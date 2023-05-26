@@ -20,7 +20,7 @@ AppFooter
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 
-import json from '@/assets/data.json'
+import json from '@/assets/data/reviews.json'
 
 export default {
   name: "HomeView",

@@ -1,0 +1,17 @@
+import './assets/main.scss'
+
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+
+import App from './App.vue'
+import router from './router'
+
+// import LazyTube from "vue-lazytube"
+
+const app = createApp(App)
+
+app.use(createPinia())
+app.use(router)
+// app.use(LazyTube)
+
+app.mount('#app')

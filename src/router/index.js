@@ -41,7 +41,7 @@ const router = createRouter({
       component: ListWeekView
     },
     {
-      path: '/list-week/:post',
+      path: '/list-week/:name:year',
       name: 'list-post',
       component: ListWeekPostView
     },

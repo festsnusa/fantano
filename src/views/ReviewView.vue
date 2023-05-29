@@ -21,7 +21,7 @@ import AppFooter from '@/components/AppFooter.vue'
 import YouTube from 'vue3-youtube'
 import Toggle from '@vueform/toggle'
 
-import json from '@/assets/data.json'
+import json from '@/assets/data/reviews.json'
 
 export default {
   components: {

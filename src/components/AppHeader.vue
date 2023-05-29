@@ -18,7 +18,6 @@ export default {
         { "title": "home", "link": "home" },
         { "title": "reviews", "link": "reviews" },
         { "title": "weekly track roundup", "link": "wtr" },
-        { "title": "new music friday", "link": "nfr" },
         { "title": "list week", "link": "list-week" },
       ],
     }

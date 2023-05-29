@@ -4,9 +4,10 @@ AppHeader(:currentIndex="1")
   section.reviews__left
     .reviews__header 
       span.reviews__title Reviews
-    RouterLink.review(v-for="(item, index) in reviews.slice().reverse()" :to="`/review/${item.id}`")
-      img(:src="item.imgSrc", :alt="item.title")
-      span.review__title {{ item.title }}
+    .reviews__content
+      RouterLink.review(v-for="(item, index) in reviews.slice().reverse()" :to="`/review/${item.id}`")
+        img.review__image(:src="item.imgSrc", :alt="item.title")
+        p.review__title {{ item.title }}
   aside.reviews__right
     AppFilter
 AppFooter
@@ -38,5 +39,20 @@ export default {
 .reviews {
   padding: 3rem;
   display: flex;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 2rem;
+  }
+}
+
+.review {
+  &__image {
+    width: 300px;
+  }
 }
 </style>

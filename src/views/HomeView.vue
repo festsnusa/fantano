@@ -5,9 +5,10 @@ AppHeader(:currentIndex="0")
     span.reviews__title Reviews
     RouterLink(to="/reviews")
       span.reviews__show Show all
-  RouterLink.review(v-for="(item, index) in reviews.slice().reverse()" v-show="index<4" :to="`/review/${item.id}`")
-    img(:src="item.imgSrc", :alt="item.title")
-    span.review__title {{ item.title }}
+  .reviews__content
+    RouterLink.review(v-for="(item, index) in reviews.slice().reverse()" v-show="index<4" :to="`/review/${item.id}`")
+      img.review__image(:src="item.imgSrc", :alt="item.title")
+      p.review__title {{ item.title }}
 .wtr 
 .nmf 
 .list-week 
@@ -35,3 +36,24 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.reviews {
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 2rem;
+  }
+
+}
+
+.review {
+  &__image {
+    width: 300px;
+  }
+}
+</style>

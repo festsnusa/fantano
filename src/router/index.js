@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 const HomeView = () => import('@/views/HomeView.vue')
 const ListWeekView = () => import('@/views/ListWeekView.vue')
 const ListWeekPostView = () => import('@/views/ListWeekPostView.vue')
-const NewMusicFridayView = () => import('@/views/NewMusicFridayView.vue')
 const ReviewsView = () => import('@/views/ReviewsView.vue')
 const ReviewView = () => import('@/views/ReviewView.vue')
 const WeeklyRoundupView = () => import('@/views/WeeklyRoundupView.vue')
@@ -29,11 +28,6 @@ const router = createRouter({
       path: '/wtr',
       name: 'wtr',
       component: WeeklyRoundupView
-    },
-    {
-      path: '/nfr',
-      name: 'nfr',
-      component: NewMusicFridayView
     },
     {
       path: '/list-week',

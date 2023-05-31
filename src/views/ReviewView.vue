@@ -21,7 +21,7 @@ import AppFooter from '@/components/AppFooter.vue'
 import YouTube from 'vue3-youtube'
 import Toggle from '@vueform/toggle'
 
-import json from '@/assets/data/reviews.json'
+import json from '../assets/data/main-channel.json'
 
 export default {
   components: {
@@ -32,13 +32,13 @@ export default {
   },
   data() {
     return {
-      arr: json,
+      arr: json.filter(e => e.type == 'review'),
       current: null,
       en: true,
     }
   },
   created() {
-    this.current = json.filter((_, i) => (i + 1) == this.$route.params.review)[0]
+    this.current = json.filter((e) => e.id == this.$route.params.review)[0]
   }
 }
 </script>

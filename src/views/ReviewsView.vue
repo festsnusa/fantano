@@ -6,7 +6,8 @@ AppHeader(:currentIndex="1")
       span.reviews__title Reviews
     .reviews__content
       RouterLink.review(v-for="(item, index) in paginatedData" :key="index" :to="`/review/${item.id}`")
-        img.review__image(:src="getThumbnail(item.video)", :alt="item.title")
+        AppPreloader(v-show="!item.imageShow")
+        img.review__image(v-show="item.imageShow" :src="getThumbnail(item.video)", :alt="item.title" @load="item.imageShow = true")
         p.review__title {{ item.title }}
   aside.reviews__right
     AppFilter(:filter="filter" :searchReview="searchReview")
@@ -26,6 +27,8 @@ import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 import AppFilter from '@/components/AppFilter.vue'
 
+import AppPreloader from '@/components/AppPreloader.vue'
+
 import json from '../assets/data/main-channel.json'
 
 export default {
@@ -34,6 +37,7 @@ export default {
     AppHeader,
     AppFooter,
     AppFilter,
+    AppPreloader,
   },
   data() {
     return {

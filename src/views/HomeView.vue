@@ -7,7 +7,8 @@ AppHeader(:currentIndex="0")
       span.reviews__show Show all
   .reviews__content
     RouterLink.review(v-for="(item, index) in reviews" v-show="index<4" :to="`/review/${item.id}`")
-      img.review__image(:src="getThumbnail(item.video)", :alt="item.title")
+      AppPreloader(v-show="!item.imageShow")
+      img.review__image(v-show="item.imageShow" :src="getThumbnail(item.video)", :alt="item.title" @load="item.imageShow = true")
       p.review__title {{ item.title }}
 .wtr
   .wtr__header 
@@ -24,6 +25,7 @@ AppFooter
 <script>
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
+import AppPreloader from '@/components/AppPreloader.vue'
 
 import json from '../assets/data/main-channel.json'
 
@@ -32,6 +34,7 @@ export default {
   components: {
     AppHeader,
     AppFooter,
+    AppPreloader,
   },
   methods: {
     getThumbnail(url) {
@@ -55,12 +58,10 @@ export default {
 .reviews {
 
   &__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 2rem;
+    gap: 2rem;
   }
 
 }

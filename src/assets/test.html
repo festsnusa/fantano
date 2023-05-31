@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://apis.google.com/js/api.js"></script>
+</head>
+
+<body>
+    <input type="file" id="fileInput" />
+    <script>
+        // Event listener for when the file is selected
+        document.getElementById("fileInput").addEventListener("change", function (event) {
+            let file = event.target.files[0];
+
+            let reader = new FileReader();
+
+            reader.onload = function (e) {
+                let fileContent = e.target.result;
+
+                let arr = fileContent.split('\t\r\n').map(e => e.split('https://'))
+                let arrOfObjects = []
+                let id = arr.length
+
+                arr.forEach(e => {
+                    let jsonObject = {}
+                    jsonObject.id = id
+                    jsonObject.title = e[0]
+                    jsonObject.video = e[1]
+                    jsonObject.year = ""
+
+                    if (e[0].toLowerCase().includes('review') || (e[0].toLowerCase().includes('not good'))
+                        || (e[0].toLowerCase().includes('not bad'))) {
+                        jsonObject.type = 'review'
+                    } else if (e[0].toLowerCase().includes('weekly')) {
+                        jsonObject.type = 'weekly'
+                    } else if (e[0].toLowerCase().includes('yunoreview')) {
+                        jsonObject.type = 'yunoreview'
+                    } else if (e[0].toLowerCase().includes('great albums')) {
+                        jsonObject.type = 'great albums'
+                    } else if (e[0].toLowerCase().includes('top') || e[0].toLowerCase().includes('honorable')) {
+                        jsonObject.type = 'great albums'
+                    } else {
+                        jsonObject.type = 'other'
+                    }
+                    arrOfObjects.push(jsonObject)
+
+                    id--
+                })
+
+                // Convert JSON object to string
+                let jsonString = JSON.stringify(arrOfObjects);
+
+                console.log(jsonString);
+            };
+
+            // Read the file as text
+            reader.readAsText(file);
+        });
+//         // Example usage
+//         const originalString = `1. The Tallest Man on Earth - Sometimes the Blues Is Just a Passing Bird /// contemporary folk, singer/songwriter
+// 2. Flying Lotus - Pattern+Grid World /// glitch hop, IDM
+// 3. Sufjan Stevens - All Delighted People /// chamber pop, singer/songwriter
+// 4. Sharon Van Etten - Epic /// contemporary folk, singer/songwriter
+// 5. Superhumanoids - Urgency /// indie rock, indie pop
+// 6. Holy Ghost! - Static on the Wire /// nu-disco, indietronica
+// 7. Owen Pallett - A Swedish Love Story /// chamber pop, art pop
+// 8. Walsh - Smoke Weed About It /// chillwave
+// 9. Dirty Projectors + Björk - Mount Wittenberg Orca /// art pop, progressive pop
+// 10. Twin Sister - Color Your Life /// dream pop, indie pop
+// 11. Junip - Rope & Summit /// folktronica, indie folk
+// 12. The Gaslamp Killer - Death Gate /// wonky, IDM
+// 13. Torche – Songs For Singles /// stoner rock, alternative rock
+// 14. Cults - Cults 7" /// indie pop, twee pop
+// 15. Cave - Pure Moods /// psychedelic rock, krautrock
+
+// `;
+//         const stringWithoutNumeration = removeNumerationFromString(originalString);
+//         console.log(stringWithoutNumeration);
+
+    </script>
+</body>
+
+</html>

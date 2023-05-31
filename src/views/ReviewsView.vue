@@ -9,25 +9,16 @@ AppHeader(:currentIndex="1")
         img.review__image(:src="getThumbnail(item.video)", :alt="item.title")
         p.review__title {{ item.title }}
   aside.reviews__right
-    AppFilter
+    AppFilter(:filter="filter" :searchReview="searchReview")
 .pagination 
-  button(@click="backPage") prev
-  button(
-    v-for="item in Math.ceil(data.length / perPage)"
+  button.pagination__prev(@click="backPage") &laquo
+  button.pagination__button(:class="{active: item == page}"
+    v-for="item in Math.ceil(reviews.length / perPage)"
     :key="item"
     @click="() => goToPage(item)"
   ) {{ item }}
-  button(@click="nextPage") next
+  button.pagination__next(@click="nextPage") &raquo
 AppFooter
-
-div(v-for="item in paginatedData" :key="item.index") {{ item.id }}
-button(@click="backPage") prev
-button(
-  v-for="item in Math.ceil(data.length / perPage)"
-  :key="item"
-  @click="() => goToPage(item)"
-) {{ item }}
-button(@click="nextPage") next
 </template>
 
 <script>
@@ -36,7 +27,6 @@ import AppFooter from '@/components/AppFooter.vue'
 import AppFilter from '@/components/AppFilter.vue'
 
 import json from '../assets/data/main-channel.json'
-import handlePagination from "../includes/handlePagination";
 
 export default {
   name: "ReviewsView",
@@ -45,14 +35,16 @@ export default {
     AppFooter,
     AppFilter,
   },
-  setup() {
-    const handlePaginationValue = handlePagination();
-
-    return { ...handlePaginationValue };
-  },
   data() {
     return {
       reviews: json.filter(e => e.type == 'review'),
+      page: 1,
+      perPage: 15,
+    }
+  },
+  computed: {
+    paginatedData() {
+      return this.reviews.slice((this.page - 1) * this.perPage, this.page * this.perPage)
     }
   },
   methods: {
@@ -63,6 +55,32 @@ export default {
       let regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/
       let match = url.match(regExp)
       return (match && match[7].length == 11) ? match[7] : false
+    },
+    nextPage() {
+      if (this.page !== Math.ceil(this.reviews.length / this.perPage)) {
+        this.page += 1
+      }
+    },
+    backPage() {
+      if (this.page !== 1) {
+        this.page -= 1
+      }
+    },
+    goToPage(numPage) {
+      this.page = numPage
+    },
+    filter() {
+      this.reviews = json.filter(e => e.type == 'review')
+      this.page = 1
+      const year = document.querySelector('.search__select').value
+      if (year == '') return
+      this.reviews = this.reviews.filter(e => e.year == year)
+    },
+    searchReview(text) {
+      this.reviews = json.filter(e => e.type == 'review')
+      document.querySelector('.search__select').value = ''
+      if (text.length == 0) return
+      this.reviews = this.reviews.filter(e => e.title.toLowerCase().includes(text.toLowerCase()))
     }
   },
 }
@@ -94,5 +112,25 @@ export default {
       transition: all 0.5s ease-in;
     }
   }
+}
+
+.pagination {
+  display: inline-block;
+
+  button {
+    background-color: #fff;
+    text-transform: uppercase;
+    padding: 1rem;
+
+    &:hover:not(.active) {
+      background-color: #DDD;
+    }
+  }
+}
+
+.active {
+  background-color: #0096FF;
+  // color: #FFFFFF;
+  border: 1px solid #0096FF;
 }
 </style>

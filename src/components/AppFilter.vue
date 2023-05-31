@@ -1,8 +1,9 @@
 <template lang="pug">
 .search
-  font-awesome-icon.search__icon(icon="fa-solid fa-magnifying-glass")
-  input.search__input(:class="`search__input_${mode}`" type="text" v-model="text" @input="searchReview(text)" placeholder="Search for a review...")
-  select.search__select(:class="`search__select_${mode}`" name="select" @change="filter()")
+  //- font-awesome-icon.search__icon(icon="fa-solid fa-magnifying-glass")
+  <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
+  input.search__input(type="text" v-model="text" @input="searchReview(text)" placeholder="Search for a review...")
+  select.search__select(name="select" @change="filter")
     option(value="") Filter by year
     option(v-for="item in years" :value="item") {{item}}
 </template>

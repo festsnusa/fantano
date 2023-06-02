@@ -1,21 +1,11 @@
 <template lang="pug">
 AppHeader(:currentIndex="0")
-.reviews 
-  .reviews__header 
-    span.reviews__title Reviews
-    RouterLink(to="/reviews")
-      span.reviews__show Show all
-  .reviews__content
-    RouterLink.review(v-for="(item, index) in reviews" v-show="index<4" :to="`/review/${item.id}`")
-      AppPreloader(v-show="!item.imageShow")
-      img.review__image(v-show="item.imageShow" :src="getThumbnail(item.video)", :alt="item.title" @load="item.imageShow = true")
-      p.review__title {{ item.title }}
+.reviews
+  HomeBlockVue(title="Reviews" link="reviews" :arr="reviews")
 .wtr
-  .wtr__header 
-    span.wtr__title Weekly Track Roundups
-    RouterLink(to="/wtr")
-      span.reviews__show Show all
-.nmf 
+  HomeBlockVue(title="Weekly Track Roundups" link="wtr" :arr="wtr")
+.ynr 
+  HomeBlockVue(title="YUNOREVIEWS" link="ynr" :arr="ynr")
 .list-week 
 
 AppFooter
@@ -25,6 +15,7 @@ AppFooter
 <script>
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
+import HomeBlockVue from '@/components/HomeBlock.vue'
 import AppPreloader from '@/components/AppPreloader.vue'
 
 import json from '../assets/data/main-channel.json'
@@ -34,6 +25,7 @@ export default {
   components: {
     AppHeader,
     AppFooter,
+    HomeBlockVue,
     AppPreloader,
   },
   methods: {
@@ -49,6 +41,8 @@ export default {
   data() {
     return {
       reviews: json.filter(e => e.type == 'review'),
+      wtr: json.filter(e => e.type == 'weekly'),
+      ynr: json.filter(e => e.type == 'YUNOREVIEW'),
     }
   },
 }

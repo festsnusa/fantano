@@ -10,7 +10,7 @@ AppHeader(:currentIndex="1")
         img.review__image(v-show="item.imageShow" :src="getThumbnail(item.video)", :alt="item.title" @load="item.imageShow = true")
         p.review__title {{ item.title }}
   aside.reviews__right
-    AppFilter(:filter="filter" :searchReview="searchReview")
+    AppFilter(:filterByYear="filterByYear" :searchReview="searchReview" :filterByRating="filterByRating")
 .pagination 
   button.pagination__prev(@click="backPage") &laquo
   button.pagination__button(:class="{active: item == page}"
@@ -34,6 +34,7 @@ import json from '../assets/data/main-channel.json'
 import { mapStores } from 'pinia';
 import usePageStore from '@/stores/page'
 import useYearStore from '@/stores/year'
+import useRatingStore from '@/stores/rating'
 
 export default {
   name: "ReviewsView",
@@ -54,7 +55,7 @@ export default {
     paginatedData() {
       return this.reviews.slice((this.page - 1) * this.perPage, this.page * this.perPage)
     },
-    ...mapStores(usePageStore, useYearStore)
+    ...mapStores(usePageStore, useYearStore, useRatingStore)
   },
   methods: {
     getThumbnail(url) {
@@ -78,13 +79,21 @@ export default {
     goToPage(numPage) {
       this.pageStore.currentPage = numPage
     },
-    filter() {
+    filterByYear() {
       this.reviews = json.filter(e => e.type == 'review')
       this.pageStore.currentPage = 1
       document.querySelector('.search__input').value = ''
       this.yearStore.currentYear = document.querySelector('.search__select').value
       if (this.yearStore.currentYear == '') return
       this.reviews = this.reviews.filter(e => e.year == this.yearStore.currentYear)
+    },
+    filterByRating() {
+      this.reviews = json.filter(e => e.type == 'review')
+      this.pageStore.currentPage = 1
+      document.querySelector('.search__input').value = ''
+      this.ratingStore.currentRating = document.querySelector('.search__select_rating').value
+      if (this.ratingStore.currentRating == '') return
+      this.reviews = this.reviews.filter(e => e.rating == this.ratingStore.currentRating)
     },
     searchReview(text) {
       this.reviews = json.filter(e => e.type == 'review')

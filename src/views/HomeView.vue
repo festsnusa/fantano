@@ -49,20 +49,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.reviews {
-
-  &__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 2rem;
-    gap: 2rem;
-  }
-
-}
-
-.review {
-  &__image {
-    width: 300px;
-  }
+.reviews,
+.wtr,
+.ynr,
+.list-week {
+  padding: 3rem;
 }
 </style>

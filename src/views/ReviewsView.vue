@@ -31,6 +31,10 @@ import AppPreloader from '@/components/AppPreloader.vue'
 
 import json from '../assets/data/main-channel.json'
 
+import { mapStores } from 'pinia';
+import usePageStore from '@/stores/page'
+import useYearStore from '@/stores/year'
+
 export default {
   name: "ReviewsView",
   components: {
@@ -49,7 +53,8 @@ export default {
   computed: {
     paginatedData() {
       return this.reviews.slice((this.page - 1) * this.perPage, this.page * this.perPage)
-    }
+    },
+    ...mapStores(usePageStore, useYearStore)
   },
   methods: {
     getThumbnail(url) {
@@ -62,31 +67,43 @@ export default {
     },
     nextPage() {
       if (this.page !== Math.ceil(this.reviews.length / this.perPage)) {
-        this.page += 1
+        this.pageStore.currentPage += 1
       }
     },
     backPage() {
       if (this.page !== 1) {
-        this.page -= 1
+        this.pageStore.currentPage -= 1
       }
     },
     goToPage(numPage) {
-      this.page = numPage
+      this.pageStore.currentPage = numPage
     },
     filter() {
       this.reviews = json.filter(e => e.type == 'review')
-      this.page = 1
-      const year = document.querySelector('.search__select').value
-      if (year == '') return
-      this.reviews = this.reviews.filter(e => e.year == year)
+      this.pageStore.currentPage = 1
+      document.querySelector('.search__input').value = ''
+      this.yearStore.currentYear = document.querySelector('.search__select').value
+      if (this.yearStore.currentYear == '') return
+      this.reviews = this.reviews.filter(e => e.year == this.yearStore.currentYear)
     },
     searchReview(text) {
       this.reviews = json.filter(e => e.type == 'review')
+      this.pageStore.currentPage = 1
       document.querySelector('.search__select').value = ''
       if (text.length == 0) return
       this.reviews = this.reviews.filter(e => e.title.toLowerCase().includes(text.toLowerCase()))
     }
   },
+  created() {
+    this.page = this.pageStore.currentPage
+
+    this.pageStore.$subscribe((mutation, state) => {
+      this.page = state.currentPage
+    })
+  },
+  mounted() {
+    this.reviews = this.reviews.filter(e => e.year == this.yearStore.currentYear)
+  }
 }
 </script>
 

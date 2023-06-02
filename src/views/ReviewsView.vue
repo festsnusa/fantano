@@ -102,7 +102,10 @@ export default {
     })
   },
   mounted() {
-    this.reviews = this.reviews.filter(e => e.year == this.yearStore.currentYear)
+    if (this.yearStore.currentYear != '') {
+      this.reviews = this.reviews.filter(e => e.year == this.yearStore.currentYear)
+    }
+
   }
 }
 </script>

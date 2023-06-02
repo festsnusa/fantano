@@ -40,9 +40,9 @@ export default {
   },
   data() {
     return {
-      reviews: json.filter(e => e.type == 'review'),
-      wtr: json.filter(e => e.type == 'weekly'),
-      ynr: json.filter(e => e.type == 'YUNOREVIEW'),
+      reviews: json.filter(e => e.type == 'review').slice(0, 5),
+      wtr: json.filter(e => e.type == 'weekly').slice(0, 5),
+      ynr: json.filter(e => e.type == 'YUNOREVIEW').slice(0, 5),
     }
   },
 }

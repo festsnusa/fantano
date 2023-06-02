@@ -17,7 +17,8 @@ export default {
       arr: [
         { "title": "home", "link": "home" },
         { "title": "reviews", "link": "reviews" },
-        { "title": "weekly track roundup", "link": "wtr" },
+        { "title": "wtr", "link": "wtr" },
+        { "title": "ynr", "link": "ynr" },
         { "title": "list week", "link": "list-week" },
       ],
     }
@@ -30,7 +31,6 @@ export default {
 
 .header {
 
-  // position: fixed;
   width: 100%;
   display: flex;
   align-items: center;
@@ -61,5 +61,12 @@ export default {
 
 .active {
   color: $green;
+}
+
+@media (max-width: 800px) {
+  .list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 </style>

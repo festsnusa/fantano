@@ -11,12 +11,14 @@ AppHeader
     .text-field.multiline
       p(v-if="en") {{ current.en }}
       p(v-else) {{ current.ru }}
+    ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
 AppFooter
 </template>
 
 <script>
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
+import ReviewStar from '@/components/ReviewStar.vue'
 
 import YouTube from 'vue3-youtube'
 import Toggle from '@vueform/toggle'
@@ -27,6 +29,7 @@ export default {
   components: {
     AppHeader,
     AppFooter,
+    ReviewStar,
     YouTube,
     Toggle,
   },

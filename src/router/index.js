@@ -5,6 +5,7 @@ const ListWeekPostView = () => import('@/views/ListWeekPostView.vue')
 const ReviewsView = () => import('@/views/ReviewsView.vue')
 const ReviewView = () => import('@/views/ReviewView.vue')
 const WeeklyRoundupView = () => import('@/views/WeeklyRoundupView.vue')
+const YunoView = () => import('@/views/YunoView.vue')
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,6 +29,11 @@ const router = createRouter({
       path: '/wtr',
       name: 'wtr',
       component: WeeklyRoundupView
+    },
+    {
+      path: '/ynr',
+      name: 'ynr',
+      component: YunoView
     },
     {
       path: '/list-week',

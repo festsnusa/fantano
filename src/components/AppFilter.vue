@@ -1,6 +1,5 @@
 <template lang="pug">
 .search
-  <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
   input.search__input(type="text" v-model="text" @input="searchReview(text)" placeholder="Search for a review...")
   select.search__select(v-model="year" name="select" @change="filter")
     option(value="") Filter by year

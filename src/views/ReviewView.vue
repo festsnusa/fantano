@@ -12,10 +12,13 @@ AppHeader
       p(v-if="en") {{ current.en }}
       p(v-else) {{ current.ru }}
     ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
+    //- <Markdown :source="markdown" />
 AppFooter
 </template>
 
 <script>
+import Markdown from 'vue3-markdown-it';
+
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 import ReviewStar from '@/components/ReviewStar.vue'
@@ -25,6 +28,7 @@ import Toggle from '@vueform/toggle'
 import { useMediaQuery } from '@vueuse/core'
 
 import json from '../assets/data/main-channel.json'
+import markdownSource from '../assets/text/test.md'
 
 export default {
   components: {
@@ -33,6 +37,7 @@ export default {
     ReviewStar,
     YouTube,
     Toggle,
+    Markdown
   },
   data() {
     return {
@@ -40,6 +45,7 @@ export default {
       current: null,
       en: true,
       isLargeScreen: useMediaQuery('(min-width: 1024px)'),
+      markdown: markdownSource,
     }
   },
   computed: {
@@ -71,6 +77,7 @@ export default {
     display: flex;
     width: 100%;
     flex-direction: column;
+    max-width: 640px;
   }
 }
 

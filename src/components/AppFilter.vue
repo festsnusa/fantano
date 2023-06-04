@@ -43,16 +43,18 @@ export default {
 
 .search {
   display: flex;
+  flex-direction: column;
   padding: 1rem;
-  align-items: center;
   gap: 1.5rem;
+  max-width: 25rem;
 
   &__input {
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
   }
 
-  &__select {
+  &__select,
+  &__select_rating {
     padding: 1rem 1.5rem;
   }
 }

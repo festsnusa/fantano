@@ -2,8 +2,6 @@
 AppHeader(:currentIndex="1")
 .reviews
   section.reviews__left
-    .reviews__header 
-      span.reviews__title Reviews
     .reviews__content
       RouterLink.review(v-for="(item, index) in paginatedData" :key="index" :to="`/review/${item.id}`")
         AppPreloader(v-show="!item.imageShow")
@@ -48,7 +46,7 @@ export default {
     return {
       reviews: json.filter(e => e.type == 'review'),
       page: 1,
-      perPage: 15,
+      perPage: 16,
     }
   },
   computed: {
@@ -124,9 +122,13 @@ export default {
   padding: 3rem;
   display: flex;
 
+  &__left {
+    flex-grow: 2;
+  }
+
   &__content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 2rem;
     gap: 2rem;
   }
@@ -165,5 +167,20 @@ export default {
   background-color: #0096FF;
   // color: #FFFFFF;
   border: 1px solid #0096FF;
+}
+
+@media (max-width: 1700px) {
+  .reviews {
+
+    flex-direction: column;
+
+    &__left {
+      order: 2;
+    }
+
+    &__right {
+      order: 1;
+    }
+  }
 }
 </style>

@@ -6,5 +6,8 @@ export default defineStore('rating', {
       currentRating: '',
     };
   },
-  persist: true,
+  // persist: true,
+  persist: {
+    storage: sessionStorage,
+  },
 })

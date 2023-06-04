@@ -6,5 +6,8 @@ export default defineStore('page', {
       currentPage: 1,
     };
   },
-  persist: true,
+  // persist: true,
+  persist: {
+    storage: sessionStorage,
+  },
 })

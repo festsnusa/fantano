@@ -6,5 +6,8 @@ export default defineStore('year', {
       currentYear: '',
     };
   },
-  persist: true,
+  // persist: true,
+  persist: {
+    storage: sessionStorage,
+  },
 })

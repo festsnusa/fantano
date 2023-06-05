@@ -7,12 +7,13 @@ AppHeader
   .review__right
     .review__header
       h1.review__title {{ current.title }} ({{ current.year }})
-      Toggle.review__toggle(v-show="'ru' in current" v-model="en" name="toggle" onLabel="EN" offLabel="RU")
-    .text-field.multiline
-      p(v-if="en") {{ current.en }}
-      p(v-else) {{ current.ru }}
+      Toggle.review__toggle(v-model="en" name="toggle" onLabel="EN" offLabel="RU")
+
     ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
-    //- <Markdown :source="markdown" />
+    .text-field.multiline
+      Markdown(v-if="en" :source="textEn")
+      Markdown(v-else :source="textRu")
+
 AppFooter
 </template>
 
@@ -28,7 +29,6 @@ import Toggle from '@vueform/toggle'
 import { useMediaQuery } from '@vueuse/core'
 
 import json from '../assets/data/main-channel.json'
-import markdownSource from '../assets/text/test.md'
 
 export default {
   components: {
@@ -45,7 +45,8 @@ export default {
       current: null,
       en: true,
       isLargeScreen: useMediaQuery('(min-width: 1024px)'),
-      markdown: markdownSource,
+      textEn: '',
+      textRu: ''
     }
   },
   computed: {
@@ -60,6 +61,14 @@ export default {
   },
   created() {
     this.current = json.filter((e) => e.id == this.$route.params.review)[0]
+
+    import(`@/assets/text/${this.$route.params.review}-en.md`).then((module) => {
+      this.textEn = module.default
+    })
+
+    import(`@/assets/text/${this.$route.params.review}-ru.md`).then((module) => {
+      this.textRu = module.default
+    })
   },
 }
 </script>

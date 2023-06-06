@@ -4,7 +4,7 @@
   RouterLink(:to="`/${link}`")
     span.header__show Show all
 .content
-  RouterLink.content__element(v-for="(item, index) in arr" v-show="index<5" :to="`/review/${item.id}`")
+  RouterLink.content__element(v-for="(item, index) in arr" v-show="index<5" :to="`/videos/${item.id}`")
     AppPreloader(v-show="!item.imageShow")
     img.content__image(v-show="item.imageShow" :src="getThumbnail(item.video)", :alt="item.title" @load="item.imageShow = true")
     p.content__title {{ item.title }}

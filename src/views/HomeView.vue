@@ -1,11 +1,11 @@
 <template lang="pug">
 AppHeader(:currentIndex="0")
 .reviews
-  HomeBlockVue(title="Reviews" link="reviews" :arr="reviews")
+  HomeBlock(title="Reviews" link="videos" :arr="reviews")
 .wtr
-  HomeBlockVue(title="Weekly Track Roundups" link="wtr" :arr="wtr")
+  HomeBlock(title="Weekly Track Roundups" link="wtr" :arr="wtr")
 .ynr 
-  HomeBlockVue(title="YUNOREVIEWS" link="ynr" :arr="ynr")
+  HomeBlock(title="YUNOREVIEWS" link="ynr" :arr="ynr")
 .list-week 
 
 AppFooter
@@ -15,17 +15,17 @@ AppFooter
 <script>
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
-import HomeBlockVue from '@/components/HomeBlock.vue'
+import HomeBlock from '@/components/HomeBlock.vue'
 import AppPreloader from '@/components/AppPreloader.vue'
 
-import json from '../assets/data/main-channel.json'
+import json from '@/assets/data/main-channel.json'
 
 export default {
   name: "HomeView",
   components: {
     AppHeader,
     AppFooter,
-    HomeBlockVue,
+    HomeBlock,
     AppPreloader,
   },
   methods: {

@@ -3,7 +3,7 @@ AppHeader(:currentIndex="1")
 .reviews
   section.reviews__left
     .reviews__content
-      RouterLink.review(v-for="(item, index) in paginatedData" :key="index" :to="`/review/${item.id}`")
+      RouterLink.review(v-for="(item, index) in paginatedData" :key="index" :to="`/videos/${item.id}`")
         AppPreloader(v-show="!item.imageShow")
         img.review__image(v-show="item.imageShow" :src="getThumbnail(item.video)", :alt="item.title" @load="item.imageShow = true")
         p.review__title {{ item.title }}

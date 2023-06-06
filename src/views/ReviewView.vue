@@ -60,13 +60,13 @@ export default {
     }
   },
   created() {
-    this.current = json.filter((e) => e.id == this.$route.params.review)[0]
+    this.current = json.filter((e) => e.id == this.$route.params.video)[0]
 
-    import(`@/assets/text/${this.$route.params.review}-en.md`).then((module) => {
+    import(`@/assets/text/${this.$route.params.video}-en.md`).then((module) => {
       this.textEn = module.default
     })
 
-    import(`@/assets/text/${this.$route.params.review}-ru.md`).then((module) => {
+    import(`@/assets/text/${this.$route.params.video}-ru.md`).then((module) => {
       this.textRu = module.default
     })
   },

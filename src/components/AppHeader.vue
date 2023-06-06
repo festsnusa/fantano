@@ -16,7 +16,7 @@ export default {
     return {
       arr: [
         { "title": "home", "link": "home" },
-        { "title": "reviews", "link": "reviews" },
+        { "title": "reviews", "link": "videos" },
         { "title": "wtr", "link": "wtr" },
         { "title": "ynr", "link": "ynr" },
         { "title": "list week", "link": "list-week" },

@@ -1,5 +1,15 @@
 [
   {
+    "id": 4097,
+    "title": "Avenged Sevenfold's Life Is But a Dream... is NOT GOOD",
+    "video": "https://youtu.be/Gwtat22jkig",
+    "year": "2023",
+    "imageShow": false,
+    "type": "review",
+    "rating": "NOT GOOD",
+    "spotify": "https://open.spotify.com/embed/album/50YNY0xy9uJ0U9eFQBdLJa?utm_source=generator"
+  },
+  {
     "id": 4096,
     "title": "MGK, The Weeknd, Kid Cudi, Gunna | Weekly Track Roundup: 6/4/23",
     "video": "https://youtu.be/JmhWyeGHz-k",
@@ -1165,7 +1175,59 @@
     "video": "https://www.youtube.com/watch?v=iHrJDmN2oxk",
     "year": "2022",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week",
+    "list": [
+      "Natalia Lafourcade - De Todas las Flores",
+      "J.I.D - The Forever Story",
+      "Viagra Boys - Cave World",
+      "Soul Glo - Diaspora Problems",
+      "black midi - Hellfire",
+      "Conway the Machine - God Don’t Make Mistakes",
+      "Black Country, New Road - Ants from Up There",
+      "Sudan Archives - Natural Brown Prom Queen",
+      "Big Thief - Dragon New Warm Mountain I Believe in You",
+      "Silvana Estrada - Marchita",
+      "Charlotte Adigéry & Bolis Pupul - Topical Dancer",
+      "Ashenspire - Hostile Architecture",
+      "Petrol Girls - Baby",
+      "death’s dynamic shroud - Darklife",
+      "Beyoncé - Renaissance",
+      "billy woods - Aethiopes",
+      "Chat Pile - God’s Country",
+      "Adeem the Artist - White Trash Revelry",
+      "OFF! - Free LSD",
+      "Meridian Brothers - Meridian Brothers & El Grupo Renacimiento",
+      "Spiritualized - Everything Was Beautiful",
+      "Otoboke Beaver - SUPER CHAMPON",
+      "Jockstrap - I Love You Jennifer B",
+      "Lupe Fiasco - Drill Music in Zion",
+      "Cheekface - Too Much to Ask",
+      "Pusha T - It’s Almost Dry",
+      "SZA - SOS",
+      "Nas - King’s Disease III",
+      "Leikeli47 - Shape Up",
+      "Kenny Beats - LOUIE",
+      "Denzel Curry - Melt My Eyez See Your Future",
+      "FKA twigs - Caprisongs",
+      "Gospel - The Loser",
+      "Kendrick Lamar - Mr. Morale & The Big Steppers",
+      "Kilo Kish - American Gurl",
+      "Autopsy - Morbidity Triumphant",
+      "Smino - Luv 4 Rent",
+      "Beach House - Once Twice Melody",
+      "The Weeknd - Dawn FM",
+      "Krallice - Crystalline Exhaustion",
+      "Richard Dawson - The Ruby Cord",
+      "Black Thought & Danger Mouse - Cheat Codes",
+      "Ari Lennox - age/sex/location",
+      "Wormrot - Hiss",
+      "Artificial Brain - Artificial Brain",
+      "Daniel Rossen - You Belong There",
+      "Backxwash - His Happiness Shall Come First Even Though We Are Suffering",
+      "Bladee & Ecco2k - Crest",
+      "Black Dresses - Forget Your Own Face",
+      "JER - Bothered / Unbothered"
+    ]
   },
   {
     "id": 3973,
@@ -1173,7 +1235,8 @@
     "video": "https://www.youtube.com/watch?v=PK1tkV0ixro",
     "year": "2022",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week",
+    "spotify": "https://open.spotify.com/playlist/4QO2N2w2gXEqfsV4a2Vddz?si=830ba7842be44375"
   },
   {
     "id": 3972,
@@ -1181,7 +1244,7 @@
     "video": "https://www.youtube.com/watch?v=LYg9zYKP85A&t=674s",
     "year": "2022",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 3971,
@@ -1189,7 +1252,7 @@
     "video": "https://www.youtube.com/watch?v=6C6NJequlKQ&t=294s",
     "year": "2022",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 3970,
@@ -1197,7 +1260,7 @@
     "video": "https://www.youtube.com/watch?v=aP04tybPu5o",
     "year": "2022",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 3969,
@@ -1205,7 +1268,7 @@
     "video": "https://www.youtube.com/watch?v=_hwQLwy7lVk",
     "year": "2022",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 3968,
@@ -3872,7 +3935,7 @@
     "video": "https://www.youtube.com/watch?v=LhMqqAK5eAc&t=1s",
     "year": "2021",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 3689,
@@ -3880,7 +3943,7 @@
     "video": "https://www.youtube.com/watch?v=IgFi5eF6PFg",
     "year": "2021",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 3688,
@@ -3888,7 +3951,24 @@
     "video": "https://www.youtube.com/watch?v=k-Hutyszw_U",
     "year": "2021",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week",
+    "list": [
+      "Rachel Chinouriri - Four° in Winter",
+      "JPEGMAFIA - EP2!",
+      "Kero Kero Bonito - Civilisation II",
+      "Poppy - EAT (NXT Soundtrack)",
+      "Blu & Sirplus - For Sale",
+      "Knocked Loose - A Tear in the Fabric of Life",
+      "YUKIKA - timeabout",
+      "Vic Mensa - I Tape",
+      "Beach Bunny - Blame Game",
+      "Tkay Maidza - Last Year Was Weird, Vol. 3",
+      "Yves Tumor - The Asymptotical World",
+      "SPY - Habitual Offender",
+      "Benny the Butcher - Pyrex Picasso",
+      "Luna Li - jams",
+      "Clarence Clarity - Vanishing Act I: No Nouns"
+    ]
   },
   {
     "id": 3687,
@@ -3896,7 +3976,7 @@
     "video": "https://www.youtube.com/watch?v=vqMS1HekKqU&t=528s",
     "year": "2021",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 3686,
@@ -3904,7 +3984,7 @@
     "video": "https://www.youtube.com/watch?v=l8Nq8_7n7oE&t=8s",
     "year": "2021",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 3685,
@@ -3912,7 +3992,7 @@
     "video": "https://www.youtube.com/watch?v=nJOeuWvKzww&t=4s",
     "year": "2021",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 3684,
@@ -6647,7 +6727,7 @@
     "video": "https://www.youtube.com/watch?v=VN562bgJRZ4&t=4s",
     "year": "2020",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 3394,
@@ -6655,7 +6735,7 @@
     "video": "https://www.youtube.com/watch?v=73Pqpq-Qx1I",
     "year": "2020",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 3393,
@@ -6663,7 +6743,7 @@
     "video": "https://www.youtube.com/watch?v=-0vC47LMTGk",
     "year": "2020",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 3392,
@@ -6671,7 +6751,7 @@
     "video": "https://www.youtube.com/watch?v=gwsvZmbVuEw",
     "year": "2020",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 3391,
@@ -6679,7 +6759,7 @@
     "video": "https://www.youtube.com/watch?v=OEevZG_berE",
     "year": "2020",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 3390,
@@ -6687,7 +6767,7 @@
     "video": "https://www.youtube.com/watch?v=topbKN4iAX8",
     "year": "2020",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 3389,
@@ -9359,7 +9439,7 @@
     "video": "https://www.youtube.com/watch?v=EyMX4lcKNPg&t=959s",
     "year": "2020",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 3110,
@@ -9367,7 +9447,7 @@
     "video": "https://www.youtube.com/watch?v=gnkw3tjc4ck",
     "year": "2020",
     "imageShow": false,
-    "type": "great albums"
+    "type": "glist-week"
   },
   {
     "id": 3109,
@@ -9375,7 +9455,7 @@
     "video": "https://www.youtube.com/watch?v=S-gAv3pO8iM&t=143s",
     "year": "2020",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 3108,
@@ -9383,7 +9463,7 @@
     "video": "https://www.youtube.com/watch?v=IOFf-6Jg-GM&t=639s",
     "year": "2020",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 3107,
@@ -9459,7 +9539,7 @@
     "video": "https://www.youtube.com/watch?v=q8wm4QFCqhE&t=9s",
     "year": "2019",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 3099,
@@ -9467,7 +9547,7 @@
     "video": "https://www.youtube.com/watch?v=sWSdboVgeek",
     "year": "2019",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 3098,
@@ -9475,7 +9555,7 @@
     "video": "https://www.youtube.com/watch?v=9K7JoChJEww",
     "year": "2019",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 3097,
@@ -9483,7 +9563,7 @@
     "video": "https://www.youtube.com/watch?v=ankJslr42AA",
     "year": "2019",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 3096,
@@ -9491,7 +9571,7 @@
     "video": "https://www.youtube.com/watch?v=yfCgjZ2_4TE",
     "year": "2019",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 3095,
@@ -9499,7 +9579,7 @@
     "video": "https://www.youtube.com/watch?v=Ml0GPxwZtw8",
     "year": "2019",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 3094,
@@ -12304,7 +12384,7 @@
     "video": "https://www.youtube.com/watch?v=jhpP8YKjtTQ&t=1s",
     "year": "2018",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2798,
@@ -12312,7 +12392,7 @@
     "video": "https://www.youtube.com/watch?v=vTr99X6Nh74",
     "year": "2018",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2797,
@@ -12320,7 +12400,7 @@
     "video": "https://www.youtube.com/watch?v=DniRzLNzxcc&t=25s",
     "year": "2018",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 2796,
@@ -12328,7 +12408,7 @@
     "video": "https://www.youtube.com/watch?v=6YLcTdaNYPw",
     "year": "2018",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 2795,
@@ -12336,7 +12416,7 @@
     "video": "https://www.youtube.com/watch?v=oQ28ZolgeaI",
     "year": "2018",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2794,
@@ -12344,7 +12424,7 @@
     "video": "https://www.youtube.com/watch?v=sHNjyrzkxgY",
     "year": "2018",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2793,
@@ -12352,7 +12432,7 @@
     "video": "https://www.youtube.com/watch?v=NFCN0tOZ4UE",
     "year": "2018",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2792,
@@ -15348,7 +15428,7 @@
     "video": "https://www.youtube.com/watch?v=YU-MFIbWsK4&t=371s",
     "year": "2017",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2477,
@@ -15356,7 +15436,7 @@
     "video": "https://www.youtube.com/watch?v=jTW5_KvkGoE",
     "year": "2017",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2476,
@@ -15364,7 +15444,7 @@
     "video": "https://www.youtube.com/watch?v=Lc_b_5Ewq74",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 2475,
@@ -15372,7 +15452,7 @@
     "video": "https://www.youtube.com/watch?v=_s1NfR6tjRY",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 2474,
@@ -15380,7 +15460,7 @@
     "video": "https://www.youtube.com/watch?v=TVcu3R_qLFM&t=1s",
     "year": "2017",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2473,
@@ -15436,7 +15516,7 @@
     "video": "https://www.youtube.com/watch?v=STeN0JQkatw",
     "year": "2017",
     "imageShow": false,
-    "type": "great albums"
+    "type": "other"
   },
   {
     "id": 2467,
@@ -18752,7 +18832,7 @@
     "id": 2116,
     "title": "Kid Cudi - Passion, Pain & Demon Slayin' ALBUM REVIEW",
     "video": "https://www.youtube.com/watch?v=IAHgAEpNF5I",
-    "year": "2017",
+    "year": "2016",
     "imageShow": false,
     "type": "review",
     "rating": 4,
@@ -18764,7 +18844,7 @@
     "video": "https://www.youtube.com/watch?v=PkDH0RquNYo",
     "year": "2016",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2114,
@@ -18772,7 +18852,7 @@
     "video": "https://www.youtube.com/watch?v=dWLzwObFzcY&t=1s",
     "year": "2016",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2113,
@@ -18780,7 +18860,7 @@
     "video": "https://www.youtube.com/watch?v=NcEAdtuccP4",
     "year": "2016",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2112,
@@ -18788,7 +18868,7 @@
     "video": "https://www.youtube.com/watch?v=ebQcgnlz5SU",
     "year": "2016",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2111,
@@ -18796,7 +18876,7 @@
     "video": "https://www.youtube.com/watch?v=thEYVY5zmxQ",
     "year": "2016",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2110,
@@ -18804,7 +18884,7 @@
     "video": "https://www.youtube.com/watch?v=HSzXhVr3T6E",
     "year": "2016",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 2109,
@@ -21970,7 +22050,7 @@
     "video": "https://www.youtube.com/watch?v=X0UtPI9Jp2Y",
     "year": "2015",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1773,
@@ -21978,7 +22058,7 @@
     "video": "https://www.youtube.com/watch?v=XbJIFmZLiHM&t=1s",
     "year": "2015",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1772,
@@ -21986,7 +22066,7 @@
     "video": "https://www.youtube.com/watch?v=XWY-q1UYCRI",
     "year": "2015",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1771,
@@ -21994,7 +22074,7 @@
     "video": "https://www.youtube.com/watch?v=TVplf7tG09M",
     "year": "2015",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1770,
@@ -22002,7 +22082,7 @@
     "video": "https://www.youtube.com/watch?v=Mcv35GDsfuE",
     "year": "2015",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1769,
@@ -22050,7 +22130,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/7vFWddoQjyL0jlwzizSy7N?utm_source=generator"
   },
   {
     "id": 1764,
@@ -25024,7 +25104,7 @@
     "video": "https://www.youtube.com/watch?v=6GAUWscCIHg",
     "year": "2014",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1453,
@@ -25032,7 +25112,7 @@
     "video": "https://www.youtube.com/watch?v=UG5lcBqMHvk&t=1s",
     "year": "2014",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1452,
@@ -25040,7 +25120,7 @@
     "video": "https://www.youtube.com/watch?v=oxXR2JnK6CU",
     "year": "2014",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1451,
@@ -25048,7 +25128,7 @@
     "video": "https://www.youtube.com/watch?v=Q3x4SX9Uu_4",
     "year": "2014",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1450,
@@ -28052,7 +28132,7 @@
     "video": "https://www.youtube.com/watch?v=yYEZK6_MlDw",
     "year": "2013",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1136,
@@ -28060,7 +28140,7 @@
     "video": "https://www.youtube.com/watch?v=SyQz4cAF4iE",
     "year": "2013",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1135,
@@ -28068,7 +28148,7 @@
     "video": "https://www.youtube.com/watch?v=96bcfJLNe2Q&t=1s",
     "year": "2013",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1134,
@@ -28076,7 +28156,7 @@
     "video": "https://www.youtube.com/watch?v=odPbMnGaiA8",
     "year": "2013",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1133,
@@ -28084,7 +28164,7 @@
     "video": "https://www.youtube.com/watch?v=crTam4W0CpU",
     "year": "2013",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 1132,
@@ -31152,7 +31232,7 @@
     "video": "https://www.youtube.com/watch?v=lBdnBBgmCTM",
     "year": "2012",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 809,
@@ -31160,7 +31240,7 @@
     "video": "https://www.youtube.com/watch?v=5zhnhnespGA",
     "year": "2012",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 808,
@@ -31168,7 +31248,7 @@
     "video": "https://www.youtube.com/watch?v=n9zSSPCazBs&t=1s",
     "year": "2012",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 807,
@@ -31176,7 +31256,7 @@
     "video": "https://www.youtube.com/watch?v=z6nHxoqkFOI",
     "year": "2012",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 806,
@@ -31242,7 +31322,7 @@
     "video": "https://www.youtube.com/watch?v=hnUlcgPPjbc",
     "year": "2012",
     "imageShow": false,
-    "type": "great albums"
+    "type": "other"
   },
   {
     "id": 799,
@@ -31250,7 +31330,7 @@
     "video": "https://www.youtube.com/watch?v=P0mflpv5y4A",
     "year": "2012",
     "imageShow": false,
-    "type": "great albums"
+    "type": "other"
   },
   {
     "id": 798,
@@ -34756,7 +34836,7 @@
     "video": "https://www.youtube.com/watch?v=b0tyB8tkmU8",
     "year": "2011",
     "imageShow": false,
-    "type": "great albums"
+    "type": "other"
   },
   {
     "id": 429,
@@ -36813,7 +36893,7 @@
     "video": "https://www.youtube.com/watch?v=yWE3o_6l-WA&t=83s",
     "year": "2010",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 216,
@@ -36821,7 +36901,7 @@
     "video": "https://www.youtube.com/watch?v=yB4zueiCp2c&t=1s",
     "year": "2010",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 215,
@@ -36829,7 +36909,7 @@
     "video": "https://www.youtube.com/watch?v=ltdFjG7VP7M&t=1s",
     "year": "2010",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 214,
@@ -36837,7 +36917,7 @@
     "video": "https://www.youtube.com/watch?v=kz2Kg-JxKSE",
     "year": "2010",
     "imageShow": false,
-    "type": "great albums"
+    "type": "list-week"
   },
   {
     "id": 213,

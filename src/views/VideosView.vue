@@ -1,6 +1,6 @@
 <template lang="pug">
 AppHeader(:currentIndex="1")
-AppVideos
+AppVideos(type="review" :years="years")
 AppFooter
 </template>
 
@@ -16,5 +16,10 @@ export default {
     AppFooter,
     AppVideos,
   },
+  data() {
+    return {
+      years: Array.from(Array(13), (_, i) => i + 2010).reverse()
+    }
+  }
 }
 </script>

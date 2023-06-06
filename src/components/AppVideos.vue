@@ -7,11 +7,12 @@
         img.review__image(v-show="item.imageShow" :src="getThumbnail(item.video)", :alt="item.title" @load="item.imageShow = true")
         p.review__title {{ item.title }}
   aside.reviews__right
-    AppFilter(:filterByYear="filterByYear" :searchReview="searchReview" :filterByRating="filterByRating")
+    AppFilter(:filterByYear="filterByYear" :searchReview="searchReview" 
+    :filterByRating="filterByRating" :type="type" :years="years")
 .pagination 
   button.pagination__prev(@click="backPage") &laquo
   button.pagination__button(:class="{active: item == page}"
-    v-for="item in Math.ceil(reviews.length / perPage)"
+    v-for="item in Math.ceil(this.reviews.length / this.perPage)"
     :key="item"
     @click="() => goToPage(item)"
   ) {{ item }}
@@ -31,13 +32,14 @@ import useRatingStore from '@/stores/rating'
 
 export default {
   name: "AppVideos",
+  props: ["type", "years"],
   components: {
     AppFilter,
     AppPreloader,
   },
   data() {
     return {
-      reviews: json.filter(e => e.type == 'review'),
+      reviews: json.filter(e => e.type == this.type),
       page: 1,
       perPage: 16,
     }
@@ -71,7 +73,7 @@ export default {
       this.pageStore.currentPage = numPage
     },
     filterByYear() {
-      this.reviews = json.filter(e => e.type == 'review')
+      this.reviews = json.filter(e => e.type == this.type)
       this.pageStore.currentPage = 1
       document.querySelector('.search__input').value = ''
       this.yearStore.currentYear = document.querySelector('.search__select').value
@@ -79,7 +81,7 @@ export default {
       this.reviews = this.reviews.filter(e => e.year == this.yearStore.currentYear)
     },
     filterByRating() {
-      this.reviews = json.filter(e => e.type == 'review')
+      this.reviews = json.filter(e => e.type == this.type)
       this.pageStore.currentPage = 1
       document.querySelector('.search__input').value = ''
       this.ratingStore.currentRating = document.querySelector('.search__select_rating').value
@@ -87,7 +89,7 @@ export default {
       this.reviews = this.reviews.filter(e => e.rating == this.ratingStore.currentRating)
     },
     searchReview(text) {
-      this.reviews = json.filter(e => e.type == 'review')
+      this.reviews = json.filter(e => e.type == this.type)
       this.pageStore.currentPage = 1
       document.querySelector('.search__select').value = ''
       if (text.length == 0) return
@@ -95,6 +97,9 @@ export default {
     }
   },
   created() {
+
+    let totalPages = Math.ceil(this.reviews.length / this.perPage)
+    this.pageStore.currentPage = (this.pageStore.currentPage > totalPages) ? 1 : this.pageStore.currentPage
     this.page = this.pageStore.currentPage
 
     this.pageStore.$subscribe((mutation, state) => {

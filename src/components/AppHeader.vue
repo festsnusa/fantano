@@ -20,6 +20,9 @@ export default {
         { "title": "wtr", "link": "wtr" },
         { "title": "ynr", "link": "ynr" },
         { "title": "list week", "link": "list-week" },
+        { "title": "podcasts", "link": "podcasts" },
+        { "title": "vinyls", "link": "vinyls" },
+        { "title": "other", "link": "other" },
       ],
     }
   }

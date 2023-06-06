@@ -1,10 +1,11 @@
 <template lang="pug">
 .search
-  input.search__input(type="text" v-model="text" @input="searchReview(text)" placeholder="Search for a review...")
+  input.search__input(type="text" v-model="text" @input="searchReview(text)" placeholder="Search by title...")
   select.search__select(v-model="year" name="select" @change="filterByYear")
     option(value="") Filter by year
     option(v-for="item in years" :value="item") {{item}}
-  select.search__select_rating(v-model="rating" name="select_rating" @change="filterByRating")
+  select.search__select_rating(v-model="rating" name="select_rating" @change="filterByRating"
+    v-show="type == 'review'")
     option(value="") Filter by rating
     option(v-for="item in ratings" :value="item") {{item}}
 </template>
@@ -15,12 +16,12 @@ import useYearStore from '@/stores/year'
 
 export default {
   name: "AppFilter",
-  props: ["filterByYear", "searchReview", "filterByRating"],
+  props: ["filterByYear", "searchReview", "filterByRating", "type", "years"],
   data() {
     return {
       text: '',
       year: '',
-      years: [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      // years: [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
       rating: '',
       ratings: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 'NOT GOOD', 'NOT BAD', '-']
     }

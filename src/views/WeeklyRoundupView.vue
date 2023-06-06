@@ -1,17 +1,25 @@
 <template lang="pug">
 AppHeader(:currentIndex="2")
+AppVideos(type="weekly" :years="years")
 AppFooter
 </template>
 
 <script>
-import AppHeader from '@/components/AppHeader.vue';
-import AppFooter from '@/components/AppFooter.vue';
+import AppHeader from '@/components/AppHeader.vue'
+import AppFooter from '@/components/AppFooter.vue'
+import AppVideos from '@/components/AppVideos.vue'
 
 export default {
   name: "WeeklyRoundupView",
   components: {
     AppHeader,
     AppFooter,
+    AppVideos,
+  },
+  data() {
+    return {
+      years: Array.from(Array(8), (_, i) => i + 2016).reverse()
+    }
   }
 }
 </script>

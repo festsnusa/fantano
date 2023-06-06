@@ -1,11 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 const HomeView = () => import('@/views/HomeView.vue')
 const ListWeekView = () => import('@/views/ListWeekView.vue')
-const ListWeekPostView = () => import('@/views/ListWeekPostView.vue')
 const VideosView = () => import('@/views/VideosView.vue')
 const VideoView = () => import('@/views/VideoView.vue')
 const WeeklyRoundupView = () => import('@/views/WeeklyRoundupView.vue')
 const YunoView = () => import('@/views/YunoView.vue')
+const PodcastsView = () => import('@/views/PodcastsView.vue')
+const VinylsView = () => import('@/views/VinylsView.vue')
+const OtherView = () => import('@/views/OtherView.vue')
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,9 +43,19 @@ const router = createRouter({
       component: ListWeekView
     },
     {
-      path: '/list-week/:name:year',
-      name: 'list-post',
-      component: ListWeekPostView
+      path: '/podcasts',
+      name: 'podcasts',
+      component: PodcastsView
+    },
+    {
+      path: '/vinyls',
+      name: 'vinyls',
+      component: VinylsView
+    },
+    {
+      path: '/other',
+      name: 'other',
+      component: OtherView
     },
     {
       path: '/:catchAll(.*)*',

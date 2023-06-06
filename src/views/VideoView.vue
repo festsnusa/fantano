@@ -7,7 +7,7 @@ AppHeader
   .review__right
     .review__header
       h1.review__title {{ current.title }} ({{ current.year }})
-      Toggle.review__toggle(v-model="en" name="toggle" onLabel="EN" offLabel="RU")
+      Toggle.review__toggle(v-show="current.type=='review'" v-model="en" name="toggle" onLabel="EN" offLabel="RU")
 
     ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
     .text-field.multiline

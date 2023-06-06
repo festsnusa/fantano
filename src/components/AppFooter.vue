@@ -22,8 +22,8 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  bottom: 0;
+  // position: sticky;
+  // bottom: 0;
   width: 100%;
 }
 

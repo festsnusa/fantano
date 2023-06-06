@@ -1175,59 +1175,7 @@
     "video": "https://www.youtube.com/watch?v=iHrJDmN2oxk",
     "year": "2022",
     "imageShow": false,
-    "type": "list-week",
-    "list": [
-      "Natalia Lafourcade - De Todas las Flores",
-      "J.I.D - The Forever Story",
-      "Viagra Boys - Cave World",
-      "Soul Glo - Diaspora Problems",
-      "black midi - Hellfire",
-      "Conway the Machine - God Don’t Make Mistakes",
-      "Black Country, New Road - Ants from Up There",
-      "Sudan Archives - Natural Brown Prom Queen",
-      "Big Thief - Dragon New Warm Mountain I Believe in You",
-      "Silvana Estrada - Marchita",
-      "Charlotte Adigéry & Bolis Pupul - Topical Dancer",
-      "Ashenspire - Hostile Architecture",
-      "Petrol Girls - Baby",
-      "death’s dynamic shroud - Darklife",
-      "Beyoncé - Renaissance",
-      "billy woods - Aethiopes",
-      "Chat Pile - God’s Country",
-      "Adeem the Artist - White Trash Revelry",
-      "OFF! - Free LSD",
-      "Meridian Brothers - Meridian Brothers & El Grupo Renacimiento",
-      "Spiritualized - Everything Was Beautiful",
-      "Otoboke Beaver - SUPER CHAMPON",
-      "Jockstrap - I Love You Jennifer B",
-      "Lupe Fiasco - Drill Music in Zion",
-      "Cheekface - Too Much to Ask",
-      "Pusha T - It’s Almost Dry",
-      "SZA - SOS",
-      "Nas - King’s Disease III",
-      "Leikeli47 - Shape Up",
-      "Kenny Beats - LOUIE",
-      "Denzel Curry - Melt My Eyez See Your Future",
-      "FKA twigs - Caprisongs",
-      "Gospel - The Loser",
-      "Kendrick Lamar - Mr. Morale & The Big Steppers",
-      "Kilo Kish - American Gurl",
-      "Autopsy - Morbidity Triumphant",
-      "Smino - Luv 4 Rent",
-      "Beach House - Once Twice Melody",
-      "The Weeknd - Dawn FM",
-      "Krallice - Crystalline Exhaustion",
-      "Richard Dawson - The Ruby Cord",
-      "Black Thought & Danger Mouse - Cheat Codes",
-      "Ari Lennox - age/sex/location",
-      "Wormrot - Hiss",
-      "Artificial Brain - Artificial Brain",
-      "Daniel Rossen - You Belong There",
-      "Backxwash - His Happiness Shall Come First Even Though We Are Suffering",
-      "Bladee & Ecco2k - Crest",
-      "Black Dresses - Forget Your Own Face",
-      "JER - Bothered / Unbothered"
-    ]
+    "type": "list-week"
   },
   {
     "id": 3973,
@@ -1236,7 +1184,7 @@
     "year": "2022",
     "imageShow": false,
     "type": "list-week",
-    "spotify": "https://open.spotify.com/playlist/4QO2N2w2gXEqfsV4a2Vddz?si=830ba7842be44375"
+    "spotify": "https://open.spotify.com/embed/playlist/4QO2N2w2gXEqfsV4a2Vddz?utm_source=generator"
   },
   {
     "id": 3972,
@@ -3943,7 +3891,8 @@
     "video": "https://www.youtube.com/watch?v=IgFi5eF6PFg",
     "year": "2021",
     "imageShow": false,
-    "type": "list-week"
+    "type": "list-week",
+    "spotify": "https://open.spotify.com/embed/playlist/07bBS7IGGLWrn9eDFasd81?utm_source=generator"
   },
   {
     "id": 3688,
@@ -3951,24 +3900,7 @@
     "video": "https://www.youtube.com/watch?v=k-Hutyszw_U",
     "year": "2021",
     "imageShow": false,
-    "type": "list-week",
-    "list": [
-      "Rachel Chinouriri - Four° in Winter",
-      "JPEGMAFIA - EP2!",
-      "Kero Kero Bonito - Civilisation II",
-      "Poppy - EAT (NXT Soundtrack)",
-      "Blu & Sirplus - For Sale",
-      "Knocked Loose - A Tear in the Fabric of Life",
-      "YUKIKA - timeabout",
-      "Vic Mensa - I Tape",
-      "Beach Bunny - Blame Game",
-      "Tkay Maidza - Last Year Was Weird, Vol. 3",
-      "Yves Tumor - The Asymptotical World",
-      "SPY - Habitual Offender",
-      "Benny the Butcher - Pyrex Picasso",
-      "Luna Li - jams",
-      "Clarence Clarity - Vanishing Act I: No Nouns"
-    ]
+    "type": "list-week"
   },
   {
     "id": 3687,
@@ -5183,7 +5115,7 @@
     "video": "https://www.youtube.com/watch?v=jcI24XwVUiE&t=929s",
     "year": "2021",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 3558,
@@ -5641,7 +5573,7 @@
     "video": "https://www.youtube.com/watch?v=lfaPeI_BUSI",
     "year": "2021",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 3509,
@@ -6735,7 +6667,8 @@
     "video": "https://www.youtube.com/watch?v=73Pqpq-Qx1I",
     "year": "2020",
     "imageShow": false,
-    "type": "list-week"
+    "type": "list-week",
+    "spotify": "https://open.spotify.com/embed/playlist/1SeKGmoAa1a6IGK5UP3Qmj?utm_source=generator"
   },
   {
     "id": 3393,
@@ -9447,7 +9380,8 @@
     "video": "https://www.youtube.com/watch?v=gnkw3tjc4ck",
     "year": "2020",
     "imageShow": false,
-    "type": "glist-week"
+    "type": "list-week",
+    "spotify": "https://open.spotify.com/embed/playlist/0cuOOEkqVobfFMWevhKirJ?utm_source=generator"
   },
   {
     "id": 3109,
@@ -9547,7 +9481,8 @@
     "video": "https://www.youtube.com/watch?v=sWSdboVgeek",
     "year": "2019",
     "imageShow": false,
-    "type": "list-week"
+    "type": "list-week",
+    "spotify": "https://open.spotify.com/embed/playlist/30u7B05HgbYAz2KOGRU0F9?utm_source=generator"
   },
   {
     "id": 3098,
@@ -11989,7 +11924,7 @@
     "video": "https://www.youtube.com/watch?v=81v5RK33AME",
     "year": "2019",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 2840,
@@ -12308,7 +12243,7 @@
     "video": "https://www.youtube.com/watch?v=-taRTOugIWY",
     "year": "2019",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 2806,
@@ -12613,7 +12548,7 @@
     "video": "https://www.youtube.com/watch?v=Zd4SioCs6mQ",
     "year": "2018",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 2773,
@@ -13669,7 +13604,7 @@
     "video": "https://www.youtube.com/watch?v=pao9YD2S0d8",
     "year": "2018",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 2662,
@@ -14179,7 +14114,7 @@
     "video": "https://www.youtube.com/watch?v=h9SlF00t-is",
     "year": "2018",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 2609,
@@ -14517,7 +14452,7 @@
     "video": "https://www.youtube.com/watch?v=PZFH6X2ht00",
     "year": "2018",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 2573,
@@ -15478,7 +15413,7 @@
     "video": "https://www.youtube.com/watch?v=4SsE52JdnVc",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 2471,
@@ -15733,7 +15668,7 @@
     "video": "https://www.youtube.com/watch?v=1moThJ2KXOs",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2444,
@@ -15741,7 +15676,7 @@
     "video": "https://www.youtube.com/watch?v=_NlQanKlme0",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 2443,
@@ -15799,7 +15734,7 @@
     "video": "https://www.youtube.com/watch?v=gV46UqL5GIQ&t=1s",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2437,
@@ -15875,7 +15810,7 @@
     "video": "https://www.youtube.com/watch?v=OiI54tt1p-U",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2429,
@@ -15941,7 +15876,7 @@
     "video": "https://www.youtube.com/watch?v=OFy45VzW-Ig",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2422,
@@ -16005,7 +15940,7 @@
     "video": "https://www.youtube.com/watch?v=ADqQCsoUA90",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2415,
@@ -16073,7 +16008,7 @@
     "video": "https://www.youtube.com/watch?v=9pwHvfONtyo",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2408,
@@ -16204,7 +16139,7 @@
     "video": "https://www.youtube.com/watch?v=B5lZ7M3Qkdk",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2394,
@@ -16290,7 +16225,7 @@
     "video": "https://www.youtube.com/watch?v=DE_44lZLPKw",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2385,
@@ -16368,7 +16303,7 @@
     "video": "https://www.youtube.com/watch?v=NSvAh1fcnNY",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2377,
@@ -16436,7 +16371,7 @@
     "video": "https://www.youtube.com/watch?v=jKAdZXNFt-0",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2370,
@@ -16493,7 +16428,7 @@
     "video": "https://www.youtube.com/watch?v=_AkWW9kFFQM",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2364,
@@ -16569,7 +16504,7 @@
     "video": "https://www.youtube.com/watch?v=I4WgAk5GxV8",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2356,
@@ -16657,7 +16592,7 @@
     "video": "https://www.youtube.com/watch?v=hg6WtElBwW4",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2347,
@@ -16725,7 +16660,7 @@
     "video": "https://www.youtube.com/watch?v=JOd8gB8Yot4",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2340,
@@ -16733,7 +16668,7 @@
     "video": "https://www.youtube.com/watch?v=PBqjFihluag",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 2339,
@@ -16791,7 +16726,7 @@
     "video": "https://www.youtube.com/watch?v=cHOBxPR56vY",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2333,
@@ -16856,7 +16791,7 @@
     "video": "https://www.youtube.com/watch?v=ubXEzsW0t6Y",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2326,
@@ -16932,7 +16867,7 @@
     "video": "https://www.youtube.com/watch?v=Ab3m47hEUuU",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2318,
@@ -16974,7 +16909,7 @@
     "video": "https://www.youtube.com/watch?v=Kp7Y7cYqmpQ",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2313,
@@ -17050,7 +16985,7 @@
     "video": "https://www.youtube.com/watch?v=iHyqvFgPRzA",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2305,
@@ -17107,7 +17042,7 @@
     "video": "https://www.youtube.com/watch?v=oF0geIavxQU",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2299,
@@ -17261,7 +17196,7 @@
     "video": "https://www.youtube.com/watch?v=Qi6YXRBXRhI",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2283,
@@ -17319,7 +17254,7 @@
     "video": "https://www.youtube.com/watch?v=CnBrzOCbShc",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2277,
@@ -17385,7 +17320,7 @@
     "video": "https://www.youtube.com/watch?v=_Xq5kN9v854",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2270,
@@ -17451,7 +17386,7 @@
     "video": "https://www.youtube.com/watch?v=17JnPv2fTjw",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2263,
@@ -17525,7 +17460,7 @@
     "video": "https://www.youtube.com/watch?v=pADx9xggSFI",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2255,
@@ -17583,7 +17518,7 @@
     "video": "https://www.youtube.com/watch?v=I0dQMY1DhdI",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2249,
@@ -17651,7 +17586,7 @@
     "video": "https://www.youtube.com/watch?v=oTYoQs8JWBQ",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2242,
@@ -17726,7 +17661,7 @@
     "video": "https://www.youtube.com/watch?v=wIy2KsybDMQ",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2234,
@@ -17754,7 +17689,7 @@
     "video": "https://www.youtube.com/watch?v=uX0iSgy4qKM",
     "year": "2017",
     "imageShow": false,
-    "type": "other",
+    "type": "podcast",
     "spotify": ""
   },
   {
@@ -17780,7 +17715,7 @@
     "video": "https://www.youtube.com/watch?v=m2XV3sj_iqY",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2228,
@@ -17788,7 +17723,7 @@
     "video": "https://www.youtube.com/watch?v=Sb2jdXBAWw4",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 2227,
@@ -17854,7 +17789,7 @@
     "video": "https://www.youtube.com/watch?v=ud3WySlz6ZI",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2220,
@@ -17912,7 +17847,7 @@
     "video": "https://www.youtube.com/watch?v=BhWoelsGLcI",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2214,
@@ -17949,7 +17884,7 @@
     "video": "https://www.youtube.com/watch?v=Ni258ri7U3o",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 2210,
@@ -17994,7 +17929,7 @@
     "video": "https://www.youtube.com/watch?v=EVq_Vx9pdBs",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2205,
@@ -18079,7 +18014,7 @@
     "video": "https://www.youtube.com/watch?v=3zo0gL2pW8s",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2196,
@@ -18155,7 +18090,7 @@
     "video": "https://www.youtube.com/watch?v=fs3LKYZkZ_8",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2188,
@@ -18219,7 +18154,7 @@
     "video": "https://www.youtube.com/watch?v=krbx-JeEwAg",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2181,
@@ -18257,7 +18192,7 @@
     "video": "https://www.youtube.com/watch?v=_byxaI-DWeA",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 2177,
@@ -18274,7 +18209,7 @@
     "video": "https://www.youtube.com/watch?v=Mr-kmKlveg8",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2175,
@@ -18340,7 +18275,7 @@
     "video": "https://www.youtube.com/watch?v=VV_ZDrTU_0g",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2168,
@@ -18408,7 +18343,7 @@
     "video": "https://www.youtube.com/watch?v=4QAcBR3kF4I",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2161,
@@ -18472,7 +18407,7 @@
     "video": "https://www.youtube.com/watch?v=lvzmQo0aRM4",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2154,
@@ -18526,7 +18461,7 @@
     "video": "https://www.youtube.com/watch?v=qcDGjCZZuFE",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2148,
@@ -18580,7 +18515,7 @@
     "video": "https://www.youtube.com/watch?v=OsVtqDxhFcw",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2142,
@@ -18627,7 +18562,7 @@
     "video": "https://www.youtube.com/watch?v=NSYTd1OEacM",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2137,
@@ -18685,7 +18620,7 @@
     "video": "https://www.youtube.com/watch?v=cXDhL_K20eU",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2131,
@@ -18703,7 +18638,7 @@
     "video": "https://www.youtube.com/watch?v=pH1hWAuQv4I",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 2129,
@@ -18739,7 +18674,7 @@
     "video": "https://www.youtube.com/watch?v=g89__xEK_mw",
     "year": "2017",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2125,
@@ -18940,7 +18875,7 @@
     "video": "https://www.youtube.com/watch?v=XXmMojUmFwg",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2103,
@@ -19004,7 +18939,7 @@
     "video": "https://www.youtube.com/watch?v=HhXHfjm9RZo",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2096,
@@ -19081,7 +19016,7 @@
     "video": "https://www.youtube.com/watch?v=adF7aDSYUxg",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2088,
@@ -19129,7 +19064,7 @@
     "video": "https://www.youtube.com/watch?v=vkVReXIgcFM",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 2083,
@@ -19137,7 +19072,7 @@
     "video": "https://www.youtube.com/watch?v=WIlpRZLxPYE",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2082,
@@ -19195,7 +19130,7 @@
     "video": "https://www.youtube.com/watch?v=rnxn1gLrYDk",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2076,
@@ -19256,7 +19191,7 @@
     "video": "https://www.youtube.com/watch?v=EvIq0DvErTU",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2069,
@@ -19304,7 +19239,7 @@
     "video": "https://www.youtube.com/watch?v=AgKvvSumNmc",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2064,
@@ -19370,7 +19305,7 @@
     "video": "https://www.youtube.com/watch?v=vGVz09KdsAA",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2057,
@@ -19378,7 +19313,7 @@
     "video": "https://www.youtube.com/watch?v=QOqgk-j-pNI",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 2056,
@@ -19456,7 +19391,7 @@
     "video": "https://www.youtube.com/watch?v=W_s3eQ5tQes",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2048,
@@ -19519,7 +19454,7 @@
     "video": "https://www.youtube.com/watch?v=ouOt4KWwfJ8",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2041,
@@ -19576,7 +19511,7 @@
     "video": "https://www.youtube.com/watch?v=PBIBfrRgKlM",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2035,
@@ -19644,7 +19579,7 @@
     "video": "https://www.youtube.com/watch?v=v-cMNvQ4aE4",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2028,
@@ -19721,7 +19656,7 @@
     "video": "https://www.youtube.com/watch?v=f00yIaXqfOU",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2020,
@@ -19777,7 +19712,7 @@
     "video": "https://www.youtube.com/watch?v=bwHEVxtIAzk",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2014,
@@ -19833,7 +19768,7 @@
     "video": "https://www.youtube.com/watch?v=f51wTFevGpw",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2008,
@@ -19899,7 +19834,7 @@
     "video": "https://www.youtube.com/watch?v=rnFKFVmjKqk",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 2001,
@@ -19947,7 +19882,7 @@
     "video": "https://www.youtube.com/watch?v=soU23fARkjI",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1996,
@@ -19955,7 +19890,7 @@
     "video": "https://www.youtube.com/watch?v=L7J8eLUYWaA",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 1995,
@@ -20032,7 +19967,7 @@
     "video": "https://www.youtube.com/watch?v=2O-TfcGQboQ",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 1987,
@@ -20088,7 +20023,7 @@
     "video": "https://www.youtube.com/watch?v=uYGP3wmTDAU",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 1981,
@@ -20154,7 +20089,7 @@
     "video": "https://www.youtube.com/watch?v=iQ8Gko3MrY0",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 1974,
@@ -20212,7 +20147,7 @@
     "video": "https://www.youtube.com/watch?v=MmaNvsGfcoY&t=62s",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 1968,
@@ -20260,7 +20195,7 @@
     "video": "https://www.youtube.com/watch?v=QYrsp1dyM-I",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 1963,
@@ -20307,7 +20242,7 @@
     "video": "https://www.youtube.com/watch?v=VbGMzh9rEzE",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1958,
@@ -20325,7 +20260,7 @@
     "video": "https://www.youtube.com/watch?v=EGwEmD7EfXg",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 1956,
@@ -20389,7 +20324,7 @@
     "video": "https://www.youtube.com/watch?v=oGgXrNC4J_g",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 1949,
@@ -20447,7 +20382,7 @@
     "video": "https://www.youtube.com/watch?v=4L953g8FYXI&t=203s",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "weekly"
   },
   {
     "id": 1943,
@@ -20465,7 +20400,7 @@
     "video": "https://www.youtube.com/watch?v=Wcd95qDfUMg",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1941,
@@ -20574,7 +20509,7 @@
     "year": "2016",
     "imageShow": false,
     "rating": 3,
-    "type": "other"
+    "type": "review"
   },
   {
     "id": 1930,
@@ -20582,7 +20517,7 @@
     "video": "https://www.youtube.com/watch?v=907jNma2M0Q",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1929,
@@ -20645,7 +20580,7 @@
     "video": "https://www.youtube.com/watch?v=Mq9GAEn_nMI",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1922,
@@ -20701,7 +20636,7 @@
     "video": "https://www.youtube.com/watch?v=FfwGQ7WxcPk",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1916,
@@ -20779,7 +20714,7 @@
     "video": "https://www.youtube.com/watch?v=DtWCewhhV90",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1908,
@@ -20847,7 +20782,7 @@
     "video": "https://www.youtube.com/watch?v=nHnmsXwKUPw",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1901,
@@ -20911,7 +20846,7 @@
     "video": "https://www.youtube.com/watch?v=P51fbOulZy4",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1894,
@@ -20929,7 +20864,7 @@
     "video": "https://www.youtube.com/watch?v=A18b9Hls6gE",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1892,
@@ -21023,7 +20958,7 @@
     "video": "https://www.youtube.com/watch?v=cmh9TApEqrM",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1882,
@@ -21089,7 +21024,7 @@
     "video": "https://www.youtube.com/watch?v=Emok6SjTbVk",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1875,
@@ -21155,7 +21090,7 @@
     "video": "https://www.youtube.com/watch?v=bCmFFZYeRNo",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1868,
@@ -21221,7 +21156,7 @@
     "video": "https://www.youtube.com/watch?v=UXLunzqmdlk",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1861,
@@ -21293,7 +21228,7 @@
     "video": "https://www.youtube.com/watch?v=ioXQscpdNd4",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1853,
@@ -21351,7 +21286,7 @@
     "video": "https://www.youtube.com/watch?v=dPMnU1y0jYg",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1847,
@@ -21426,7 +21361,7 @@
     "video": "https://www.youtube.com/watch?v=h98BVWxEG-w",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1839,
@@ -21492,7 +21427,7 @@
     "video": "https://www.youtube.com/watch?v=5sWCSTDZr_A",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1832,
@@ -21557,7 +21492,7 @@
     "video": "https://www.youtube.com/watch?v=C50kKFageEw",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1825,
@@ -21595,7 +21530,7 @@
     "video": "https://www.youtube.com/watch?v=hMC-U5W5a40",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1821,
@@ -21671,7 +21606,7 @@
     "video": "https://www.youtube.com/watch?v=aHJwBjPIoU8",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1813,
@@ -21726,7 +21661,7 @@
     "video": "https://www.youtube.com/watch?v=EssKgFxVQPI",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1807,
@@ -21734,7 +21669,7 @@
     "video": "https://www.youtube.com/watch?v=T8C7ViDV5u8",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1806,
@@ -21808,7 +21743,7 @@
     "video": "https://www.youtube.com/watch?v=lzXLg1u3wWo",
     "year": "2016",
     "imageShow": false,
-    "type": "other",
+    "type": "podcast",
     "spotify": ""
   },
   {
@@ -21935,7 +21870,7 @@
     "video": "https://www.youtube.com/watch?v=7XzAZM_1q1w",
     "year": "2016",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1785,
@@ -22090,7 +22025,7 @@
     "video": "https://www.youtube.com/watch?v=ArsmNxC_Qmo",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1768,
@@ -22168,7 +22103,7 @@
     "video": "https://www.youtube.com/watch?v=9w_gOJ3plHE",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1760,
@@ -22244,7 +22179,7 @@
     "video": "https://www.youtube.com/watch?v=FA70VNfm1rw",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1752,
@@ -22318,7 +22253,7 @@
     "video": "https://www.youtube.com/watch?v=iVwybRCbrG0",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1744,
@@ -22326,7 +22261,7 @@
     "video": "https://www.youtube.com/watch?v=ootGFiPPDq4",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1743,
@@ -22455,7 +22390,8 @@
     "year": "2015",
     "imageShow": false,
     "rating": 8,
-    "type": "other"
+    "type": "review",
+    "spotify": ""
   },
   {
     "id": 1730,
@@ -22492,7 +22428,7 @@
     "video": "https://www.youtube.com/watch?v=iXo7_VP06RI",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1726,
@@ -22568,7 +22504,7 @@
     "video": "https://www.youtube.com/watch?v=z-xDu_K1iyI",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1718,
@@ -22636,7 +22572,7 @@
     "video": "https://www.youtube.com/watch?v=dmPP-21464I",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1711,
@@ -22703,7 +22639,7 @@
     "video": "https://www.youtube.com/watch?v=OESBE0xA5eY",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1704,
@@ -22721,7 +22657,7 @@
     "video": "https://www.youtube.com/watch?v=Ms_-QsccCcQ",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1702,
@@ -22759,7 +22695,7 @@
     "video": "https://www.youtube.com/watch?v=HePtlB3daH8",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1698,
@@ -22920,7 +22856,7 @@
     "video": "https://www.youtube.com/watch?v=Gwd3i3GAOls",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1681,
@@ -22986,7 +22922,7 @@
     "video": "https://www.youtube.com/watch?v=5S0MuQKZkAY",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1674,
@@ -23052,7 +22988,7 @@
     "video": "https://www.youtube.com/watch?v=ylReViHjiUk",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1667,
@@ -23110,7 +23046,7 @@
     "video": "https://www.youtube.com/watch?v=z6UYz2eNoS8",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1661,
@@ -23192,7 +23128,7 @@
     "video": "https://www.youtube.com/watch?v=LRcZ3nbciUc",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1652,
@@ -23210,7 +23146,7 @@
     "video": "https://www.youtube.com/watch?v=JhJGRV7bN3o",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "podcast"
   },
   {
     "id": 1650,
@@ -23326,7 +23262,7 @@
     "video": "https://www.youtube.com/watch?v=ndr2MYXIfAk",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1638,
@@ -23723,7 +23659,7 @@
     "video": "https://www.youtube.com/watch?v=mpi2qC6htu8",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1597,
@@ -24255,7 +24191,7 @@
     "video": "https://www.youtube.com/watch?v=PMj7XvIXpsw",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1541,
@@ -24620,7 +24556,7 @@
     "video": "https://www.youtube.com/watch?v=_526INQlmss",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1503,
@@ -25028,7 +24964,7 @@
     "video": "https://www.youtube.com/watch?v=DrhFxbWuW_M",
     "year": "2015",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1461,
@@ -25559,7 +25495,7 @@
     "video": "https://www.youtube.com/watch?v=1pJLYMHAaAo",
     "year": "2014",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1406,
@@ -25907,7 +25843,7 @@
     "video": "https://www.youtube.com/watch?v=dEUm_mqWVnI",
     "year": "2014",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1370,
@@ -26282,7 +26218,7 @@
     "video": "https://www.youtube.com/watch?v=w5Ukeqt65hA",
     "year": "2014",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1331,
@@ -26866,7 +26802,7 @@
     "video": "https://www.youtube.com/watch?v=JS0wSFyUWVE",
     "year": "2014",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1270,
@@ -26955,7 +26891,8 @@
     "year": "2014",
     "imageShow": false,
     "rating": 6,
-    "type": "other"
+    "type": "review",
+    "spotify": ""
   },
   {
     "id": 1261,
@@ -27088,7 +27025,7 @@
     "video": "https://www.youtube.com/watch?v=IJ6klK0yvXk",
     "year": "2014",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1247,
@@ -27228,7 +27165,7 @@
     "video": "https://www.youtube.com/watch?v=3ZZaCn51o-c",
     "year": "2014",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1232,
@@ -27643,7 +27580,7 @@
     "video": "https://www.youtube.com/watch?v=48jhH1BxEUA",
     "year": "2014",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1189,
@@ -27845,7 +27782,7 @@
     "video": "https://www.youtube.com/watch?v=JNlm0vLA_N8",
     "year": "2014",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1167,
@@ -28190,7 +28127,7 @@
     "video": "https://www.youtube.com/watch?v=mNkCTEyLGrU",
     "year": "2013",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1129,
@@ -28292,7 +28229,7 @@
     "video": "https://www.youtube.com/watch?v=euUEkuTjyKg",
     "year": "2013",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1118,
@@ -28763,7 +28700,7 @@
     "video": "https://www.youtube.com/watch?v=m9xyc2YatdA",
     "year": "2013",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1069,
@@ -29052,7 +28989,7 @@
     "video": "https://www.youtube.com/watch?v=F74Lu3d3goI",
     "year": "2013",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1039,
@@ -29252,7 +29189,7 @@
     "video": "https://www.youtube.com/watch?v=nTimdBZM30E",
     "year": "2013",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 1018,
@@ -29713,7 +29650,9 @@
     "video": "https://www.youtube.com/watch?v=EWNqiY8HNpU",
     "year": "2013",
     "imageShow": false,
-    "type": "other"
+    "type": "review",
+    "rating": "-",
+    "spotify": ""
   },
   {
     "id": 970,
@@ -29789,7 +29728,7 @@
     "video": "https://www.youtube.com/watch?v=p2Z6M7GxOmA",
     "year": "2013",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 962,
@@ -30303,7 +30242,7 @@
     "video": "https://www.youtube.com/watch?v=np1X_MIt84I",
     "year": "2013",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 908,
@@ -30642,7 +30581,7 @@
     "video": "https://www.youtube.com/watch?v=qm-8S5MHxsI",
     "year": "2013",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 872,
@@ -30912,7 +30851,7 @@
     "video": "https://www.youtube.com/watch?v=Ae_FCKsjPzQ",
     "year": "2013",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 843,
@@ -31141,7 +31080,7 @@
     "video": "https://www.youtube.com/watch?v=tstRFTn7hoM",
     "year": "2013",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 819,
@@ -31338,7 +31277,7 @@
     "video": "https://www.youtube.com/watch?v=J6Nh88VeQO4",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 797,
@@ -31464,7 +31403,7 @@
     "video": "https://www.youtube.com/watch?v=6FEm1bx7_mc",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 784,
@@ -31532,7 +31471,7 @@
     "video": "https://www.youtube.com/watch?v=Zi2KeWtkCsY",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 777,
@@ -31598,7 +31537,7 @@
     "video": "https://www.youtube.com/watch?v=mQ8HrwwyEig",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 770,
@@ -31702,7 +31641,7 @@
     "video": "https://www.youtube.com/watch?v=hm7iZ7pfdS4",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 759,
@@ -31780,7 +31719,7 @@
     "video": "https://www.youtube.com/watch?v=bZHECvXQsz4",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 751,
@@ -31836,7 +31775,7 @@
     "video": "https://www.youtube.com/watch?v=WGnt3mMpEZE",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 745,
@@ -31961,7 +31900,7 @@
     "video": "https://www.youtube.com/watch?v=X2wt88DjLtE",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 732,
@@ -32017,7 +31956,7 @@
     "video": "https://www.youtube.com/watch?v=o6JTc1c1yVw",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 726,
@@ -32174,7 +32113,7 @@
     "video": "https://www.youtube.com/watch?v=6i8EVMkZvfs",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 709,
@@ -32232,7 +32171,7 @@
     "video": "https://www.youtube.com/watch?v=Jg87EK-G5tQ",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 703,
@@ -32346,7 +32285,7 @@
     "video": "https://www.youtube.com/watch?v=DUIEepOLRYY",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 691,
@@ -32469,7 +32408,7 @@
     "video": "https://www.youtube.com/watch?v=0HvN1uqgc2E",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 678,
@@ -32477,7 +32416,7 @@
     "video": "https://www.youtube.com/watch?v=vLVcFNms9Xw",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 677,
@@ -32561,7 +32500,7 @@
     "video": "https://www.youtube.com/watch?v=2c-G1oHPg9U",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "vinyl"
   },
   {
     "id": 668,
@@ -33279,7 +33218,9 @@
     "video": "https://www.youtube.com/watch?v=M4yjv2a4Pt4",
     "year": "2012",
     "imageShow": false,
-    "type": "other"
+    "type": "review",
+    "rating": "-",
+    "spotify": ""
   },
   {
     "id": 593,
@@ -33508,7 +33449,8 @@
     "year": "2012",
     "imageShow": false,
     "rating": 8,
-    "type": "other"
+    "type": "review",
+    "spotify": ""
   },
   {
     "id": 569,
@@ -34270,7 +34212,7 @@
     "video": "https://www.youtube.com/watch?v=JpQn6vqCtFw",
     "year": "2011",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 488,
@@ -34278,7 +34220,7 @@
     "video": "https://www.youtube.com/watch?v=7ljw5YxV8vw&t=1s",
     "year": "2011",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 487,
@@ -34286,7 +34228,7 @@
     "video": "https://www.youtube.com/watch?v=qLdwuZ8Jr88",
     "year": "2011",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 486,
@@ -34294,7 +34236,7 @@
     "video": "https://www.youtube.com/watch?v=XVi_Ldg4Hp8&t=623s",
     "year": "2011",
     "imageShow": false,
-    "type": "other"
+    "type": "list-week"
   },
   {
     "id": 485,
@@ -34865,7 +34807,7 @@
     "year": "2011",
     "imageShow": false,
     "rating": 6,
-    "type": "other"
+    "type": "review"
   },
   {
     "id": 426,

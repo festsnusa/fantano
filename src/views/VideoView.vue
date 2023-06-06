@@ -2,18 +2,16 @@
 AppHeader
 .review
   .review__left
-    YouTube.video(:src="current.video" @ready="onReady" ref="youtube" :width="calculateWidth")
+    iframe(width="560" height="315" :src="transformYouTubeLink(current.video)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
     iframe.spotify(v-if="current.spotify !=''" style="border-radius:12px" :src="`${current.spotify}&theme=0`" width="100%" height="452" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy")
   .review__right
     .review__header
       h1.review__title {{ current.title }} ({{ current.year }})
       Toggle.review__toggle(v-show="current.type=='review'" v-model="en" name="toggle" onLabel="EN" offLabel="RU")
-
     ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
     .text-field.multiline
-      Markdown(v-if="en" :source="textEn")
-      Markdown(v-else :source="textRu")
-
+      Markdown(v-if="!en" :source="textRu")
+      Markdown(v-else :source="textEn")
 AppFooter
 </template>
 
@@ -43,7 +41,7 @@ export default {
     return {
       arr: json.filter(e => e.type == 'review'),
       current: null,
-      en: true,
+      en: false,
       isLargeScreen: useMediaQuery('(min-width: 1024px)'),
       textEn: '',
       textRu: ''
@@ -57,6 +55,33 @@ export default {
   methods: {
     updateScreen() {
       this.isLargeScreen = useMediaQuery('(min-width: 1024px)')
+    },
+    transformYouTubeLink(link) {
+      const videoID = this.extractVideoID(link);
+      const embedURL = `https://www.youtube.com/embed/${videoID}`;
+      return embedURL;
+    },
+
+    extractVideoID(link) {
+      let videoID = '';
+
+      // Regular expression pattern to match the video ID
+      const pattern = /(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|[^#]*[?&]v=|youtu\.be\/|[^#]*[?&]vi=))([^?&"'>]+)/;
+
+      // Extract the video ID using the regular expression
+      const match = link.match(pattern);
+      if (match && match[1]) {
+        videoID = match[1];
+      } else {
+        // Check if the link is in the youtu.be pattern
+        const youtuPattern = /^https?:\/\/youtu.be\/([\w-]{11})/;
+        const youtuMatch = link.match(youtuPattern);
+        if (youtuMatch && youtuMatch[1]) {
+          videoID = youtuMatch[1];
+        }
+      }
+
+      return videoID;
     }
   },
   created() {
@@ -64,10 +89,12 @@ export default {
 
     import(`@/assets/text/${this.$route.params.video}-en.md`).then((module) => {
       this.textEn = module.default
+      this.en = true
     })
 
     import(`@/assets/text/${this.$route.params.video}-ru.md`).then((module) => {
       this.textRu = module.default
+      this.en = false
     })
   },
 }
@@ -76,7 +103,6 @@ export default {
 <style lang="scss" scoped>
 .review {
   padding: 3rem;
-  display: grid;
   display: flex;
   justify-content: space-between;
   gap: 3rem;

@@ -2,7 +2,9 @@
 footer.footer
   ul.list 
     a(href="https://vk.com/mbdtfisstill6" target="_blank") 
-      li.item VK
+      li.item
+        img.image(src="@/assets/images/vk.png")
+  p.text Copyright © 2023 The Needle Drop
 </template>
 
 <script>
@@ -15,6 +17,21 @@ export default {
 @import '@/assets/vars';
 
 .footer {
-  background-color: $darkShade50;
+  background-color: $darkShade100;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+.text {
+  color: #fff;
+}
+
+.image {
+  max-width: 3rem;
 }
 </style>

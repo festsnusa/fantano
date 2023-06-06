@@ -6,17 +6,17 @@
         AppPreloader(v-show="!item.imageShow")
         img.review__image(v-show="item.imageShow" :src="getThumbnail(item.video)", :alt="item.title" @load="item.imageShow = true")
         p.review__title {{ item.title }}
+    .pagination 
+      button.pagination__prev(@click="backPage") &laquo
+      button.pagination__button(:class="{active: item == page}"
+        v-for="item in Math.ceil(this.reviews.length / this.perPage)"
+        :key="item"
+        @click="() => goToPage(item)"
+      ) {{ item }}
+      button.pagination__next(@click="nextPage") &raquo
   aside.reviews__right
     AppFilter(:filterByYear="filterByYear" :searchReview="searchReview" 
     :filterByRating="filterByRating" :type="type" :years="years")
-.pagination 
-  button.pagination__prev(@click="backPage") &laquo
-  button.pagination__button(:class="{active: item == page}"
-    v-for="item in Math.ceil(this.reviews.length / this.perPage)"
-    :key="item"
-    @click="() => goToPage(item)"
-  ) {{ item }}
-  button.pagination__next(@click="nextPage") &raquo
 </template>
 
 <script>
@@ -42,13 +42,15 @@ export default {
       reviews: json.filter(e => e.type == this.type),
       page: 1,
       perPage: 16,
+      totalPages: 1,
+      maxVisibleButtons: 10,
     }
   },
   computed: {
     paginatedData() {
       return this.reviews.slice((this.page - 1) * this.perPage, this.page * this.perPage)
     },
-    ...mapStores(usePageStore, useYearStore, useRatingStore)
+    ...mapStores(usePageStore, useYearStore, useRatingStore),
   },
   methods: {
     getThumbnail(url) {
@@ -98,8 +100,8 @@ export default {
   },
   created() {
 
-    let totalPages = Math.ceil(this.reviews.length / this.perPage)
-    this.pageStore.currentPage = (this.pageStore.currentPage > totalPages) ? 1 : this.pageStore.currentPage
+    this.totalPages = Math.ceil(this.reviews.length / this.perPage)
+    this.pageStore.currentPage = (this.pageStore.currentPage > this.totalPages) ? 1 : this.pageStore.currentPage
     this.page = this.pageStore.currentPage
 
     this.pageStore.$subscribe((mutation, state) => {
@@ -148,12 +150,14 @@ export default {
 }
 
 .pagination {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
   button {
     background-color: #fff;
     text-transform: uppercase;
-    padding: 1rem;
+    padding: 1.5rem;
 
     &:hover:not(.active) {
       background-color: #DDD;

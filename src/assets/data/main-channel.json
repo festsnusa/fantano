@@ -20509,7 +20509,8 @@
     "year": "2016",
     "imageShow": false,
     "rating": 3,
-    "type": "review"
+    "type": "review",
+    "spotify": "https://open.spotify.com/embed/album/1SQjs5LxCj7J5WIZYg3h1D?utm_source=generator"
   },
   {
     "id": 1930,
@@ -38767,7 +38768,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/3HA1Ru1gEAgaxTywkJmBOL?utm_source=generator"
   },
   {
     "id": 14,

@@ -1,1 +1,0 @@
-import{A as t,a as r}from"./AppFooter-5ce84ec7.js";import{r as e,o as a,c as s,b as o,F as c,_ as m}from"./index-7b570708.js";function d(u,l,i,A,f,F){const n=e("AppHeader"),p=e("AppFooter");return a(),s(c,null,[o(n,{currentIndex:2}),o(p)],64)}const _={name:"WeeklyRoundupView",components:{AppHeader:t,AppFooter:r}},$=m(_,[["render",d]]);export{$ as default};

@@ -3,7 +3,7 @@ const HomeView = () => import('@/views/HomeView.vue')
 const ListWeekView = () => import('@/views/ListWeekView.vue')
 const ListWeekPostView = () => import('@/views/ListWeekPostView.vue')
 const VideosView = () => import('@/views/VideosView.vue')
-const ReviewView = () => import('@/views/ReviewView.vue')
+const VideoView = () => import('@/views/VideoView.vue')
 const WeeklyRoundupView = () => import('@/views/WeeklyRoundupView.vue')
 const YunoView = () => import('@/views/YunoView.vue')
 
@@ -23,7 +23,7 @@ const router = createRouter({
     {
       path: '/videos/:video',
       name: 'video',
-      component: ReviewView
+      component: VideoView
     },
     {
       path: '/wtr',

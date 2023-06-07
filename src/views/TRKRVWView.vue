@@ -1,16 +1,16 @@
 <template lang="pug">
-AppHeader(:currentIndex="8")
-AppVideos(type="other" :years="years")
+AppHeader(:currentIndex="7")
+AppVideos(type="TRACK REVIEW" :years="years")
 AppFooter
 </template>
-  
+
 <script>
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 import AppVideos from '@/components/AppVideos.vue'
 
 export default {
-  name: "VinylsView",
+  name: "TRKRVWView",
   components: {
     AppHeader,
     AppFooter,
@@ -18,10 +18,10 @@ export default {
   },
   data() {
     return {
-      years: Array.from(Array(13), (_, i) => i + 2010).reverse(),
+      years: Array.from(Array(13), (_, i) => i + 2010).reverse()
     }
   }
 }
 </script>
-  
+
 <style lang="scss" scoped></style>

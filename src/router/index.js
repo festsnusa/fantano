@@ -7,6 +7,7 @@ const WeeklyRoundupView = () => import('@/views/WeeklyRoundupView.vue')
 const YunoView = () => import('@/views/YunoView.vue')
 const PodcastsView = () => import('@/views/PodcastsView.vue')
 const VinylsView = () => import('@/views/VinylsView.vue')
+const TRKRVWView = () => import('@/views/TRKRVWView.vue')
 const OtherView = () => import('@/views/OtherView.vue')
 
 const router = createRouter({
@@ -51,6 +52,11 @@ const router = createRouter({
       path: '/vinyls',
       name: 'vinyls',
       component: VinylsView
+    },
+    {
+      path: '/trkrvws',
+      name: 'trkrvws',
+      component: TRKRVWView
     },
     {
       path: '/other',

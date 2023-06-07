@@ -2,8 +2,10 @@
 AppHeader
 .review
   .review__left
-    iframe(width="560" height="315" :src="transformYouTubeLink(current.video)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
-    iframe.spotify(v-if="current.spotify !=''" style="border-radius:12px" :src="`${current.spotify}&theme=0`" width="100%" height="452" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy")
+    .review__video
+      iframe(:src="transformYouTubeLink(current.video)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+    .review__player(v-show="current.spotify")
+      iframe.spotify(style="border-radius:12px" :src="`${current.spotify}&theme=0`" width="100%" height="452" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy")
   .review__right
     .review__header
       h1.review__title {{ current.title }} ({{ current.year }})
@@ -107,12 +109,32 @@ export default {
   justify-content: space-between;
   gap: 3rem;
 
+  &__left,
+  &__right {
+    width: 100%;
+  }
+
   &__left {
     gap: 3rem;
     display: flex;
-    width: 100%;
     flex-direction: column;
-    max-width: 640px;
+  }
+
+  &__video,
+  &__player {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* Adjust this value to set the desired aspect ratio (e.g., 16:9 = 56.25%) */
+    overflow: hidden;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -129,12 +151,8 @@ export default {
     }
   }
 
-  .video {
-    width: 10rem;
-  }
-
   .spotify {
-    max-height: 22.5rem;
+    // max-height: 22.5rem;
   }
 }
 

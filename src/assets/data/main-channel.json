@@ -1,5 +1,15 @@
 [
   {
+    "id": 4098,
+    "title": "Foo Fighters - But Here We Are ALBUM REVIEW",
+    "video": "https://youtu.be/m99lkzqB-E0",
+    "year": "2023",
+    "imageShow": false,
+    "type": "review",
+    "rating": 8,
+    "spotify": "https://open.spotify.com/embed/album/4wp4aWWpoYfNcspimVAnel?utm_source=generator"
+  },
+  {
     "id": 4097,
     "title": "Avenged Sevenfold's Life Is But a Dream... is NOT GOOD",
     "video": "https://youtu.be/Gwtat22jkig",
@@ -15,7 +25,8 @@
     "video": "https://youtu.be/JmhWyeGHz-k",
     "year": "2023",
     "imageShow": false,
-    "type": "weekly"
+    "type": "weekly",
+    "spotify": "https://open.spotify.com/embed/playlist/360Mp59E9CVip6lDsfYsZl?utm_source=generator"
   },
   {
     "id": 4095,
@@ -922,7 +933,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/6CmlLROLOUJZnZ8QeCCpqD?utm_source=generator"
   },
   {
     "id": 4000,
@@ -3197,7 +3208,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 1,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/3sKZHtQoq3tPtkXbT8PJAc?utm_source=generator"
   },
   {
     "id": 3761,
@@ -3205,7 +3216,8 @@
     "video": "https://www.youtube.com/watch?v=9I7IMlgZUcw&t=2s",
     "year": "2022",
     "imageShow": false,
-    "type": "weekly"
+    "type": "weekly",
+    "spotify": "https://open.spotify.com/embed/playlist/3ImIsPsK0n59L66okper0I?utm_source=generator"
   },
   {
     "id": 3760,
@@ -3261,7 +3273,8 @@
     "video": "https://www.youtube.com/watch?v=s9Q6uNpdleY",
     "year": "2022",
     "imageShow": false,
-    "type": "weekly"
+    "type": "weekly",
+    "spotify": "https://open.spotify.com/embed/playlist/2igN6ySkwdjzGM4wmrHUK8?utm_source=generator"
   },
   {
     "id": 3754,
@@ -7131,7 +7144,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/6HodZ9bCtPbrWSqMlIEuvK?utm_source=generator"
   },
   {
     "id": 3344,
@@ -7141,7 +7154,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/6xlQNGdro3cCcn8v1ZEGm3?utm_source=generator"
   },
   {
     "id": 3343,
@@ -7151,7 +7164,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/2QFXjy3u6Bl6ctdK9FS9eF?utm_source=generator"
   },
   {
     "id": 3342,
@@ -7161,7 +7174,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/2LEEg9PQsJqQuhBU0poSrd?utm_source=generator"
   },
   {
     "id": 3341,
@@ -27479,7 +27492,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/2ligeNFwBdKXnK7y9Qbqae?utm_source=generator"
   },
   {
     "id": 1200,
@@ -35962,7 +35975,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/276GJQROaVFWuxjiVe0qG4?utm_source=generator"
   },
   {
     "id": 307,
@@ -35972,7 +35985,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/13VVtuvboNAaPFcKsQsjLP?utm_source=generator"
   },
   {
     "id": 306,
@@ -35982,7 +35995,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 4,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/5kl3MEiOAGrmlamu3oP7mr?utm_source=generator"
   },
   {
     "id": 305,
@@ -35992,7 +36005,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/3ZjiKy5Tb1MIFRyGBBzoos?utm_source=generator"
   },
   {
     "id": 304,
@@ -36002,7 +36015,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/753v8ajoypUj7zgGnIHTuu?utm_source=generator"
   },
   {
     "id": 303,
@@ -36012,7 +36025,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 5,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/4UL3kkNbM2VZOHBqjDmdri?utm_source=generator"
   },
   {
     "id": 302,
@@ -36022,7 +36035,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/5lnQLEUiVDkLbFJHXHQu9m?utm_source=generator"
   },
   {
     "id": 301,
@@ -36032,7 +36045,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/716fnrS2qXChPC3J2X73pK?utm_source=generator"
   },
   {
     "id": 300,
@@ -36050,7 +36063,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/3gKfwsIwkQmVKDvgpPUUeO?utm_source=generator"
   },
   {
     "id": 298,
@@ -36060,7 +36073,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 3,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/5EbpxRwbbpCJUepbqVTZ1U?utm_source=generator"
   },
   {
     "id": 297,
@@ -36070,7 +36083,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/0FvrvaVsWQ7kTdGzipW6HV?utm_source=generator"
   },
   {
     "id": 296,
@@ -36079,7 +36092,7 @@
     "year": "2011",
     "imageShow": false,
     "type": "TRACK REVIEW",
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/track/2Bz2Q1JNwwPj40T9AvzE7f?utm_source=generator"
   },
   {
     "id": 295,
@@ -36089,7 +36102,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/0wEUibNMYKz5fbadNEDzUm?utm_source=generator"
   },
   {
     "id": 294,
@@ -36099,7 +36112,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/2T0iwqVWzr4Y63x4kKO5DW?utm_source=generator"
   },
   {
     "id": 293,
@@ -36109,7 +36122,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/1AWfnNJVd2vIVNiJca6zyH?utm_source=generator"
   },
   {
     "id": 292,
@@ -36119,7 +36132,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 5,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/1dxMK0PJZ9RyarNPXQQeeP?utm_source=generator"
   },
   {
     "id": 291,
@@ -36129,7 +36142,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/5mdfU5YxMPnwFwJQMC9rBj?utm_source=generator"
   },
   {
     "id": 290,
@@ -36138,7 +36151,7 @@
     "year": "2011",
     "imageShow": false,
     "type": "TRACK REVIEW",
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/track/082NxYziijsxSJINkMO2rq?utm_source=generator"
   },
   {
     "id": 289,
@@ -36148,7 +36161,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 9,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/3wIBeumkpK7gBvdophWNeC?utm_source=generator"
   },
   {
     "id": 288,
@@ -36158,7 +36171,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 5,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/6byj8A6hwXB0Qo3Lm5KXLZ?utm_source=generator"
   },
   {
     "id": 287,
@@ -36167,7 +36180,7 @@
     "year": "2011",
     "imageShow": false,
     "type": "TRACK REVIEW",
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/track/3cn4e9MRXiUmDqTioimYBp?utm_source=generator"
   },
   {
     "id": 286,
@@ -36177,7 +36190,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/3BTFGccaSVYAHsgBTOL423?utm_source=generator"
   },
   {
     "id": 285,
@@ -36187,7 +36200,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/1WPAuvFraK3Ep8gmSDUHPU?utm_source=generator"
   },
   {
     "id": 284,
@@ -36197,7 +36210,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/6Jx4cGhWHewTcfKDJKguBQ?utm_source=generator"
   },
   {
     "id": 283,
@@ -36247,7 +36260,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/1Vzbc7NOGCHxDKLp1efCp6?utm_source=generator"
   },
   {
     "id": 277,
@@ -36265,7 +36278,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/29dkmoYR82SDkgGZpqsDNE?utm_source=generator"
   },
   {
     "id": 275,
@@ -36274,7 +36287,7 @@
     "year": "2011",
     "imageShow": false,
     "type": "TRACK REVIEW",
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/track/3NEXqoPyJnjCInw9BTb92R?utm_source=generator"
   },
   {
     "id": 274,
@@ -36284,7 +36297,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 5,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/3t2nEfRZ1um6Spqw5P7g5F?utm_source=generator"
   },
   {
     "id": 273,
@@ -36294,17 +36307,17 @@
     "imageShow": false,
     "type": "review",
     "rating": 3,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/1j0apvEvaWbTmlZpKsfr2D?utm_source=generator"
   },
   {
     "id": 272,
     "title": "Tim Hecker- Ravedeath, 1972 ALBUM REVIEW",
-    "video": "https://www.youtube.com/watch?v=Gc0Jpf_25a4&t=65s",
+    "video": "https://www.youtube.com/watch?v=Gc0Jpf_25a4",
     "year": "2011",
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/6Iu8toVsvCc3I4INxYiVIy?utm_source=generator"
   },
   {
     "id": 271,
@@ -36314,7 +36327,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/2TOup5N69VhUHM9LQUPU4n?utm_source=generator"
   },
   {
     "id": 270,
@@ -36342,7 +36355,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/3SkG4Alb9sIniRsJiXwlYX?utm_source=generator"
   },
   {
     "id": 267,
@@ -36352,7 +36365,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/24LrUTOayWjn0qiEGDnlkE?utm_source=generator"
   },
   {
     "id": 266,
@@ -36362,7 +36375,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 5,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/4A5nCDuPk7HbcyvR6X0d8h?utm_source=generator"
   },
   {
     "id": 265,
@@ -36372,7 +36385,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/50cKcSmA9WNslW8pJQAgWi?utm_source=generator"
   },
   {
     "id": 264,
@@ -36382,7 +36395,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/2JfiVMvVhdueC48EmskS7t?utm_source=generator"
   },
   {
     "id": 263,
@@ -36392,7 +36405,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/6FtCAAEZUEutbmNfFHzeK0?utm_source=generator"
   },
   {
     "id": 262,
@@ -36402,7 +36415,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/56rcjS8EZIWTXCbk1V2NBI?utm_source=generator"
   },
   {
     "id": 261,
@@ -36412,17 +36425,17 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/3P17levwUPzmFfLYdAK3A7?utm_source=generator"
   },
   {
     "id": 260,
     "title": "Nicolas Jaar- Space Is Only Noise ALBUM REVIEW",
-    "video": "https://www.youtube.com/watch?v=Pc5Hutyj2AA&t=135s",
+    "video": "https://www.youtube.com/watch?v=Pc5Hutyj2AA",
     "year": "2011",
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/0tUJcqDuXHNkaPKLN0lQhT?utm_source=generator"
   },
   {
     "id": 259,
@@ -37921,7 +37934,7 @@
     "year": "2010",
     "imageShow": false,
     "type": "TRACK REVIEW",
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/5AboigmcctvSRcBYktFtuZ?utm_source=generator"
   },
   {
     "id": 103,
@@ -37931,7 +37944,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/1jjUFDODxguSdb2hZLF2au?utm_source=generator"
   },
   {
     "id": 102,
@@ -37950,7 +37963,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 9,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/3Ht9pevRimaOYARTDXXWcr?utm_source=generator"
   },
   {
     "id": 100,
@@ -37968,7 +37981,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 5,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/7BIbGgOmGMhLscZqowMSDV?utm_source=generator"
   },
   {
     "id": 98,
@@ -37987,7 +38000,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/0zm40o2MnYmpxcKKProN8U?utm_source=generator"
   },
   {
     "id": 96,
@@ -38006,7 +38019,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/19cAWBNXr4GVOFM3VamI9J?utm_source=generator"
   },
   {
     "id": 94,
@@ -38035,7 +38048,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/0GZMsKdDsbNhxvM1VaxB0U?utm_source=generator"
   },
   {
     "id": 91,
@@ -38045,7 +38058,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 5,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/2eG9zNSfqkYajU464jKShZ?utm_source=generator"
   },
   {
     "id": 90,
@@ -38064,7 +38077,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/7Mn0aXVHjaoFZPKLssqI9d?utm_source=generator"
   },
   {
     "id": 88,
@@ -38074,7 +38087,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/25sYZjutddzUpXNbeQ7bEC?utm_source=generator"
   },
   {
     "id": 87,
@@ -38084,7 +38097,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/16IUCg94zmGIgEz09v003g?utm_source=generator"
   },
   {
     "id": 86,
@@ -38666,7 +38679,7 @@
     "year": "2010",
     "imageShow": false,
     "type": "TRACK REVIEW",
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/track/7ejVZ3PhhiGvmQVkYe7Pyf?utm_source=generator"
   },
   {
     "id": 25,
@@ -38684,7 +38697,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 4,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/2mhR354QT8ZqRI5Q4BPBEB?utm_source=generator"
   },
   {
     "id": 23,
@@ -38693,7 +38706,7 @@
     "year": "2010",
     "imageShow": false,
     "type": "TRACK REVIEW",
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/track/0EW4GsmfRpu5aRsdVLlbIW?utm_source=generator"
   },
   {
     "id": 22,
@@ -38703,7 +38716,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/739sVJZ4pLPDxucwe0RwTI?utm_source=generator"
   },
   {
     "id": 21,
@@ -38713,7 +38726,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/1fgtiyeUDIoUayYbwroqVH?utm_source=generator"
   },
   {
     "id": 20,
@@ -38749,7 +38762,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/5UYmZOpjjA5Y7GyZhjI6fy?utm_source=generator"
   },
   {
     "id": 16,
@@ -38758,7 +38771,7 @@
     "year": "2010",
     "imageShow": false,
     "type": "TRACK REVIEW",
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/track/5idVbYWHOBsFktyGq9KhkL?utm_source=generator"
   },
   {
     "id": 15,
@@ -38778,7 +38791,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 3,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/3GXyPZJCzsnP4apzEiVyXu?utm_source=generator"
   },
   {
     "id": 13,
@@ -38788,7 +38801,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 9,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/1wbBB7p99GDeO9IDcZfmwy?utm_source=generator"
   },
   {
     "id": 12,
@@ -38807,7 +38820,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/1QAooV9OvcgJ4YKC3WSQVN?utm_source=generator"
   },
   {
     "id": 10,
@@ -38817,7 +38830,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 5,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/0X7WyEKdm5afGj1fmD7Blx?utm_source=generator"
   },
   {
     "id": 9,
@@ -38845,7 +38858,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 6,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/7FPJ82J5plnxgc9xk9WYrL?utm_source=generator"
   },
   {
     "id": 6,
@@ -38864,7 +38877,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 8,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/4sditvRrUA7k8owVPj2zAy?utm_source=generator"
   },
   {
     "id": 4,
@@ -38874,7 +38887,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 3,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/5692ZaIRRmlkpC1rfU6PLa?utm_source=generator"
   },
   {
     "id": 3,

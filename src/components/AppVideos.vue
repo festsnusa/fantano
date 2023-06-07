@@ -121,6 +121,7 @@ export default {
 .reviews {
   padding: 3rem;
   display: flex;
+  justify-content: center;
 
   &__left {
     flex-grow: 2;
@@ -182,6 +183,15 @@ export default {
 
     &__right {
       order: 1;
+    }
+
+  }
+
+  .review {
+    max-width: 13.5rem;
+
+    &__image {
+      width: 200px;
     }
   }
 }

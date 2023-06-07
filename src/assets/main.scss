@@ -11,6 +11,10 @@ html {
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
 button {
 	cursor: pointer;
 	font-family: 'Montserrat';

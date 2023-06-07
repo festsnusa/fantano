@@ -29,6 +29,7 @@ export default {
 
 .text {
   color: #fff;
+  text-align: end;
 }
 
 .image {

@@ -22,6 +22,7 @@ export default {
         { "title": "list week", "link": "list-week" },
         { "title": "podcasts", "link": "podcasts" },
         { "title": "vinyls", "link": "vinyls" },
+        { "title": "trkrvws", "link": "trkrvws" },
         { "title": "other", "link": "other" },
       ],
     }

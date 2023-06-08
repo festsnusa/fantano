@@ -1,6 +1,6 @@
 <template lang="pug">
 AppHeader
-.review
+main.review
   .review__left
     .review__video
       iframe(:src="transformYouTubeLink(current.video)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
@@ -149,10 +149,6 @@ export default {
     &__left {
       flex-direction: row;
     }
-  }
-
-  .spotify {
-    // max-height: 22.5rem;
   }
 }
 

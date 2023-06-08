@@ -1,5 +1,5 @@
 <template lang="pug">
-.reviews
+main.reviews
   section.reviews__left
     .reviews__content
       RouterLink.review(v-for="(item, index) in paginatedData" :key="index" :to="`/videos/${item.id}`")

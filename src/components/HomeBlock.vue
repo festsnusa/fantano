@@ -33,6 +33,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/vars';
+
+.header {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 0;
+
+  a {
+    color: #000;
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__show {
+    &:hover {
+      border-bottom: 1px solid $green;
+    }
+  }
+}
+
 .content {
   display: flex;
   align-items: baseline;

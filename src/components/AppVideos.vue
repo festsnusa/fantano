@@ -6,14 +6,22 @@ main.reviews
         AppPreloader(v-show="!item.imageShow")
         img.review__image(v-show="item.imageShow" :src="getThumbnail(item.video)", :alt="item.title" @load="item.imageShow = true")
         p.review__title {{ item.title }}
-    .pagination 
-      button.pagination__prev(@click="backPage") &laquo
-      button.pagination__button(:class="{active: item == page}"
-        v-for="item in Math.ceil(this.reviews.length / this.perPage)"
-        :key="item"
-        @click="() => goToPage(item)"
-      ) {{ item }}
-      button.pagination__next(@click="nextPage") &raquo
+    .pagination
+      div(:class="{ 'arrow left': true, disabled: page == 1 }" @click="prev")
+      template(v-if="totalPages > displayedPages[displayedPages.length - 2] && firstPage > 1")
+        .item(@click="setIndex(1)") {{ 1 }}
+        div(v-if="firstPage > 2") ...
+      div(v-for="num in displayedPages" :key="`pagination-item-${num}`" :class="{ item: true, on: page == num }"
+        @click="setIndex(num)") {{ num }}
+      template(v-if="totalPages > displayedPages[displayedPages.length - 1]")
+        div(v-if="lastPage < totalPages - 1") ...
+        .item(@click="setIndex(totalPages)") {{ totalPages }}
+      div(:class="{ 'arrow right': true, disabled: page == totalPages }" @click="next")
+      .gotoPage 
+        span Go to page
+        input(type="number" v-model="gotoNumber")
+        button(@click="gotopage(Number(gotoNumber))") Go
+
   aside.reviews__right
     AppFilter(:filterByYear="filterByYear" :searchReview="searchReview" 
     :filterByRating="filterByRating" :type="type" :years="years")
@@ -44,6 +52,7 @@ export default {
       perPage: 16,
       totalPages: 1,
       maxVisibleButtons: 10,
+      gotoNumber: ''
     }
   },
   computed: {
@@ -51,8 +60,39 @@ export default {
       return this.reviews.slice((this.page - 1) * this.perPage, this.page * this.perPage)
     },
     ...mapStores(usePageStore, useYearStore, useRatingStore),
+    firstPage() {
+      return Math.max(this.page - (this.page === this.totalPages ? 2 : 1), 1)
+    },
+    lastPage() {
+      return Math.min(this.page + (this.page === 1 ? 2 : 1), this.totalPages)
+    },
+    displayedPages() {
+      if (this.totalPages <= this.maxVisibleButtons || this.page > this.totalPages) {
+        return this.totalPages
+      }
+
+      return Array.from(
+        { length: this.lastPage - this.firstPage + 1 },
+        (_, index) => index + this.firstPage
+      );
+    }
   },
   methods: {
+    prev() {
+      this.pageStore.currentPage = Math.max(this.page - 1, 1)
+    },
+    next() {
+      this.pageStore.currentPage = Math.min(this.page + 1, this.totalPages)
+    },
+    setIndex(num) {
+      this.pageStore.currentPage = num
+    },
+    gotopage(num) {
+      if (isNaN(num)) return
+      if (num > this.totalPages) return
+      this.setIndex(num)
+      this.gotoNumber = ''
+    },
     getThumbnail(url) {
       return `http://img.youtube.com/vi/${this.getVideoID(url)}/0.jpg`
     },
@@ -60,19 +100,6 @@ export default {
       let regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/
       let match = url.match(regExp)
       return (match && match[7].length == 11) ? match[7] : false
-    },
-    nextPage() {
-      if (this.page !== Math.ceil(this.reviews.length / this.perPage)) {
-        this.pageStore.currentPage += 1
-      }
-    },
-    backPage() {
-      if (this.page !== 1) {
-        this.pageStore.currentPage -= 1
-      }
-    },
-    goToPage(numPage) {
-      this.pageStore.currentPage = numPage
     },
     filterByYear() {
       this.reviews = json.filter(e => e.type == this.type)
@@ -118,6 +145,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$primary: #39e;
+$text: #666;
+$size: 24px;
+
 .reviews {
   padding: 3rem;
   display: flex;
@@ -170,6 +201,81 @@ export default {
   background-color: #0096FF;
   // color: #FFFFFF;
   border: 1px solid #0096FF;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  color: $text;
+  font-size: $size * 0.625;
+  font-weight: bold;
+  user-select: none;
+
+  @media (max-width: 360px) {
+    gap: 4px;
+  }
+
+  .arrow {
+    width: $size;
+    height: $size;
+    position: relative;
+    cursor: pointer;
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: auto;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: $size/12;
+      height: $size/2;
+      left: 0;
+      top: 0;
+      background-color: $text;
+      border-radius: $size/12;
+    }
+
+    &::before {
+      transform: translate($size/2, $size/12) rotate(40deg);
+    }
+
+    &::after {
+      transform: translate($size/2, $size/2 - $size/12) rotate(-40deg);
+    }
+
+    &.right {
+      transform: rotate(180deg);
+    }
+  }
+
+  .item {
+    width: $size;
+    height: $size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba($primary, 0.2);
+    }
+
+    &.on {
+      background: $primary;
+      color: white;
+      cursor: auto;
+    }
+  }
 }
 
 @media (max-width: 1700px) {

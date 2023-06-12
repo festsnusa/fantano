@@ -2,10 +2,13 @@
 header.header   
   RouterLink(to="/")
     img.header__logo(src="@/assets/images/fantano-logo.png" alt="#")
-  nav
-    ul.list 
-      RouterLink(:to="{ name: item.link }" v-for="(item, index) in arr") 
-        li.item(:class="{active: currentIndex == index}") {{item.title}}
+  nav(@mouseover="dropdownVisible = true" @mouseleave="dropdownVisible = false")
+    .header__right
+      RouterLink(to="/videos") 
+        li.item(:class="{active: currentIndex == 0}") reviews
+      font-awesome-icon.icon(icon="fa-solid fa-sort-down")
+    RouterLink(v-show="dropdownVisible" :to="{ name: item.link }" v-for="(item, index) in arr") 
+      li.item.item__dropdown(:class="{active: currentIndex == index+1}") {{item.title}}
 </template>
 
 <script>
@@ -14,9 +17,8 @@ export default {
   props: ["currentIndex"],
   data() {
     return {
+      dropdownVisible: false,
       arr: [
-        { "title": "home", "link": "home" },
-        { "title": "reviews", "link": "videos" },
         { "title": "wtr", "link": "wtr" },
         { "title": "ynr", "link": "ynr" },
         { "title": "list week", "link": "list-week" },
@@ -37,7 +39,7 @@ export default {
 
   width: 100%;
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
   background-color: $darkShade100;
   padding: 3rem;
@@ -46,11 +48,22 @@ export default {
     border-radius: 50%;
     max-width: 4rem;
   }
+
+  &__right {
+    display: inline-flex;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 
-.list {
-  display: flex;
-  gap: 2rem;
+nav {
+  text-align: right;
+}
+
+.icon {
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.5);
 }
 
 .item {

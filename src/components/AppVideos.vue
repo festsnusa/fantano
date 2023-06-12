@@ -1,27 +1,15 @@
 <template lang="pug">
 main.reviews
   section.reviews__left
-    .reviews__content
+    h2.reviews__heading {{ title }}
+    .reviews__content(v-if="reviews.length")
       RouterLink.review(v-for="(item, index) in paginatedData" :key="index" :to="`/videos/${item.id}`")
         AppPreloader(v-show="!item.imageShow")
         img.review__image(v-show="item.imageShow" :src="getThumbnail(item.video)", :alt="item.title" @load="item.imageShow = true")
         p.review__title {{ item.title }}
-    .pagination
-      div(:class="{ 'arrow left': true, disabled: page == 1 }" @click="prev")
-      template(v-if="totalPages > displayedPages[displayedPages.length - 2] && firstPage > 1")
-        .item(@click="setIndex(1)") {{ 1 }}
-        div(v-if="firstPage > 2") ...
-      div(v-for="num in displayedPages" :key="`pagination-item-${num}`" :class="{ item: true, on: page == num }"
-        @click="setIndex(num)") {{ num }}
-      template(v-if="totalPages > displayedPages[displayedPages.length - 1]")
-        div(v-if="lastPage < totalPages - 1") ...
-        .item(@click="setIndex(totalPages)") {{ totalPages }}
-      div(:class="{ 'arrow right': true, disabled: page == totalPages }" @click="next")
-      .gotoPage 
-        span Go to page
-        input(type="number" v-model="gotoNumber")
-        button(@click="gotopage(Number(gotoNumber))") Go
-
+    .reviews__content(v-else)
+      p No videos
+    AppPagination(v-show="reviews.length" :reviews="reviews" :totalPages="totalPages")
   aside.reviews__right
     AppFilter(:filterByYear="filterByYear" :searchReview="searchReview" 
     :filterByRating="filterByRating" :type="type" :years="years")
@@ -30,6 +18,7 @@ main.reviews
 <script>
 import AppPreloader from '@/components/AppPreloader.vue'
 import AppFilter from '@/components/AppFilter.vue'
+import AppPagination from '@/components/AppPagination.vue'
 
 import json from '@/assets/data/main-channel.json'
 
@@ -40,10 +29,11 @@ import useRatingStore from '@/stores/rating'
 
 export default {
   name: "AppVideos",
-  props: ["type", "years"],
+  props: ["type", "years", "title"],
   components: {
     AppFilter,
     AppPreloader,
+    AppPagination,
   },
   data() {
     return {
@@ -78,21 +68,6 @@ export default {
     }
   },
   methods: {
-    prev() {
-      this.pageStore.currentPage = Math.max(this.page - 1, 1)
-    },
-    next() {
-      this.pageStore.currentPage = Math.min(this.page + 1, this.totalPages)
-    },
-    setIndex(num) {
-      this.pageStore.currentPage = num
-    },
-    gotopage(num) {
-      if (isNaN(num)) return
-      if (num > this.totalPages) return
-      this.setIndex(num)
-      this.gotoNumber = ''
-    },
     getThumbnail(url) {
       return `http://img.youtube.com/vi/${this.getVideoID(url)}/0.jpg`
     },
@@ -106,8 +81,12 @@ export default {
       this.pageStore.currentPage = 1
       document.querySelector('.search__input').value = ''
       this.yearStore.currentYear = document.querySelector('.search__select').value
-      if (this.yearStore.currentYear == '') return
+      if (this.yearStore.currentYear == '') {
+        this.totalPages = Math.ceil(this.reviews.length / this.perPage)
+        return
+      }
       this.reviews = this.reviews.filter(e => e.year == this.yearStore.currentYear)
+      this.totalPages = Math.ceil(this.reviews.length / this.perPage)
     },
     filterByRating() {
       this.reviews = json.filter(e => e.type == this.type)
@@ -116,6 +95,7 @@ export default {
       this.ratingStore.currentRating = document.querySelector('.search__select_rating').value
       if (this.ratingStore.currentRating == '') return
       this.reviews = this.reviews.filter(e => e.rating == this.ratingStore.currentRating)
+      this.totalPages = Math.ceil(this.reviews.length / this.perPage)
     },
     searchReview(text) {
       this.reviews = json.filter(e => e.type == this.type)
@@ -123,9 +103,21 @@ export default {
       document.querySelector('.search__select').value = ''
       if (text.length == 0) return
       this.reviews = this.reviews.filter(e => e.title.toLowerCase().includes(text.toLowerCase()))
+    },
+    checkYears() {
+      // check if year is in the list
+      if (!this.years.includes(Number(this.yearStore.currentYear))) {
+        this.yearStore.currentYear = ''
+      }
     }
   },
   created() {
+
+    this.checkYears()
+
+    if (this.yearStore.currentYear != '') {
+      this.reviews = this.reviews.filter(e => e.year == +this.yearStore.currentYear)
+    }
 
     this.totalPages = Math.ceil(this.reviews.length / this.perPage)
     this.pageStore.currentPage = (this.pageStore.currentPage > this.totalPages) ? 1 : this.pageStore.currentPage
@@ -136,6 +128,7 @@ export default {
     })
   },
   mounted() {
+
     if (this.yearStore.currentYear != '') {
       this.reviews = this.reviews.filter(e => e.year == this.yearStore.currentYear)
     }
@@ -153,6 +146,10 @@ $size: 24px;
   padding: 3rem;
   display: flex;
   justify-content: center;
+
+  &__heading {
+    text-transform: uppercase;
+  }
 
   &__left {
     flex-grow: 2;

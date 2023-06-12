@@ -1,6 +1,6 @@
 <template lang="pug">
-AppHeader(:currentIndex="7")
-AppVideos(type="TRACK REVIEW" :years="years")
+AppHeader(:currentIndex="6")
+AppVideos(type="TRACK REVIEW" :years="years" title="TRACK REVIEW")
 AppFooter
 </template>
 
@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      years: Array.from(Array(13), (_, i) => i + 2010).reverse()
+      years: Array.from(Array(8), (_, i) => i + 2010).reverse()
     }
   }
 }

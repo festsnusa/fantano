@@ -1,6 +1,6 @@
 <template lang="pug">
-AppHeader(currentIndex="3")
-AppVideos(type="YUNOREVIEW" :years="years")
+AppHeader(currentIndex="2")
+AppVideos(type="YUNOREVIEW" :years="years" title="YUNOREVIEWs")
 AppFooter
 </template>
 

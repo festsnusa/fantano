@@ -1,5 +1,5 @@
 <template lang="pug">
-AppHeader(:currentIndex="0")
+AppHeader
 .reviews
   HomeBlock(title="Reviews" link="videos" :arr="reviews")
 .wtr

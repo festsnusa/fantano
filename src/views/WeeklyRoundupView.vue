@@ -1,6 +1,6 @@
 <template lang="pug">
-AppHeader(:currentIndex="2")
-AppVideos(type="weekly" :years="years")
+AppHeader(:currentIndex="1")
+AppVideos(type="weekly" :years="years" title="Weekly Track Roundups")
 AppFooter
 </template>
 

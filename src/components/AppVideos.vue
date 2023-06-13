@@ -82,11 +82,11 @@ export default {
       this.reviews = json.filter(e => e.type == this.type)
       this.pageStore.currentPage = 1
       document.querySelector('.search__input').value = ''
-      if (year != '') {
-        this.reviews = json.filter(e => e.year == year)
+      if (year !== '') {
+        this.reviews = this.reviews.filter(e => e.year == year)
       }
       this.ratingStore.currentRating = rating
-      if (rating == '') return
+      if (rating === '') return
       this.reviews = this.reviews.filter(e => e.rating == rating)
       this.totalPages = Math.ceil(this.reviews.length / this.perPage)
     },

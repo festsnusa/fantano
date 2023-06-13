@@ -6,7 +6,7 @@ header.header
     .header__right
       RouterLink(to="/videos") 
         li.item(:class="{active: currentIndex == 0}") reviews
-      font-awesome-icon.icon(icon="fa-solid fa-sort-down")
+      font-awesome-icon.icon(icon="fa-solid fa-sort-down" @click="dropdownVisible = !dropdownVisible")
     RouterLink(v-show="dropdownVisible" :to="{ name: item.link }" v-for="(item, index) in arr") 
       li.item.item__dropdown(:class="{active: currentIndex == index+1}") {{item.title}}
 </template>

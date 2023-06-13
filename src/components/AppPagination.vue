@@ -1,19 +1,21 @@
 <template lang="pug">
 .pagination
-  div(:class="{ 'arrow left': true, disabled: page == 1 }" @click="prev")
-  template(v-if="totalPages > displayedPages[displayedPages.length - 2] && firstPage > 1")
-    .item(@click="setIndex(1)") {{ 1 }}
-    div(v-if="firstPage > 2") ...
-  div(v-for="num in displayedPages" :key="`pagination-item-${num}`" :class="{ item: true, on: page == num }"
-    @click="setIndex(num)") {{ num }}
-  template(v-if="totalPages > displayedPages[displayedPages.length - 1]")
-    div(v-if="lastPage < totalPages - 1") ...
-    .item(@click="setIndex(totalPages)") {{ totalPages }}
-  div(:class="{ 'arrow right': true, disabled: page == totalPages }" @click="next")
-  .gotoPage 
-    span Go to page
-    input(type="number" v-model="gotoNumber")
-    button(@click="gotopage(Number(gotoNumber))") Go
+  .pagination__header
+    div(:class="{ 'arrow left': true, disabled: page == 1 }" @click="prev")
+    template(v-if="totalPages > displayedPages[displayedPages.length - 2] && firstPage > 1")
+      .item(@click="setIndex(1)") {{ 1 }}
+      div(v-if="firstPage > 2") ...
+    div(v-for="num in displayedPages" :key="`pagination-item-${num}`" :class="{ item: true, on: page == num }"
+      @click="setIndex(num)") {{ num }}
+    template(v-if="totalPages > displayedPages[displayedPages.length - 1]")
+      div(v-if="lastPage < totalPages - 1") ...
+      .item(@click="setIndex(totalPages)") {{ totalPages }}
+    div(:class="{ 'arrow right': true, disabled: page == totalPages }" @click="next")
+  .pagination__footer 
+    .gotoPage
+      span Go to page
+      input(type="number" v-model="gotoNumber")
+      button(@click="gotopage(Number(gotoNumber))") Go
 </template>
 
 <script>
@@ -92,13 +94,18 @@ $size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   gap: 12px;
   color: $text;
   font-size: $size * 0.625;
   font-weight: bold;
   user-select: none;
+
+  &__header {
+    display: inline-flex;
+    gap: 1rem;
+  }
 
   @media (max-width: 360px) {
     gap: 4px;
@@ -161,5 +168,9 @@ $size: 24px;
       cursor: auto;
     }
   }
+}
+
+.gotoPage {
+  display: flex;
 }
 </style>

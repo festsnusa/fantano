@@ -84,20 +84,28 @@ export default {
       }
 
       return videoID;
-    }
+    },
   },
   created() {
     this.current = json.filter((e) => e.id == this.$route.params.video)[0]
 
-    import(`@/assets/text/${this.$route.params.video}-en.md`).then((module) => {
-      this.textEn = module.default
-      this.en = true
-    })
+    import(`@/assets/text/${this.$route.params.video}-en.md`)
+      .then((module) => {
+        this.textEn = module.default
+        this.en = true
+      })
+      .catch((e) => {
+        console.log(e)
+      })
 
-    import(`@/assets/text/${this.$route.params.video}-ru.md`).then((module) => {
-      this.textRu = module.default
-      this.en = false
-    })
+    import(`@/assets/text/${this.$route.params.video}-ru.md`)
+      .then((module) => {
+        this.textRu = module.default
+        this.en = false
+      })
+      .catch((e) => {
+        console.log(e)
+      })
   },
 }
 </script>

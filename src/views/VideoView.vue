@@ -138,6 +138,12 @@ export default {
   }
 }
 
+.text-field {
+  font-family: 'Programme', 'Montserrat';
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
 .multiline {
   white-space: pre-wrap;
 }

@@ -63,6 +63,16 @@ a {
   font-style: normal;
 }
 
+@font-face {
+	font-family: 'Programme';
+	src: local('Programme Light'), local('Programme-Light'),
+			url('@/assets/fonts/Programme-Light.woff2') format('woff2'),
+			url('@/assets/fonts/Programme-Light.woff') format('woff'),
+			url('@/assets/fonts/Programme-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
 body {
   background-color: #F0EAD6;
 }

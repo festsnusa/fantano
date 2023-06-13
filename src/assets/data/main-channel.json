@@ -1,5 +1,14 @@
 [
   {
+    "id": 4102,
+    "title": "Rosalía, J Hus, Drake, 30 Seconds to Mars | Weekly Track Roundup: 6/12/23",
+    "video": "https://youtu.be/hAx_VUHss9w",
+    "year": "2023",
+    "imageShow": false,
+    "type": "weekly",
+    "spotify": "https://open.spotify.com/embed/playlist/4xSWPmuNmCbJ6E01cl2K2B?utm_source=generator"
+  },
+  {
     "id": 4101,
     "title": "GREAT ALBUMS: June 2023",
     "video": "https://youtu.be/e1jY3YgtN9g",
@@ -17188,7 +17197,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/2B87zXm9bOWvAJdkJBTpzF?utm_source=generator"
   },
   {
     "id": 2288,
@@ -23223,7 +23232,7 @@
     "imageShow": false,
     "type": "review",
     "rating": 7,
-    "spotify": ""
+    "spotify": "https://open.spotify.com/embed/album/2oj3FG6fos7zAQJxLQGzou?utm_source=generator"
   },
   {
     "id": 1646,
@@ -38949,6 +38958,7 @@
     "year": "2010",
     "imageShow": false,
     "type": "review",
+    "rating": "CLASSIC",
     "spotify": "https://open.spotify.com/embed/album/5fMlysqhFE0itGn4KezMBW?utm_source=generator"
   }
 ]

@@ -29,7 +29,7 @@ export default {
     return {
       page: 1,
       perPage: 16,
-      maxVisibleButtons: 10,
+      maxVisibleButtons: 8,
       gotoNumber: ''
     }
   },

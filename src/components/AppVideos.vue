@@ -27,6 +27,8 @@ import usePageStore from '@/stores/page'
 import useYearStore from '@/stores/year'
 import useRatingStore from '@/stores/rating'
 
+import { useMediaQuery } from '@vueuse/core'
+
 export default {
   name: "AppVideos",
   props: ["type", "years", "title"],
@@ -41,8 +43,8 @@ export default {
       page: 1,
       perPage: 16,
       totalPages: 1,
-      maxVisibleButtons: 10,
-      gotoNumber: ''
+      gotoNumber: '',
+      isLargeScreen: useMediaQuery('(min-width: 1024px)')
     }
   },
   computed: {
@@ -105,6 +107,8 @@ export default {
     }
   },
   created() {
+
+    this.perPage = this.isLargeScreen ? 16 : 6
 
     this.checkYears()
 
@@ -215,6 +219,14 @@ $size: 24px;
   .reviews {
     &__content {
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .reviews {
+    &__content {
+      grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     }
   }
 }

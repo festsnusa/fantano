@@ -148,6 +148,7 @@ $size: 24px;
 
   &__heading {
     text-transform: uppercase;
+    padding: 2rem;
   }
 
   &__left {
@@ -173,6 +174,47 @@ $size: 24px;
     &:hover {
       transform: scale(1.05);
       transition: all 0.5s ease-in;
+    }
+  }
+}
+
+@media (min-width: 280px) {
+  .reviews {
+    &__content {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 412px) {
+  .reviews {
+    &__content {
+      padding: 2rem;
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  .reviews {
+    &__content {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .reviews {
+    &__content {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews {
+    &__content {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
   }
 }

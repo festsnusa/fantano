@@ -1,10 +1,10 @@
 <template lang="pug">
 .search
   input.search__input(type="text" v-model="text" @input="searchReview(text)" placeholder="Search by title...")
-  select.search__select(v-model="year" name="select" @change="filterByYear")
+  select.search__select(v-model="year" name="select" @change="filterByYear(year, rating)")
     option(value="") Filter by year
     option(v-for="item in years" :value="item") {{item}}
-  select.search__select_rating(v-model="rating" name="select_rating" @change="filterByRating"
+  select.search__select_rating(v-model="rating" name="select_rating" @change="filterByRating(rating, year)"
     v-show="type == 'review'")
     option(value="") Filter by rating
     option(v-for="item in ratings" :value="item") {{item}}
@@ -13,6 +13,7 @@
 <script>
 import { mapStores } from 'pinia'
 import useYearStore from '@/stores/year'
+import useRatingStore from '@/stores/rating'
 
 export default {
   name: "AppFilter",
@@ -21,19 +22,27 @@ export default {
     return {
       text: '',
       year: '',
-      // years: [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
       rating: '',
       ratings: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 'NOT GOOD', 'NOT BAD', 'CLASSIC', '-']
     }
   },
   computed: {
-    ...mapStores(useYearStore)
+    ...mapStores(useYearStore, useRatingStore)
   },
   mounted() {
     this.year = this.yearStore.currentYear
+    this.rating = this.ratingStore.currentRating
+
+    if (this.type != 'review') {
+      this.ratingStore.currentRating = ''
+    }
 
     this.yearStore.$subscribe((mutation, state) => {
       this.year = state.currentYear
+    })
+
+    this.ratingStore.$subscribe((mutation, state) => {
+      this.rating = state.currentRating
     })
   }
 }

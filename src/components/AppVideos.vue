@@ -50,22 +50,6 @@ export default {
       return this.reviews.slice((this.page - 1) * this.perPage, this.page * this.perPage)
     },
     ...mapStores(usePageStore, useYearStore, useRatingStore),
-    firstPage() {
-      return Math.max(this.page - (this.page === this.totalPages ? 2 : 1), 1)
-    },
-    lastPage() {
-      return Math.min(this.page + (this.page === 1 ? 2 : 1), this.totalPages)
-    },
-    displayedPages() {
-      if (this.totalPages <= this.maxVisibleButtons || this.page > this.totalPages) {
-        return this.totalPages
-      }
-
-      return Array.from(
-        { length: this.lastPage - this.firstPage + 1 },
-        (_, index) => index + this.firstPage
-      );
-    }
   },
   methods: {
     getThumbnail(url) {
@@ -76,25 +60,34 @@ export default {
       let match = url.match(regExp)
       return (match && match[7].length == 11) ? match[7] : false
     },
-    filterByYear() {
-      this.reviews = json.filter(e => e.type == this.type)
-      this.pageStore.currentPage = 1
-      document.querySelector('.search__input').value = ''
-      this.yearStore.currentYear = document.querySelector('.search__select').value
-      if (this.yearStore.currentYear == '') {
-        this.totalPages = Math.ceil(this.reviews.length / this.perPage)
-        return
-      }
-      this.reviews = this.reviews.filter(e => e.year == this.yearStore.currentYear)
+    setTotalPages() {
       this.totalPages = Math.ceil(this.reviews.length / this.perPage)
     },
-    filterByRating() {
+    filterByYear(year, rating) {
       this.reviews = json.filter(e => e.type == this.type)
       this.pageStore.currentPage = 1
       document.querySelector('.search__input').value = ''
-      this.ratingStore.currentRating = document.querySelector('.search__select_rating').value
-      if (this.ratingStore.currentRating == '') return
-      this.reviews = this.reviews.filter(e => e.rating == this.ratingStore.currentRating)
+      this.yearStore.currentYear = year
+      if (year != '') {
+        this.reviews = this.reviews.filter(e => e.year == year)
+      }
+
+      if (this.type == 'review' && rating != '') {
+        this.reviews = this.reviews.filter(e => e.rating == rating)
+      }
+
+      this.setTotalPages()
+    },
+    filterByRating(rating, year) {
+      this.reviews = json.filter(e => e.type == this.type)
+      this.pageStore.currentPage = 1
+      document.querySelector('.search__input').value = ''
+      if (year != '') {
+        this.reviews = json.filter(e => e.year == year)
+      }
+      this.ratingStore.currentRating = rating
+      if (rating == '') return
+      this.reviews = this.reviews.filter(e => e.rating == rating)
       this.totalPages = Math.ceil(this.reviews.length / this.perPage)
     },
     searchReview(text) {
@@ -132,6 +125,12 @@ export default {
     if (this.yearStore.currentYear != '') {
       this.reviews = this.reviews.filter(e => e.year == this.yearStore.currentYear)
     }
+
+    if (this.ratingStore.currentRating != '') {
+      this.reviews = this.reviews.filter(e => e.rating == this.ratingStore.currentRating)
+    }
+
+    this.setTotalPages()
 
   }
 }

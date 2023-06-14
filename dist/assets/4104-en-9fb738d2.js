@@ -15,7 +15,7 @@ I'll also say, this is a pretty long and dense record as well. So of course ther
 "My head was empty\r
 My life was discreet\r
 A lot has changed\r
-Notw a lot means to me."\r
+Not a lot means to me."\r
 \r
 I do love the instrumental on this track. Though, I will say the very distant and cold flatly delivered spoken word vocals don't do a whole lot for me. But again, I do respect what this track does in terms of tying a lot of the narratives up with a bow, and doing so in a pretty self-affirming way that shows Archie in a new, a different and hopefully a better place since when everything sung about on this record transpired. Honestly, very sad, very potent, very powerful little record, and one of Archie's best and most impressive releases so far.\r
 \r

@@ -1,10 +1,8 @@
 <template lang="pug">
 main.review
   .review__left
-    .review__video
-      iframe(:src="transformYouTubeLink(current.video)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
-    .review__player(v-show="current.spotify")
-      iframe.spotify(style="border-radius:12px" :src="`${current.spotify}&theme=0`" width="100%" height="452" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy")
+    Affix(v-if="isAffix" :current="current" :transformYouTubeLink="transformYouTubeLink")
+    VideoSideSection(v-else :current="current" :transformYouTubeLink="transformYouTubeLink")
   .review__right
     .review__header
       h1.review__title {{ current.title }} ({{ current.year }})
@@ -19,6 +17,9 @@ main.review
 import Markdown from 'vue3-markdown-it'
 import ReviewStar from '@/components/ReviewStar.vue'
 import Toggle from '@/components/Toggle.vue'
+import Affix from '@/components/Affix.vue'
+import VideoSideSection from '@/components/VideoSideSection.vue'
+
 import { useMediaQuery } from '@vueuse/core'
 import json from '@/assets/data/main-channel.json'
 
@@ -27,7 +28,9 @@ export default {
   components: {
     ReviewStar,
     Toggle,
-    Markdown
+    Markdown,
+    Affix,
+    VideoSideSection,
   },
   data() {
     return {
@@ -38,6 +41,7 @@ export default {
       textEn: '',
       textRu: '',
       filesLoaded: 0,
+      isAffix: useMediaQuery('(min-width: 1300px)'),
     }
   },
   computed: {
@@ -130,23 +134,6 @@ export default {
     gap: 3rem;
     display: flex;
     flex-direction: column;
-  }
-
-  &__video,
-  &__player {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    /* Adjust this value to set the desired aspect ratio (e.g., 16:9 = 56.25%) */
-    overflow: hidden;
-
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
   }
 }
 

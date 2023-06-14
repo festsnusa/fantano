@@ -93,14 +93,21 @@ export default {
       this.ratingStore.currentRating = rating
       if (rating === '') return
       this.reviews = this.reviews.filter(e => e.rating == rating)
-      this.totalPages = Math.ceil(this.reviews.length / this.perPage)
+      this.setTotalPages()
     },
     searchReview(text) {
       this.reviews = json.filter(e => e.type == this.type)
       this.pageStore.currentPage = 1
+      this.yearStore.currentYear = ''
       document.querySelector('.search__select').value = ''
-      if (text.length == 0) return
+      this.ratingStore.currentRating = ''
+      if (text.length == 0) {
+        this.setTotalPages()
+        return
+      }
       this.reviews = this.reviews.filter(e => e.title.toLowerCase().includes(text.toLowerCase()))
+      this.setTotalPages()
+
     },
     checkYears() {
       // check if year is in the list

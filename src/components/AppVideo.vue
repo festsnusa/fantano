@@ -8,7 +8,7 @@ main.review
   .review__right
     .review__header
       h1.review__title {{ current.title }} ({{ current.year }})
-      Toggle.review__toggle(v-show="current.type=='review'" v-model="en" name="toggle" onLabel="EN" offLabel="RU")
+      Toggle(v-if="filesLoaded == 2" :toggleValue="toggleValue" :checked="en")
     ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
     .text-field.multiline
       Markdown(v-if="!en" :source="textRu")
@@ -18,7 +18,7 @@ main.review
 <script>
 import Markdown from 'vue3-markdown-it'
 import ReviewStar from '@/components/ReviewStar.vue'
-import Toggle from '@vueform/toggle'
+import Toggle from '@/components/Toggle.vue'
 import { useMediaQuery } from '@vueuse/core'
 import json from '@/assets/data/main-channel.json'
 
@@ -36,7 +36,8 @@ export default {
       en: false,
       isLargeScreen: useMediaQuery('(min-width: 1024px)'),
       textEn: '',
-      textRu: ''
+      textRu: '',
+      filesLoaded: 0,
     }
   },
   computed: {
@@ -45,6 +46,9 @@ export default {
     }
   },
   methods: {
+    toggleValue(value) {
+      this.en = value
+    },
     updateScreen() {
       this.isLargeScreen = useMediaQuery('(min-width: 1024px)')
     },
@@ -83,19 +87,29 @@ export default {
       .then((module) => {
         this.textEn = module.default
         this.en = true
+        console.log(this.en)
       })
       .catch((e) => {
         console.log(e)
+      })
+      .finally(() => {
+        this.filesLoaded++
       })
 
     import(`@/assets/text/${this.$route.params.video}-ru.md`)
       .then((module) => {
         this.textRu = module.default
         this.en = false
+        console.log(this.en)
       })
       .catch((e) => {
         console.log(e)
       })
+      .finally(() => {
+        this.filesLoaded++
+      })
+
+    console.log('loaded')
   },
 }
 </script>

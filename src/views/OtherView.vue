@@ -1,19 +1,16 @@
 <template lang="pug">
 AppHeader(:currentIndex="7")
 AppVideos(type="other" :years="years" title="other")
-AppFooter
 </template>
   
 <script>
 import AppHeader from '@/components/AppHeader.vue'
-import AppFooter from '@/components/AppFooter.vue'
 import AppVideos from '@/components/AppVideos.vue'
 
 export default {
   name: "VinylsView",
   components: {
     AppHeader,
-    AppFooter,
     AppVideos,
   },
   data() {

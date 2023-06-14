@@ -1,19 +1,16 @@
 <template lang="pug">
 AppHeader(currentIndex="2")
 AppVideos(type="YUNOREVIEW" :years="years" title="YUNOREVIEWs")
-AppFooter
 </template>
 
 <script>
 import AppHeader from '@/components/AppHeader.vue'
-import AppFooter from '@/components/AppFooter.vue'
 import AppVideos from '../components/AppVideos.vue'
 
 export default {
   name: "YunoView",
   components: {
     AppHeader,
-    AppFooter,
     AppVideos,
   },
   data() {

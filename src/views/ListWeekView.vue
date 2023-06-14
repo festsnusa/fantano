@@ -1,19 +1,16 @@
 <template lang="pug">
 AppHeader(:currentIndex="3")
 AppVideos(type="list-week" :years="years" title="List week")
-AppFooter
 </template>
 
 <script>
 import AppHeader from '@/components/AppHeader.vue'
-import AppFooter from '@/components/AppFooter.vue'
 import AppVideos from '@/components/AppVideos.vue'
 
 export default {
   name: "ListWeekView",
   components: {
     AppHeader,
-    AppFooter,
     AppVideos,
   },
   data() {

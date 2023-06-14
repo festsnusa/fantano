@@ -1,19 +1,16 @@
 <template lang="pug">
 AppHeader(:currentIndex="4")
 AppVideos(type="podcast" :years="years" title="podcasts")
-AppFooter
 </template>
 
 <script>
 import AppHeader from '@/components/AppHeader.vue'
-import AppFooter from '@/components/AppFooter.vue'
 import AppVideos from '@/components/AppVideos.vue'
 
 export default {
   name: "PodcastsView",
   components: {
     AppHeader,
-    AppFooter,
     AppVideos,
   },
   data() {

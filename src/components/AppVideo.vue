@@ -151,7 +151,7 @@ export default {
 }
 
 .text-field {
-  font-family: 'knileregular', 'Programme', 'Montserrat';
+  // font-family: 'knileregular', 'Programme', 'Montserrat';
   font-size: 1.25rem;
   text-align: justify;
 

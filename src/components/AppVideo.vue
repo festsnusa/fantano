@@ -151,9 +151,29 @@ export default {
 }
 
 .text-field {
-  font-family: 'Programme', 'Montserrat';
+  font-family: 'knileregular', 'Programme', 'Montserrat';
   font-size: 1.25rem;
   text-align: justify;
+
+  @media (min-width: 100px) {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+  }
+
+  @media (min-width: 700px) {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
 }
 
 .multiline {

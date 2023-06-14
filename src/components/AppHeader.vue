@@ -2,23 +2,23 @@
 header.header   
   RouterLink(to="/")
     img.header__logo(src="@/assets/images/fantano-logo.png" alt="#")
-  nav(@mouseover="dropdownVisible = true" @mouseleave="dropdownVisible = false")
+  nav
     .header__right
-      RouterLink(to="/videos") 
-        li.item(:class="{active: currentIndex == 0}") reviews
-      font-awesome-icon.icon(icon="fa-solid fa-sort-down" @click="dropdownVisible = !dropdownVisible")
-    RouterLink(v-show="dropdownVisible" :to="{ name: item.link }" v-for="(item, index) in arr") 
-      li.item.item__dropdown(:class="{active: currentIndex == index+1}") {{item.title}}
+      Dropdown(:arr="arr")
 </template>
 
 <script>
+import Dropdown from '@/components/Dropdown.vue'
 export default {
   name: "AppHeader",
   props: ["currentIndex"],
+  components: {
+    Dropdown
+  },
   data() {
     return {
-      dropdownVisible: false,
       arr: [
+        { "title": "reviews", "link": "videos" },
         { "title": "wtr", "link": "wtr" },
         { "title": "ynr", "link": "ynr" },
         { "title": "list week", "link": "list-week" },
@@ -39,7 +39,7 @@ export default {
 
   width: 100%;
   display: flex;
-  // align-items: center;
+  align-items: center;
   justify-content: space-between;
   background-color: $darkShade100;
   padding: 3rem;

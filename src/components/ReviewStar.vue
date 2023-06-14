@@ -1,5 +1,6 @@
 <template lang="pug">
-SvgIcon(type="mdi" :path="path")
+.stars
+  SvgIcon(type="mdi" :path="path")
 </template>
 
 <script>
@@ -19,4 +20,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.stars {
+  display: inline-block;
+  padding: 1rem 0;
+}
+</style>

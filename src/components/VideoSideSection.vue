@@ -29,4 +29,11 @@ export default {
     height: 100%;
   }
 }
+
+.spotify {
+  @media (min-width: 1524px) {
+    max-height: 25rem;
+  }
+
+}
 </style>

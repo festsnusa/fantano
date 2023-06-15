@@ -107,24 +107,20 @@ export default {
       .then((module) => {
         this.textEn = module.default
         this.en = true
+        this.filesLoaded++
       })
       .catch((e) => {
         console.log(e)
-      })
-      .finally(() => {
-        this.filesLoaded++
       })
 
     import(`@/assets/text/${this.$route.params.video}-ru.md`)
       .then((module) => {
         this.textRu = module.default
         this.en = false
+        this.filesLoaded++
       })
       .catch((e) => {
         console.log(e)
-      })
-      .finally(() => {
-        this.filesLoaded++
       })
   },
 }

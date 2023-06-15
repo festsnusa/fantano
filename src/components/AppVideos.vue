@@ -1,4 +1,5 @@
 <template lang="pug">
+Breadcrumb.breadcrumb(:arr="breadcrumbArr" :title="title")
 main.reviews
   section.reviews__left
     h2.reviews__heading {{ title }}
@@ -19,6 +20,7 @@ main.reviews
 import AppPreloader from '@/components/AppPreloader.vue'
 import AppFilter from '@/components/AppFilter.vue'
 import AppPagination from '@/components/AppPagination.vue'
+import Breadcrumb from '@/components/Breadcrumb.vue'
 
 import json from '@/assets/data/main-channel.json'
 import secondJson from '@/assets/data/fantano-channel.json'
@@ -38,6 +40,7 @@ export default {
     AppFilter,
     AppPreloader,
     AppPagination,
+    Breadcrumb,
   },
   data() {
     return {
@@ -45,11 +48,14 @@ export default {
       secondChannel: secondJson.filter(e => e.type == this.type),
       reviews: [],
       page: 1,
-      perPage: 16,
+      perPage: 20,
       totalPages: 1,
       gotoNumber: '',
       isLargeScreen: useMediaQuery('(min-width: 1024px)'),
       thumbnail: getThumbnail,
+      breadcrumbArr: [
+        { "title": "Home", "link": "/" },
+      ],
     }
   },
   computed: {
@@ -115,7 +121,7 @@ export default {
     this.reviews = this.firstChannel.concat(this.secondChannel)
     // this.paginatedData()
 
-    this.perPage = this.isLargeScreen ? 16 : 6
+    this.perPage = this.isLargeScreen ? 20 : 6
 
     this.checkYears()
 
@@ -152,14 +158,19 @@ $primary: #39e;
 $text: #666;
 $size: 24px;
 
+.breadcrumb {
+  padding: 2rem 3rem;
+}
+
 .reviews {
-  padding: 3rem;
+  padding: 0 3rem;
   display: flex;
   justify-content: center;
+  gap: 2rem;
 
   &__heading {
     text-transform: uppercase;
-    padding: 2rem;
+    padding: 2rem 0;
   }
 
   &__left {
@@ -197,19 +208,10 @@ $size: 24px;
   }
 }
 
-@media (min-width: 412px) {
-  .reviews {
-    &__content {
-      padding: 2rem;
-    }
-  }
-}
-
 @media (min-width: 540px) {
   .reviews {
     &__content {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-
     }
   }
 }

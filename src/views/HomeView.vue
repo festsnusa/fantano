@@ -1,12 +1,14 @@
 <template lang="pug">
 AppHeader
-.reviews
-  HomeBlock(title="REVIEWS" link="videos" :arr="reviews")
-.wtr
-  HomeBlock(title="WTRs" link="wtr" :arr="wtr")
-.ynr 
-  HomeBlock(title="YUNOREVIEWS" link="ynr" :arr="ynr")
-.list-week 
+Breadcrumb.breadcrumb(title="Home")
+main
+  .reviews
+    HomeBlock(title="REVIEWS" link="videos" :arr="reviews")
+  .wtr
+    HomeBlock(title="WTRs" link="wtr" :arr="wtr")
+  .ynr 
+    HomeBlock(title="YUNOREVIEWS" link="ynr" :arr="ynr")
+  .list-week 
 
 AppFooter
     
@@ -14,6 +16,7 @@ AppFooter
 
 <script>
 import AppHeader from '@/components/AppHeader.vue'
+import Breadcrumb from '@/components/Breadcrumb.vue'
 import AppFooter from '@/components/AppFooter.vue'
 import HomeBlock from '@/components/HomeBlock.vue'
 import AppPreloader from '@/components/AppPreloader.vue'
@@ -24,6 +27,7 @@ export default {
   name: "HomeView",
   components: {
     AppHeader,
+    Breadcrumb,
     AppFooter,
     HomeBlock,
     AppPreloader,
@@ -67,6 +71,10 @@ export default {
 .wtr,
 .ynr,
 .list-week {
-  padding: 3rem;
+  padding: 0 3rem;
+}
+
+.breadcrumb {
+  padding: 2rem 3rem;
 }
 </style>

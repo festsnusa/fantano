@@ -104,7 +104,9 @@ $size: 24px;
 
   &__header {
     display: inline-flex;
+    align-items: center;
     gap: 1rem;
+    padding: 2rem;
   }
 
   @media (max-width: 360px) {
@@ -146,31 +148,46 @@ $size: 24px;
       transform: rotate(180deg);
     }
   }
+}
 
-  .item {
-    width: $size;
-    height: $size;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    border-radius: 4px;
-    cursor: pointer;
+.item {
+  width: $size;
+  height: $size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.7rem;
 
-    &:hover {
-      background: rgba($primary, 0.2);
-    }
+  &:hover {
+    background: rgba($primary, 0.2);
+  }
 
-    &.on {
-      background: $primary;
-      color: white;
-      cursor: auto;
-    }
+  &.on {
+    background: $primary;
+    color: white;
+    cursor: auto;
+  }
+
+  @media (min-width: 700px) {
+    padding: 1.5rem;
   }
 }
 
 .gotoPage {
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  input {
+    max-width: 3rem;
+  }
+
+  button {
+    padding: 0 1rem;
+  }
 }
 </style>

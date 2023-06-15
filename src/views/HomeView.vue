@@ -28,16 +28,6 @@ export default {
     HomeBlock,
     AppPreloader,
   },
-  methods: {
-    getThumbnail(url) {
-      return `http://img.youtube.com/vi/${this.getVideoID(url)}/0.jpg`
-    },
-    getVideoID(url) {
-      let regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/
-      let match = url.match(regExp)
-      return (match && match[7].length == 11) ? match[7] : false
-    }
-  },
   data() {
     return {
       reviews: json.filter(e => e.type == 'review').slice(0, 5),

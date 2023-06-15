@@ -1,4 +1,5 @@
 <template lang="pug">
+Breadcrumb.breadcrumb(:arr="breadcrumbArr" :title="current.title")
 main.review
   .review__left
     Affix(v-if="isAffix" :current="current")
@@ -19,6 +20,7 @@ import ReviewStar from '@/components/ReviewStar.vue'
 import Toggle from '@/components/Toggle.vue'
 import Affix from '@/components/Affix.vue'
 import VideoSideSection from '@/components/VideoSideSection.vue'
+import Breadcrumb from '@/components/Breadcrumb.vue'
 
 import { useMediaQuery } from '@vueuse/core'
 import json from '@/assets/data/main-channel.json'
@@ -31,6 +33,7 @@ export default {
     Markdown,
     Affix,
     VideoSideSection,
+    Breadcrumb,
   },
   data() {
     return {
@@ -42,6 +45,9 @@ export default {
       textRu: '',
       filesLoaded: 0,
       isAffix: useMediaQuery('(min-width: 1300px)'),
+      breadcrumbArr: [
+        { "title": "Home", "link": "/" },
+      ],
     }
   },
   computed: {
@@ -56,15 +62,51 @@ export default {
     updateScreen() {
       this.isLargeScreen = useMediaQuery('(min-width: 1024px)')
     },
+    addBreadcrumbLink(type) {
+      let obj = {}
+      if (type == 'review') {
+        obj.title = 'Reviews'
+        obj.link = '/videos'
+        this.breadcrumbArr.push(obj)
+      } else if (type == 'weekly') {
+        obj.title = 'Weekly Track Roundups'
+        obj.link = '/wtr'
+        this.breadcrumbArr.push(obj)
+      } else if (type == 'YUNOREVIEW') {
+        obj.title = 'YUNOREVIEWs'
+        obj.link = '/ynr'
+        this.breadcrumbArr.push(obj)
+      } else if (type == 'TRACK REVIEW') {
+        obj.title = 'TRACK REVIEW'
+        obj.link = '/trkrvws'
+        this.breadcrumbArr.push(obj)
+      } else if (type == 'list-week') {
+        obj.title = 'list week'
+        obj.link = '/list-week'
+        this.breadcrumbArr.push(obj)
+      } else if (type == 'podcast') {
+        obj.title = 'podcasts'
+        obj.link = '/podcasts'
+        this.breadcrumbArr.push(obj)
+      } else if (type == 'vinyl') {
+        obj.title = 'vinyls'
+        obj.link = '/vinyls'
+        this.breadcrumbArr.push(obj)
+      } else if (type == 'other') {
+        obj.title = 'other'
+        obj.link = '/other'
+        this.breadcrumbArr.push(obj)
+      }
+    }
   },
   created() {
     this.current = json.filter((e) => e.id == this.$route.params.video)[0]
+    this.addBreadcrumbLink(this.current.type)
 
     import(`@/assets/text/${this.$route.params.video}-en.md`)
       .then((module) => {
         this.textEn = module.default
         this.en = true
-        console.log(this.en)
       })
       .catch((e) => {
         console.log(e)
@@ -77,7 +119,6 @@ export default {
       .then((module) => {
         this.textRu = module.default
         this.en = false
-        console.log(this.en)
       })
       .catch((e) => {
         console.log(e)
@@ -85,13 +126,15 @@ export default {
       .finally(() => {
         this.filesLoaded++
       })
-
-    console.log('loaded')
   },
 }
 </script>
 
 <style lang="scss" scoped>
+.breadcrumb {
+  padding: 2rem 3rem;
+}
+
 .review {
   padding: 3rem;
   display: flex;

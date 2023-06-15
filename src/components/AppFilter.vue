@@ -54,7 +54,7 @@ export default {
 .search {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  // padding: 1rem;
   gap: 1.5rem;
   max-width: 25rem;
 

@@ -1,14 +1,20 @@
 <template lang="pug">
 .video
-  iframe(:src="transformYouTubeLink(current.video)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+  iframe(:src="video(current.video)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
 .player(v-show="current.spotify")
   iframe.spotify(style="border-radius:12px" :src="`${current.spotify}&theme=0`" width="100%" height="452" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy")
 </template>
 
 <script>
+import { transformYouTubeLink } from '@/includes/helper'
 export default {
   name: "VideoSideSection",
-  props: ["current", "transformYouTubeLink"]
+  props: ["current"],
+  data() {
+    return {
+      video: transformYouTubeLink,
+    }
+  },
 }
 </script>
 

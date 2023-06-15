@@ -1,8 +1,8 @@
 <template lang="pug">
 main.review
   .review__left
-    Affix(v-if="isAffix" :current="current" :transformYouTubeLink="transformYouTubeLink")
-    VideoSideSection(v-else :current="current" :transformYouTubeLink="transformYouTubeLink")
+    Affix(v-if="isAffix" :current="current")
+    VideoSideSection(v-else :current="current")
   .review__right
     .review__header
       h1.review__title {{ current.title }} ({{ current.year }})
@@ -55,33 +55,6 @@ export default {
     },
     updateScreen() {
       this.isLargeScreen = useMediaQuery('(min-width: 1024px)')
-    },
-    transformYouTubeLink(link) {
-      const videoID = this.extractVideoID(link);
-      const embedURL = `https://www.youtube.com/embed/${videoID}`;
-      return embedURL;
-    },
-
-    extractVideoID(link) {
-      let videoID = '';
-
-      // Regular expression pattern to match the video ID
-      const pattern = /(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|[^#]*[?&]v=|youtu\.be\/|[^#]*[?&]vi=))([^?&"'>]+)/;
-
-      // Extract the video ID using the regular expression
-      const match = link.match(pattern);
-      if (match && match[1]) {
-        videoID = match[1];
-      } else {
-        // Check if the link is in the youtu.be pattern
-        const youtuPattern = /^https?:\/\/youtu.be\/([\w-]{11})/;
-        const youtuMatch = link.match(youtuPattern);
-        if (youtuMatch && youtuMatch[1]) {
-          videoID = youtuMatch[1];
-        }
-      }
-
-      return videoID;
     },
   },
   created() {

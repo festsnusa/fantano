@@ -12,7 +12,7 @@ main.reviews
       p No videos
     AppPagination(v-show="reviews.length" :reviews="reviews" :totalPages="totalPages")
   aside.reviews__right
-    AppFilter(:filterByYear="filterByYear" :searchReview="searchReview" 
+    AppFilter(:filterByYear="filterByYear" :searchReview="searchReview" :sort="sort" 
     :filterByRating="filterByRating" :type="type" :years="years")
 </template>
 
@@ -65,6 +65,9 @@ export default {
     ...mapStores(usePageStore, useYearStore, useRatingStore),
   },
   methods: {
+    sort() {
+      this.reviews = this.reviews.reverse()
+    },
     setTotalPages() {
       this.totalPages = Math.ceil(this.reviews.length / this.perPage)
     },

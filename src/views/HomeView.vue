@@ -1,9 +1,9 @@
 <template lang="pug">
 AppHeader
 .reviews
-  HomeBlock(title="Reviews" link="videos" :arr="reviews")
+  HomeBlock(title="REVIEWS" link="videos" :arr="reviews")
 .wtr
-  HomeBlock(title="Weekly Track Roundups" link="wtr" :arr="wtr")
+  HomeBlock(title="WTRs" link="wtr" :arr="wtr")
 .ynr 
   HomeBlock(title="YUNOREVIEWS" link="ynr" :arr="ynr")
 .list-week 

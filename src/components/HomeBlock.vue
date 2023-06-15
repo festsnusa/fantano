@@ -1,8 +1,8 @@
 <template lang="pug">
 .header 
-  span.header__title {{title}}
+  h2.header__title {{title}}
   RouterLink(:to="`/${link}`")
-    span.header__show Show all
+    a-button(type="dashed") Show all
 .content
   RouterLink.content__element(v-for="(item, index) in arr" v-show="index<5" :to="`/videos/${item.id}`")
     AppPreloader(v-show="!item.imageShow")
@@ -33,15 +33,16 @@ export default {
 
 .header {
   display: flex;
+  align-items: center;
   gap: 2rem;
   padding: 1.5rem 0;
 
-  a {
-    color: #000;
+  h2 {
+    margin-bottom: 0;
   }
 
-  &__title {
-    text-transform: uppercase;
+  a {
+    color: #000;
   }
 
   &__show {

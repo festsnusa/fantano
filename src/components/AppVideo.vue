@@ -1,17 +1,18 @@
 <template lang="pug">
 Breadcrumb.breadcrumb(:arr="breadcrumbArr" :title="current.title")
 main.review
-  .review__left
-    Affix(v-if="isAffix" :current="current")
-    VideoSideSection(v-else :current="current")
   .review__right
     .review__header
       h1.review__title {{ current.title }} ({{ current.year }})
       Toggle(v-if="filesLoaded == 2" :toggleValue="toggleValue" :checked="en")
     ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
     .text-field.multiline
-      Markdown(v-if="!en" :source="textRu")
-      Markdown(v-else :source="textEn")
+      Markdown.markdown__ru(v-if="!en" :source="textRu")
+      Markdown.markdown__en(v-else :source="textEn")
+  .review__left
+    Affix(v-if="isAffix" :current="current")
+    VideoSideSection(v-else :current="current")
+  
 </template>
 
 <script>
@@ -177,6 +178,16 @@ export default {
 
 .multiline {
   white-space: pre-wrap;
+}
+
+.markdown {
+  &__ru {
+    font-family: 'PP Neue Machina Inktrap';
+  }
+
+  &__en {
+    font-family: 'Knile';
+  }
 }
 
 @media (max-width: 1300px) {

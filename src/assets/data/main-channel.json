@@ -2536,12 +2536,12 @@
     "imageShow": false,
     "type": "review",
     "rating": "NOT GOOD",
-    "spotify": "ttps://open.spotify.com/embed/album/6Kc0f1PCbWZLOmZNOyXYGN?utm_source=generator"
+    "spotify": "https://open.spotify.com/embed/album/6Kc0f1PCbWZLOmZNOyXYGN?utm_source=generator"
   },
   {
     "id": 3838,
     "title": "Regina Spektor - Home, before and after ALBUM REVIEW",
-    "video": "https://www.youtube.com/watch?v=yU3kEaiC3gQ&t=4s",
+    "video": "https://www.youtube.com/watch?v=yU3kEaiC3gQ",
     "year": "2022",
     "imageShow": false,
     "type": "review",

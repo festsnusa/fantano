@@ -1,6 +1,7 @@
 <template lang="pug">
 AppHeader(:currentIndex="5")
 AppVideos(type="vinyl" :years="years" title="Vinyls")
+a-back-top
 </template>
 
 <script>

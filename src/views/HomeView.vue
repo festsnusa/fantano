@@ -9,9 +9,8 @@ main
   .ynr 
     HomeBlock(title="YUNOREVIEWS" link="ynr" :arr="ynr")
   .list-week 
-
 AppFooter
-    
+a-back-top
 </template>
 
 <script>

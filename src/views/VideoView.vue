@@ -1,6 +1,7 @@
 <template lang="pug">
 AppHeader
 AppVideo
+a-back-top
 </template>
 
 <script>

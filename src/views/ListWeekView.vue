@@ -1,6 +1,7 @@
 <template lang="pug">
 AppHeader(:currentIndex="3")
 AppVideos(type="list-week" :years="years" title="List week")
+a-back-top
 </template>
 
 <script>

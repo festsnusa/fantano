@@ -1,6 +1,7 @@
 <template lang="pug">
 AppHeader(:currentIndex="6")
 AppVideos(type="TRACK REVIEW" :years="years" title="TRACK REVIEW")
+a-back-top
 </template>
 
 <script>

@@ -94,7 +94,10 @@ export default {
         this.reviews = this.reviews.filter(e => e.year == year)
       }
       this.ratingStore.currentRating = rating
-      if (rating === '') return
+      if (rating === '') {
+        this.setTotalPages()
+        return
+      }
       this.reviews = this.reviews.filter(e => e.rating == rating)
       this.setTotalPages()
     },

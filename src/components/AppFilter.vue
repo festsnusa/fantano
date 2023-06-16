@@ -1,13 +1,10 @@
 <template lang="pug">
 .search
+  a-button(@click="sort") Reverse
   input.search__input(type="text" v-model="text" @input="searchReview(text)" placeholder="Search by title...")
   select.search__select(v-model="year" name="select" @change="filterByYear(year, rating)")
     option(value="") Filter by year
     option(v-for="item in years" :value="item") {{item}}
-  select.search__select_sort(v-model="sortValue" name="sort" @change="sort")
-    option(value="" disabled selected hidden) Order by date
-    option(value="1") Newest
-    option(value="2") Oldest
   select.search__select_rating(v-model="rating" name="select_rating" @change="filterByRating(rating, year)"
     v-show="type == 'review'")
     option(value="") Filter by rating
@@ -27,7 +24,6 @@ export default {
       text: '',
       year: '',
       rating: '',
-      sortValue: '1',
       ratings: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 'NOT GOOD', 'NOT BAD', 'CLASSIC', '-']
     }
   },

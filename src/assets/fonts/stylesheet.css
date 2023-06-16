@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'PP Neue Machina Inktrap';
+    src: url('PPNeueMachina-InktrapRegular.eot');
+    src: url('PPNeueMachina-InktrapRegular.eot?#iefix') format('embedded-opentype'),
+        url('PPNeueMachina-InktrapRegular.woff2') format('woff2'),
+        url('PPNeueMachina-InktrapRegular.woff') format('woff'),
+        url('PPNeueMachina-InktrapRegular.ttf') format('truetype'),
+        url('PPNeueMachina-InktrapRegular.svg#PPNeueMachina-InktrapRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

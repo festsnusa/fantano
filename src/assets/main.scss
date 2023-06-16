@@ -9,7 +9,7 @@
 html, body {
   height: 100%;
 	font-size: 1rem;
-  font-family: 'Knile', Arial, sans-serif !important;
+  font-family: 'Knile', 'PP Neue Machina Inktrap', Arial, sans-serif !important;
 }
 
 main {
@@ -46,6 +46,19 @@ a {
 			url('@/assets/fonts/Knile-Regular.woff') format('woff'),
 			url('@/assets/fonts/Knile-Regular.ttf') format('truetype'),
 			url('@/assets/fonts/Knile-Regular.svg#Knile-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'PP Neue Machina Inktrap';
+	src: url('@/assets/fonts/PPNeueMachina-InktrapRegular.eot');
+	src: url('@/assets/fonts/PPNeueMachina-InktrapRegular.eot?#iefix') format('embedded-opentype'),
+			url('@/assets/fonts/PPNeueMachina-InktrapRegular.woff2') format('woff2'),
+			url('@/assets/fonts/PPNeueMachina-InktrapRegular.woff') format('woff'),
+			url('@/assets/fonts/PPNeueMachina-InktrapRegular.ttf') format('truetype'),
+			url('@/assets/fonts/PPNeueMachina-InktrapRegular.svg#PPNeueMachina-InktrapRegular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;

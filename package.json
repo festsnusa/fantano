@@ -28,9 +28,7 @@
     "vite-raw-plugin": "^1.0.1",
     "vue": "^3.3.2",
     "vue-material-design-icons": "^5.2.0",
-    "vue-router": "^4.2.0",
-    "vue3-markdown-it": "^1.0.10",
-    "vue3-youtube": "^0.1.9"
+    "vue-router": "^4.2.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",

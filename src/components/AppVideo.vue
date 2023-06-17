@@ -7,8 +7,8 @@ main.review
       Toggle(v-if="filesLoaded == 2" :toggleValue="toggleValue" :checked="en")
     ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
     .text-field.multiline
-      Markdown.markdown__ru(v-if="!en" :source="textRu")
-      Markdown.markdown__en(v-else :source="textEn")
+      .markdown__ru(v-show="!en")
+      .markdown__en(v-show="en")
   .review__left
     Affix(v-if="isAffix" :current="current")
     VideoSideSection(v-else :current="current")
@@ -16,7 +16,6 @@ main.review
 </template>
 
 <script>
-import Markdown from 'vue3-markdown-it'
 import ReviewStar from '@/components/ReviewStar.vue'
 import Toggle from '@/components/Toggle.vue'
 import Affix from '@/components/Affix.vue'
@@ -31,7 +30,6 @@ export default {
   components: {
     ReviewStar,
     Toggle,
-    Markdown,
     Affix,
     VideoSideSection,
     Breadcrumb,
@@ -98,6 +96,11 @@ export default {
         obj.link = '/other'
         this.breadcrumbArr.push(obj)
       }
+    },
+    stringToHTML(str) {
+      let dom = document.createElement('div')
+      dom.innerHTML = str
+      return dom
     }
   },
   created() {
@@ -106,9 +109,13 @@ export default {
 
     import(`@/assets/text/${this.$route.params.video}-en.md`)
       .then((module) => {
-        this.textEn = module.default
+        this.textEn = this.stringToHTML(module.default)
         this.en = true
         this.filesLoaded++
+        console.log(this.filesLoaded)
+        document.querySelector('.markdown__en').appendChild(this.textEn)
+        // this.textEn = module.default
+
       })
       .catch((e) => {
         console.log(e)
@@ -116,14 +123,17 @@ export default {
 
     import(`@/assets/text/${this.$route.params.video}-ru.md`)
       .then((module) => {
-        this.textRu = module.default
+        this.textRu = this.stringToHTML(module.default)
         this.en = false
         this.filesLoaded++
+        console.log(this.filesLoaded)
+        document.querySelector('.markdown__ru').appendChild(this.textRu)
+
       })
       .catch((e) => {
         console.log(e)
       })
-  },
+  }
 }
 </script>
 

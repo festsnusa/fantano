@@ -4,7 +4,6 @@ import 'ant-design-vue/dist/antd.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import piniaPluginPersistedState from 'pinia-plugin-persistedstate'
-import Markdown from 'vue3-markdown-it'
 
 import App from './App.vue'
 import router from './router'
@@ -25,7 +24,6 @@ app.component('font-awesome-icon', FontAwesomeIcon)
 
 app.use(pinia)
 app.use(router)
-app.use(Markdown)
 app.use(Antd)
 
 app.mount('#app')

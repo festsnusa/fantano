@@ -1,4 +1,4 @@
-const r=`1. [Ginger Root — Nisemono](https://www.google.com)\r
+const r=`1. Ginger Root — Nisemono\r
 2. G Jones & Eprom — Acid Disk 2\r
 3. Cohort B — 1001 Lukewarm USA\r
 4. Lust$ickPuppy — As Hard as You Can\r

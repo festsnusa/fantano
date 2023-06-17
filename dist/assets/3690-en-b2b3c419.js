@@ -1,4 +1,6 @@
-const e=`Spellling - The Turning Wheel\r
+const e=`<details>\r
+  <summary>Show the full list</summary>\r
+Spellling - The Turning Wheel\r
 Lingua Ignota - Sinner Get Ready\r
 Arca - KicK iii\r
 Floating Points Pharoah Sanders & The London Symphony Orchestra - Promises\r
@@ -48,4 +50,5 @@ Fire-Toolz - Eternal Home\r
 Silk Sonic - An Evening with Silk Sonic\r
 Dean Blunt - BLACK METAL 2\r
 dltzk - Frailty\r
+</details>\r
 `;export{e as default};

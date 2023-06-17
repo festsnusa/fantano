@@ -128,20 +128,20 @@ $size: 24px;
     &::after {
       content: "";
       position: absolute;
-      width: $size/12;
-      height: $size/2;
+      width: calc($size/12);
+      height: calc($size/2);
       left: 0;
       top: 0;
       background-color: $text;
-      border-radius: $size/12;
+      border-radius: calc($size/12);
     }
 
     &::before {
-      transform: translate($size/2, $size/12) rotate(40deg);
+      transform: translate(calc($size/2), calc($size/12)) rotate(40deg);
     }
 
     &::after {
-      transform: translate($size/2, $size/2 - $size/12) rotate(-40deg);
+      transform: translate(calc($size/2), calc($size/2) - calc($size/12)) rotate(-40deg);
     }
 
     &.right {

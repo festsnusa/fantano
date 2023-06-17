@@ -30,6 +30,10 @@ a {
 	text-decoration: none;
 }
 
+summary {
+	cursor: pointer !important;
+}
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: $darkShade25;

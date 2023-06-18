@@ -21,6 +21,8 @@ import HomeBlock from '@/components/HomeBlock.vue'
 import AppPreloader from '@/components/AppPreloader.vue'
 
 import json from '@/assets/data/main-channel.json'
+import { storage } from '../includes/firebase'
+import { ref, getDownloadURL, listAll } from "firebase/storage"
 
 export default {
   name: "HomeView",
@@ -38,29 +40,9 @@ export default {
       ynr: json.filter(e => e.type == 'YUNOREVIEW').slice(0, 5),
     }
   },
-  created() {
-    // import('@/assets/data/fantano-channel.json')
-    //   .then((module) => {
+  async created() {
 
-    //     let arr = module.default
-    //     // let id = 1
-
-    //     arr.reverse().forEach(e => {
-    //       if (e.title.toLowerCase().includes('track review')) {
-    //         e.type = 'TRACK REVIEW'
-    //       } else if (e.title.toLowerCase().includes('interview')) {
-    //         e.type = 'INTERVIEW'
-    //       } else {
-    //         e.type = 'other'
-    //       }
-
-    //     })
-
-    //     console.log(arr.reverse())
-    //   })
-    //   .catch((e) => {
-    //     console.log(e)
-    //   })
+    const starsRef = ref(storage, 'texts/0-en.md')
   }
 }
 </script>

@@ -1,33 +1,84 @@
-import firebase from "firebase/app"
-// import "firebase/auth"
-import "firebase/firestore"
-import "firebase/storage"
+import { initializeApp } from "firebase/app";
+import { getStorage, ref, getDownloadURL, listAll } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBvo6VlJc7CeBSf53GsM3eoaXrdbqRyBL8",
-  authDomain: "fantano-core-adbcc.firebaseapp.com",
-  projectId: "fantano-core-adbcc",
-  storageBucket: "fantano-core-adbcc.appspot.com",
-  messagingSenderId: "498771730177",
-  appId: "1:498771730177:web:f5dc886825657b01bdc500",
-  measurementId: "G-45HTL1M9SX"
+  apiKey: "AIzaSyDJKengyV3DYC6v8HCFKwtHTV7FrTnE9d8",
+  authDomain: "fantano-core-969b5.firebaseapp.com",
+  projectId: "fantano-core-969b5",
+  storageBucket: "fantano-core-969b5.appspot.com",
+  messagingSenderId: "771435426511",
+  appId: "1:771435426511:web:852e91795dcd46138e7dba",
+  measurementId: "G-BDDRSDHTD3"
 };
 
-firebase.initializeApp(firebaseConfig)
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-// const auth = firebase.auth()
-const db = firebase.firestore()
-const storage = firebase.storage()
+// Create a reference to the file we want to download
+const storage = getStorage(app)
+// const starsRef = ref(storage, 'texts/0-en.md')
 
-db.enablePersistence().catch((error) => {
-  console.log(`Firebase persistence error ${error.code}`)
-})
+// Get the download URL
+// getDownloadURL(starsRef)
+//   .then((url) => {
+//     // Insert url into an <img> tag to "download"
+//     console.log(url)
+//   })
+//   .catch((error) => {
+//     // A full list of error codes is available at
+//     // https://firebase.google.com/docs/storage/web/handle-errors
+//     switch (error.code) {
+//       case 'storage/object-not-found':
+//         // File doesn't exist
+//         break;
+//       case 'storage/unauthorized':
+//         // User doesn't have permission to access the object
+//         break;
+//       case 'storage/canceled':
+//         // User canceled the upload
+//         break;
 
-const textCollection = db.collection('texts')
+//       // ...
 
-export default {
-  db,
-  storage,
-  textCollection,
+//       case 'storage/unknown':
+//         // Unknown error occurred, inspect the server response
+//         break;
+//     }
+//   });
+
+export {
+  storage
 }
+
+// Create a reference under which you want to list
+// const listRef = ref(storage, 'texts');
+
+// // Find all the prefixes and items.
+// listAll(listRef)
+//   .then((res) => {
+//     res.prefixes.forEach((folderRef) => {
+//       // All the prefixes under listRef.
+//       // You may call listAll() recursively on them.
+//     });
+//     res.items.forEach((itemRef) => {
+//       // All the items under listRef.
+//       console.log(itemRef)
+//     });
+//   }).catch((error) => {
+//     // Uh-oh, an error occurred!
+//     console.log(error)
+//   });
+
+
+// // Get a list of cities from your database
+// async function getCities(db) {
+//   const textsCol = collection(db, 'texts');
+//   const textsSnapshot = await getDocs(textsCol)
+//   const textsList = textsSnapshot.docs.map(doc => doc.data())
+//   return textsList
+// }
+
+// export {
+//   db
+// }

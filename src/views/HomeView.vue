@@ -21,8 +21,6 @@ import HomeBlock from '@/components/HomeBlock.vue'
 import AppPreloader from '@/components/AppPreloader.vue'
 
 import json from '@/assets/data/main-channel.json'
-import { storage } from '../includes/firebase'
-import { ref, getDownloadURL, listAll } from "firebase/storage"
 
 export default {
   name: "HomeView",
@@ -41,8 +39,6 @@ export default {
     }
   },
   async created() {
-
-    const starsRef = ref(storage, 'texts/0-en.md')
   }
 }
 </script>

@@ -1,5 +1,24 @@
 [
   {
+    "id": 4108,
+    "title": "feeble little horse - Girl with Fish ALBUM REVIEW",
+    "video": "https://youtu.be/DwcoDbOcuMI",
+    "year": "2023",
+    "imageShow": false,
+    "type": "review",
+    "rating": 8,
+    "spotify": "https://open.spotify.com/embed/album/4lVMhVIgEdxIoTu7gS7CoT?utm_source=generator"
+  },
+  {
+    "id": 4107,
+    "title": "Doja Cat, The Weeknd, Trippie Redd, Coi Leray | Weekly Track Roundup: 6/18/23",
+    "video": "https://youtu.be/e6KQTm_cwdY",
+    "year": "2023",
+    "imageShow": false,
+    "type": "weekly",
+    "spotify": "https://open.spotify.com/embed/playlist/5USTnembaicwMg5Ep9p2Lt?utm_source=generator"
+  },
+  {
     "id": 4106,
     "title": "McKinley Dixon - Beloved! Paradise! Jazz​!​? ALBUM REVIEW",
     "video": "https://youtu.be/ImYGdMBWLFw",
@@ -2030,7 +2049,7 @@
     "imageShow": false,
     "type": "review",
     "spotify": "https://open.spotify.com/embed/album/4YFlC5Abaj48ERwaOPfpu8?utm_source=generator",
-    "rating": "8"
+    "rating": 8
   },
   {
     "id": 3892,
@@ -18213,7 +18232,7 @@
     "year": "2017",
     "imageShow": false,
     "type": "review",
-    "rating": "7",
+    "rating": 7,
     "spotify": ""
   },
   {
@@ -23572,7 +23591,7 @@
     "year": "2015",
     "imageShow": false,
     "type": "review",
-    "rating": "7",
+    "rating": 7,
     "spotify": ""
   },
   {

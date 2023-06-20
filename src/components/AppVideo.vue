@@ -4,8 +4,8 @@ main.review
   .review__right
     .review__header
       h1.review__title {{ current.title }} ({{ current.year }})
-      Toggle(v-if="filesLoaded == 2" :toggleValue="toggleValue" :checked="en")
-    ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
+      Toggle.toggle(v-if="filesLoaded == 2" :toggleValue="toggleValue" :checked="en")
+      ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
     .text-field.multiline
       .markdown__ru(v-show="!en")
       .markdown__en(v-show="en")
@@ -158,6 +158,10 @@ export default {
     display: flex;
     flex-direction: column;
   }
+}
+
+.toggle {
+  padding: 2rem 0;
 }
 
 .text-field {

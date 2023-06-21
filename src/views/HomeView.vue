@@ -24,7 +24,7 @@ import AppPreloader from '@/components/AppPreloader.vue'
 import json from '@/assets/data/main-channel.json'
 // import { storage } from '../includes/firebase'
 // import { ref, getDownloadURL } from "firebase/storage";
-import { marked } from 'marked'
+// import { marked } from 'marked'
 
 export default {
   name: "HomeView",
@@ -57,24 +57,34 @@ export default {
     },
     async downloadFile(url) {
 
-      fetch(url, {
-        mode: 'no-cors',
-      })
-        .then((response) => {
-          if (!response.ok) return "There was error with your response, please check the details and try again";
-          return response.text();
-        })
-        .then(md => {
-          // Convert the Markdown to HTML using marked.js
-          console.log(md)
-          let html = marked(md)
+      // import(url)
+      //   .then((module) => {
+      //     console.log(module.default)
 
-          // Display the HTML content
-          document.getElementById('content').innerHTML = html
-        })
-        .catch(error => {
-          console.error('Error:', error)
-        });
+
+      //   })
+      //   .catch((e) => {
+      //     console.log(e)
+      //   })
+
+      // fetch(url, {
+      //   mode: 'no-cors',
+      // })
+      //   .then((response) => {
+      //     if (!response.ok) return "There was error with your response, please check the details and try again";
+      //     return response.text();
+      //   })
+      //   .then(md => {
+      //     // Convert the Markdown to HTML using marked.js
+      //     console.log(md)
+      //     let html = marked(md)
+
+      //     // Display the HTML content
+      //     document.getElementById('content').innerHTML = html
+      //   })
+      //   .catch(error => {
+      //     console.error('Error:', error)
+      //   });
     }
 
   },

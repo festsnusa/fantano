@@ -153,7 +153,12 @@ export default {
     width: 100%;
   }
 
+  &__right {
+    flex: 70%;
+  }
+
   &__left {
+    flex: 30%;
     gap: 3rem;
     display: flex;
     flex-direction: column;

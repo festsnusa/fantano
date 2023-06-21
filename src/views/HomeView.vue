@@ -43,80 +43,102 @@ export default {
     }
   },
   methods: {
-    async getFile(downloadURL) {
-      let link = document.createElement('a');
-      link.download = downloadURL;
+    async fetchLastFm(id, apiKey, artistName, albumTitle) {
 
-      let blob = new Blob(downloadURL, { type: 'text/plain' });
+      fetch(`http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${apiKey}&artist=${artistName}&album=${albumTitle}&format=json`)
+        .then(response => response.json())
+        .catch(error => {
+          return
+        })
+        .then(data => {
 
-      link.href = URL.createObjectURL(blob);
-
-      link.click();
-
-      URL.revokeObjectURL(link.href);
+          const content = data.album.wiki.content
+          console.log(id, content)
+          // if (!Array.isArray(album.tags.tag)) {
+          //   return
+          // }
+          // let tags = album.tags.tag.map(tag => tag.name)
+          // console.log(id, tags)
+          // return tags
+        })
+        .catch(error => {
+          // console.error('Error:', error);
+          return
+        })
     },
-    async downloadFile(url) {
+    splitMarkdownParagraphs(mdText) {
+      mdText = mdText.replace(/\r/g, '');
+      const paragraphs = mdText.split(/\n\s*\n|\n/);
 
-      // import(url)
-      //   .then((module) => {
-      //     console.log(module.default)
+      let arrObj = []
 
+      paragraphs.forEach(element => {
+        let arr = element.split(" / ")
 
-      //   })
-      //   .catch((e) => {
-      //     console.log(e)
-      //   })
+        let obj = {}
+        obj.id = arr[0]
+        obj.tags = arr[1]
 
-      // fetch(url, {
-      //   mode: 'no-cors',
-      // })
-      //   .then((response) => {
-      //     if (!response.ok) return "There was error with your response, please check the details and try again";
-      //     return response.text();
-      //   })
-      //   .then(md => {
-      //     // Convert the Markdown to HTML using marked.js
-      //     console.log(md)
-      //     let html = marked(md)
-
-      //     // Display the HTML content
-      //     document.getElementById('content').innerHTML = html
-      //   })
-      //   .catch(error => {
-      //     console.error('Error:', error)
-      //   });
+        arrObj.push(obj)
+      })
+      return arrObj
     }
 
   },
   async created() {
-    // const starsRef = ref(storage, 'texts/0-en.md')
-    // getDownloadURL(starsRef)
-    //   .then((url) => {
-    //     // Insert url into an <img> tag to "download"
-    //     console.log(url)
-    //     this.downloadFile(url)
+
+    // const albumTitle = 'Artpop'
+    // const artistName = 'Lady Gaga'
+    // const apiKey = '5fa8f750d3b2ed959fd1a754a6bc7ca0';
+
+    // fetch(`http://ws.audioscrobbler.com/2.0/?method=album.getInfo&artist=${encodeURIComponent(artistName)}&album=${encodeURIComponent(albumTitle)}&api_key=${apiKey}&format=json`)
+    //   .then(response => response.json())
+    //   .then(data => {
+    //     const album = data.album;
+    //     const streamingLinks = album.streamable;
+    //     console.log('Streaming Links:', streamingLinks);
     //   })
-    //   .catch((error) => {
-    //     // A full list of error codes is available at
-    //     // https://firebase.google.com/docs/storage/web/handle-errors
-    //     switch (error.code) {
-    //       case 'storage/object-not-found':
-    //         // File doesn't exist
-    //         break;
-    //       case 'storage/unauthorized':
-    //         // User doesn't have permission to access the object
-    //         break;
-    //       case 'storage/canceled':
-    //         // User canceled the upload
-    //         break;
-
-    //       // ...
-
-    //       case 'storage/unknown':
-    //         // Unknown error occurred, inspect the server response
-    //         break;
-    //     }
+    //   .catch(error => {
+    //     console.error('Error:', error);
     //   });
+
+    // import('../assets/data/tags.md')
+    //   .then((module) => {
+    //     // console.log(module.default)
+
+    //     const paragraphsArray = this.splitMarkdownParagraphs(module.default);
+    //     console.log(paragraphsArray);
+    //   })
+    //   .catch((e) => {
+    //     console.log(e)
+    //   })
+
+    // let arrData = json
+
+    // arrData.forEach((e) => {
+
+    //   const albumTitle = e.albumTitle
+    //   const artistName = e.artistName
+    //   const apiKey = '5fa8f750d3b2ed959fd1a754a6bc7ca0';
+
+    //   if (albumTitle == undefined || artistName == undefined) {
+    //     return
+    //   }
+
+    //   new Promise((resolve) => {
+    //     setTimeout(() => {
+    //       this.fetchLastFm(e.id, apiKey, artistName, albumTitle)
+    //     }, 2000)
+    //   })
+    //     .then((result) => {
+    //       // e.tags = result
+    //       // console.log("The result is:", result);
+    //     });
+
+    // });
+
+    // console.log(arrData)
+
   }
 }
 </script>

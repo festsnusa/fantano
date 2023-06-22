@@ -4,6 +4,9 @@ main.review
   .review__right
     .review__header
       h1.review__title {{ current.title }} ({{ current.year }})
+      ul.tags 
+        li.tags__item(v-for="tag in current.tags")
+          <a-button>{{ tag }}</a-button>
       Toggle.toggle(v-if="filesLoaded == 2" :toggleValue="toggleValue" :checked="en")
       ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
     .text-field.multiline
@@ -12,6 +15,7 @@ main.review
   .review__left
     Affix(v-if="isAffix" :current="current")
     VideoSideSection(v-else :current="current")
+  
   
 </template>
 
@@ -138,6 +142,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.tags {
+  display: flex;
+  gap: 1rem;
+}
+
 .breadcrumb {
   padding: 2rem 3rem;
 }

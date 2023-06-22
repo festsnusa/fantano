@@ -87,15 +87,6 @@ $size: 24px;
   flex-direction: column;
   gap: 2rem;
 
-  &__heading {
-    text-transform: uppercase;
-    padding: 2rem 0;
-  }
-
-  &__left {
-    flex-grow: 2;
-  }
-
   &__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -160,20 +151,6 @@ $size: 24px;
 }
 
 @media (max-width: 1700px) {
-  .reviews {
-
-    flex-direction: column;
-
-    &__left {
-      order: 2;
-    }
-
-    &__right {
-      order: 1;
-    }
-
-  }
-
   .review {
     max-width: 13.5rem;
 

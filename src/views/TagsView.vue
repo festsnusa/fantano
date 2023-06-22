@@ -72,10 +72,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$primary: #39e;
-$text: #666;
-$size: 24px;
-
 .breadcrumb {
   padding: 2rem 3rem;
 }

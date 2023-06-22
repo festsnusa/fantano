@@ -4,10 +4,11 @@ main.review
   .review__right
     .review__header
       h1.review__title {{ current.title }} ({{ current.year }})
-      ul.tags
-        li.tag
-          RouterLink(v-for="tag in current.tags" :to="`/tags/${tag}`")
-            <a-button>{{ tag }}</a-button>
+      .tags-section
+        ul.tags
+          li.tag(v-for="tag in current.tags")
+            RouterLink(:to="`/tags/${tag}`")
+              a-button {{ tag }}
       Toggle.toggle(v-if="filesLoaded == 2" :toggleValue="toggleValue" :checked="en")
       ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
     .text-field.multiline
@@ -145,6 +146,7 @@ export default {
 <style lang="scss" scoped>
 .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 

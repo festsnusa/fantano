@@ -9,6 +9,7 @@ const PodcastsView = () => import('@/views/PodcastsView.vue')
 const VinylsView = () => import('@/views/VinylsView.vue')
 const TRKRVWView = () => import('@/views/TRKRVWView.vue')
 const OtherView = () => import('@/views/OtherView.vue')
+const TagsView = () => import('@/views/TagsView.vue')
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -62,6 +63,11 @@ const router = createRouter({
       path: '/other',
       name: 'other',
       component: OtherView
+    },
+    {
+      path: '/tags/:tag',
+      name: 'tags',
+      component: TagsView
     },
     {
       path: '/:catchAll(.*)*',

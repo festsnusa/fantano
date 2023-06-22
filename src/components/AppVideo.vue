@@ -4,9 +4,10 @@ main.review
   .review__right
     .review__header
       h1.review__title {{ current.title }} ({{ current.year }})
-      ul.tags 
-        li.tags__item(v-for="tag in current.tags")
-          <a-button>{{ tag }}</a-button>
+      ul.tags
+        li.tag
+          RouterLink(v-for="tag in current.tags" :to="`/tags/${tag}`")
+            <a-button>{{ tag }}</a-button>
       Toggle.toggle(v-if="filesLoaded == 2" :toggleValue="toggleValue" :checked="en")
       ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
     .text-field.multiline

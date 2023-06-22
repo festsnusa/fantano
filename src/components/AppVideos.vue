@@ -2,7 +2,6 @@
 Breadcrumb.breadcrumb(:arr="breadcrumbArr" :title="title")
 main.reviews
   section.reviews__left
-    //- h2.reviews__heading {{ title }}
     .reviews__content(v-if="reviews.length")
       RouterLink.review(v-for="(item, index) in paginatedData" :key="index" :to="`/videos/${item.id}`")
         AppPreloader(v-show="!item.imageShow")

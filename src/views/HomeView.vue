@@ -1,5 +1,4 @@
 <template lang="pug">
-//- <div id="content"></div>
 AppHeader
 Breadcrumb.breadcrumb(title="Home")
 main
@@ -22,9 +21,6 @@ import HomeBlock from '@/components/HomeBlock.vue'
 import AppPreloader from '@/components/AppPreloader.vue'
 
 import json from '@/assets/data/main-channel.json'
-// import { storage } from '../includes/firebase'
-// import { ref, getDownloadURL } from "firebase/storage";
-// import { marked } from 'marked'
 
 export default {
   name: "HomeView",
@@ -45,25 +41,30 @@ export default {
   methods: {
     async fetchLastFm(id, apiKey, artistName, albumTitle) {
 
-      fetch(`http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${apiKey}&artist=${artistName}&album=${albumTitle}&format=json`)
+      fetch(`http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${apiKey}&artist=${encodeURIComponent(artistName)}&album=${encodeURIComponent(albumTitle)}&format=json`)
         .then(response => response.json())
         .catch(error => {
-          return
+          console.error('Error:', error);
+          // return
         })
         .then(data => {
 
-          const content = data.album.wiki.content
-          console.log(id, content)
-          // if (!Array.isArray(album.tags.tag)) {
-          //   return
-          // }
-          // let tags = album.tags.tag.map(tag => tag.name)
-          // console.log(id, tags)
+          // const content = data.album.wiki.content
+          // console.log(id, content)
+
+          const album = data.album
+
+          if (!Array.isArray(album.tags.tag)) {
+            return
+          }
+
+          let tags = album.tags.tag.map(tag => tag.name)
+          console.log(id, tags)
           // return tags
         })
         .catch(error => {
-          // console.error('Error:', error);
-          return
+          console.error('Error:', error);
+          // return
         })
     },
     splitMarkdownParagraphs(mdText) {
@@ -86,7 +87,7 @@ export default {
     getSpotifyLink(id, albumTitle, artistName) {
       // const accessToken = 'BQAoGruW4vQOUL3ioFMFpRV-Yhe29_Wl25idYydLqm9uOta-tW0Z2TThAdNzPgM8abQLnVlTbGhkL-Jq4wCwvN0VWw2P5ZBGXrteL1kwZkjajz6aKhXFKpz0vSYh-1aAw7tdJj9pthugPFPur4Njh8yiSZhz9svGDjmDTOyCUK3h-YEknu72ExDmNf_NXlG2Lkhm5jx0uwtQuVA4O_ghQCC4Qrz7S30X8xq0oF_gWYdkZVVFIjRk1rz7YN5MG4Ymg1JYGSLYu7WbXEwbIj_ryb0l';
       // const accessToken = "BQDBKJ5eo5jxbtpWjVOj7ryS84khybFpP_lTqzV7uV-T_m0cTfwvdn5BnBSKPxKgEb11"
-      const accessToken = 'BQCEnGj27hh87UeMWlCfasxLWrPoylscanWowbKapzVMBK7MvWB5yCRFL64gXek8JnWrZ2V4JF16UA376bgqAuA2ky-a2rh5N4uykP6loxP-XO2z2oNf8iutrFSy1_W6CloLltJogkTjjaBhNYTYsC4nDmEZ1RHjbMc3aVA-y4FudDEeHOmZM1KbHSOAlELB-8cn7dsvXCdiZbTXBYrDaCbJvW2nzVauOkLJwAacLaGFL7v2Sqw9IAEiQ6GI2x64mTG4EZkZ39OiccbGH0plUkyg'
+      const accessToken = 'BQAiQiePpzG8UOZMRMBJbbeED1S7WgZCJg2ZmXrxZvYRdLXJFbfjNIVTyOh7wb9eZn7Ub5B9NyJ6T8z3ogXRAXZvCQG2bd7UnSFtiAmPiIjAIP0hGqyt68cQiaun7BDzV_5BDQOoWOrPin5tXyMltoB9Ed05OcNyY2b2qR72lz1iDWesxHJCTrRt2OEAIZgEzo6uonrNcG5ciR11lHrh_NowudIRMuG9Gye7tZ62ZQxJIZupbwwQ5e-ElC0W_1d7wqYOfp6VtfgVazX8UPi5YhCB'
 
       const searchQuery = `album:${encodeURIComponent(albumTitle)} artist:${encodeURIComponent(artistName)}`;
 
@@ -113,26 +114,24 @@ export default {
         });
     },
     getAppleMusicLink(id, albumTitle, artistName) {
-      const countryCode = 'us';
 
-      const searchUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(albumTitle)}+${encodeURIComponent(artistName)}&entity=album&country=${countryCode}`;
+      const searchQuery = `${albumTitle} ${artistName}`;
+      const url = `https://itunes.apple.com/search?term=${encodeURIComponent(searchQuery)}&entity=album&limit=1`;
 
-      fetch(searchUrl)
+      fetch(url)
         .then(response => response.json())
         .then(data => {
-          const albums = data.results;
-          if (albums.length > 0) {
-            const album = albums[0]; // Assuming the first album in the search results is the one you want
+          if (data.results && data.results.length > 0) {
+            const album = data.results[0];
             const albumLink = album.collectionViewUrl;
-
-            console.log([id, albumLink]);
-            // Do something with the album link, such as redirecting the user to that page
+            console.log(albumLink)
           } else {
-            console.log('No album found with the specified title and artist');
+            return null;
           }
         })
         .catch(error => {
-          console.error('Error retrieving album:', error);
+          console.error('Error:', error);
+          return null;
         });
     },
     getYouTubeLink(id, albumTitle, artistName) {
@@ -226,93 +225,9 @@ export default {
           console.error('Error retrieving album:', error);
         });
     },
-    getYoutubeVideoCaption() {
-      const videoId = 'nY0l3urHSPM'; // Replace with the actual YouTube video ID
-
-      const apiKey = 'AIzaSyD8veGTCgXd1xMkSnd_yljDUFQk3edSFaM'; // Replace with your YouTube Data API key
-
-      const apiUrl = `https://www.googleapis.com/youtube/v3/captions?part=snippet&videoId=${videoId}&key=${apiKey}`;
-
-      fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-          const captions = data.items;
-
-          if (captions.length > 0) {
-            const captionTracks = captions.map(caption => {
-              return {
-                language: caption.snippet.language,
-                url: caption.snippet.url
-              };
-            });
-
-            console.log('Caption Tracks:', captionTracks);
-          } else {
-            console.log('No captions found for the video');
-          }
-        })
-        .catch(error => {
-          console.error('Error retrieving captions:', error);
-        });
-    }
 
   },
   async created() {
-
-    // const albumTitle = 'Artpop'
-    // const artistName = 'Lady Gaga'
-    // const apiKey = '5fa8f750d3b2ed959fd1a754a6bc7ca0';
-
-    // this.getSpotifyGenres(1, albumTitle, artistName)
-    // this.getYoutubeVideoCaption()
-
-    // fetch(`http://ws.audioscrobbler.com/2.0/?method=album.getInfo&artist=${encodeURIComponent(artistName)}&album=${encodeURIComponent(albumTitle)}&api_key=${apiKey}&format=json`)
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     const album = data.album;
-    //     const streamingLinks = album.streamable;
-    //     console.log('Streaming Links:', streamingLinks);
-    //   })
-    //   .catch(error => {
-    //     console.error('Error:', error);
-    //   });
-
-    // import('../assets/data/tags.md')
-    //   .then((module) => {
-    //     // console.log(module.default)
-
-    //     const paragraphsArray = this.splitMarkdownParagraphs(module.default);
-    //     console.log(paragraphsArray);
-    //   })
-    //   .catch((e) => {
-    //     console.log(e)
-    //   })
-
-    // let arrData = json
-
-    // arrData.forEach((e) => {
-
-    //   const albumTitle = e.albumTitle
-    //   const artistName = e.artistName
-    //   const apiKey = '5fa8f750d3b2ed959fd1a754a6bc7ca0';
-
-    //   if (albumTitle == undefined || artistName == undefined) {
-    //     return
-    //   }
-
-    //   new Promise((resolve) => {
-    //     setTimeout(() => {
-    //       this.fetchLastFm(e.id, apiKey, artistName, albumTitle)
-    //     }, 2000)
-    //   })
-    //     .then((result) => {
-    //       // e.tags = result
-    //       // console.log("The result is:", result);
-    //     });
-
-    // });
-
-    // console.log(arrData)
 
   }
 }

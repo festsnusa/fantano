@@ -4,11 +4,10 @@ main.review
   .review__right
     .review__header
       h1.review__title {{ current.title }} ({{ current.year }})
-      .tags-section
-        ul.tags
-          li.tag(v-for="tag in current.tags")
-            RouterLink(:to="`/tags/${tag}`")
-              a-button {{ tag }}
+      ul.tags
+        li.tag(v-for="tag in current.tags")
+          RouterLink(:to="`/tags/${tag}`")
+            a-button {{ tag }}
       Toggle.toggle(v-if="filesLoaded == 2" :toggleValue="toggleValue" :checked="en")
       ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
     .text-field.multiline
@@ -120,8 +119,6 @@ export default {
         this.filesLoaded++
         console.log(this.filesLoaded)
         document.querySelector('.markdown__en').appendChild(this.textEn)
-        // this.textEn = module.default
-
       })
       .catch((e) => {
         console.log(e)

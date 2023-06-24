@@ -117,7 +117,6 @@ export default {
         this.textEn = this.stringToHTML(module.default)
         this.en = true
         this.filesLoaded++
-        console.log(this.filesLoaded)
         document.querySelector('.markdown__en').appendChild(this.textEn)
       })
       .catch((e) => {
@@ -129,7 +128,6 @@ export default {
         this.textRu = this.stringToHTML(module.default)
         this.en = false
         this.filesLoaded++
-        console.log(this.filesLoaded)
         document.querySelector('.markdown__ru').appendChild(this.textRu)
 
       })

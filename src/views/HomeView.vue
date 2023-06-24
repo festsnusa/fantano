@@ -21,6 +21,7 @@ import HomeBlock from '@/components/HomeBlock.vue'
 import AppPreloader from '@/components/AppPreloader.vue'
 
 import json from '@/assets/data/main-channel.json'
+// import tags from '@/assets/data/tags.json'
 
 export default {
   name: "HomeView",
@@ -39,7 +40,9 @@ export default {
     }
   },
   methods: {
-    async fetchLastFm(id, apiKey, artistName, albumTitle) {
+    async fetchLastFm(id, artistName, albumTitle) {
+
+      const apiKey = '9be755d7287c977402ce830fc6b09896'
 
       fetch(`http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${apiKey}&artist=${encodeURIComponent(artistName)}&album=${encodeURIComponent(albumTitle)}&format=json`)
         .then(response => response.json())
@@ -68,7 +71,7 @@ export default {
         })
     },
     splitMarkdownParagraphs(mdText) {
-      mdText = mdText.replace(/\r/g, '');
+      // mdText = mdText.replace(/\r/g, '');
       const paragraphs = mdText.split(/\n\s*\n|\n/);
 
       let arrObj = []
@@ -87,7 +90,7 @@ export default {
     getSpotifyLink(id, albumTitle, artistName) {
       // const accessToken = 'BQAoGruW4vQOUL3ioFMFpRV-Yhe29_Wl25idYydLqm9uOta-tW0Z2TThAdNzPgM8abQLnVlTbGhkL-Jq4wCwvN0VWw2P5ZBGXrteL1kwZkjajz6aKhXFKpz0vSYh-1aAw7tdJj9pthugPFPur4Njh8yiSZhz9svGDjmDTOyCUK3h-YEknu72ExDmNf_NXlG2Lkhm5jx0uwtQuVA4O_ghQCC4Qrz7S30X8xq0oF_gWYdkZVVFIjRk1rz7YN5MG4Ymg1JYGSLYu7WbXEwbIj_ryb0l';
       // const accessToken = "BQDBKJ5eo5jxbtpWjVOj7ryS84khybFpP_lTqzV7uV-T_m0cTfwvdn5BnBSKPxKgEb11"
-      const accessToken = 'BQAiQiePpzG8UOZMRMBJbbeED1S7WgZCJg2ZmXrxZvYRdLXJFbfjNIVTyOh7wb9eZn7Ub5B9NyJ6T8z3ogXRAXZvCQG2bd7UnSFtiAmPiIjAIP0hGqyt68cQiaun7BDzV_5BDQOoWOrPin5tXyMltoB9Ed05OcNyY2b2qR72lz1iDWesxHJCTrRt2OEAIZgEzo6uonrNcG5ciR11lHrh_NowudIRMuG9Gye7tZ62ZQxJIZupbwwQ5e-ElC0W_1d7wqYOfp6VtfgVazX8UPi5YhCB'
+      const accessToken = 'BQBAspwrTtcoSz8Q3eFdU0bWP-ayX-TuV-sMLh-baVdxzFO5iwIB_DLrrFvuF6qg-LRLjXUDmgSCEtqSGbVLepJY9xi7ie6WHZ8-4nxoZzYb1PeL3I7Zwr6DLI0Q7QeN-UPyj3ga2vYgbtDnOp4UzVH56Sh6v2ahvgC-qu0CwANaG5t065zeovXlBNbgTkOiDqQiM61h1wjAmL5TC7_IivBMZx3ihbAYphU5cZikq_Kjvn6bZiWgQ2Gj3Sip9tiKE9U-GBrqAkoWRiDvHINlu6Bw'
 
       const searchQuery = `album:${encodeURIComponent(albumTitle)} artist:${encodeURIComponent(artistName)}`;
 
@@ -103,7 +106,7 @@ export default {
             const album = albums[0]; // Assuming the first album in the search results is the one you want
             const albumLink = album.external_urls.spotify;
 
-            console.log([id, albumLink]);
+            console.log(id, albumLink);
             // Do something with the album link, such as redirecting the user to that page
           } else {
             console.log('No album found with the specified title and artist');
@@ -228,6 +231,53 @@ export default {
 
   },
   async created() {
+
+    // import('../assets/data/spotifyLinks.md')
+    //   .then((module) => {
+    //     let md = module.default
+    //     let result = this.splitMarkdownParagraphs(md)
+    //     console.log(result)
+    //   })
+    //   .catch((e) => {
+    //     console.log(e)
+    //   })
+
+    // json.forEach(e => {
+
+    // const result = spotifyLinks.filter(obj => obj.id === e.id);
+
+    // if (result.length > 0) {
+    //   e.spotifyLink = result[0].spotifyLink
+    // }
+
+    // if (e.type !== 'review') {
+    //   return
+    // }
+
+    // if (e.tags.length == 0) {
+    //   console.log(e.id)
+    // }
+
+    // if (e.spotifyLink !== '') {
+    //   return
+    // }
+    // if (e.tags.length !== 0) {
+    //   return
+    // }
+
+    // let desiredObj = tags.find(obj => obj.id == e.id)
+
+    // if (desiredObj) {
+    //   e.tags = desiredObj.tags
+    // }
+
+    // console.log(e.id)
+    // this.fetchLastFm(e.id, e.artistName, e.albumTitle)
+    // this.getSpotifyLink(e.id, e.albumTitle, e.artistName)
+
+    // })
+
+    // console.log(json)
 
   }
 }

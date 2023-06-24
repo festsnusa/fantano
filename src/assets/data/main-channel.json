@@ -848,7 +848,13 @@
         "rating": "NOT GOOD",
         "spotify": "https://open.spotify.com/embed/album/6zaisPwfcIAfdUGPj3mmGY?utm_source=generator",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2023",
+            "hip-hop",
+            "american",
+            "pop rap",
+            "trap"
+        ],
         "albumTitle": "HOPE",
         "artistName": "NF",
         "spotifyLink": "https://open.spotify.com/album/6zaisPwfcIAfdUGPj3mmGY"
@@ -1269,7 +1275,13 @@
         "rating": "NOT GOOD",
         "spotify": "https://open.spotify.com/embed/album/1ly2H0S0Ru5gJ2yvZZ18Uv?utm_source=generator",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "hip hop",
+            "hip-hop",
+            "american",
+            "trap",
+            "2023"
+        ],
         "albumTitle": "Lil Pump 2",
         "artistName": "Lil Pump",
         "spotifyLink": "https://open.spotify.com/album/1ly2H0S0Ru5gJ2yvZZ18Uv"
@@ -4876,7 +4888,13 @@
         "rating": "NOT GOOD",
         "spotify": "https://open.spotify.com/embed/album/3cf4iSSKd8ffTncbtKljXw?utm_source=generator",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "house",
+            "2022",
+            "dance",
+            "deep house",
+            "afrobeats"
+        ],
         "albumTitle": "Honestly, Nevermind",
         "artistName": "Drake",
         "spotifyLink": "https://open.spotify.com/album/3cf4iSSKd8ffTncbtKljXw"
@@ -6452,7 +6470,13 @@
         "albumTitle": "Donda 2",
         "artistName": "Kanye West",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2022",
+            "rap",
+            "hip hop",
+            "gospel",
+            "trap"
+        ],
         "spotifyLink": ""
     },
     {
@@ -7060,7 +7084,13 @@
         "albumTitle": "上出来",
         "artistName": "tricot",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "math rock",
+            "japanese",
+            "ambient",
+            "experimental",
+            "rock n roll"
+        ],
         "spotifyLink": "https://open.spotify.com/album/0jUAT2Y1TzQf6ScjVJFKQy?si=z6RG1zgaSyiStzeXQNyvDw"
     },
     {
@@ -11579,7 +11609,13 @@
         "albumTitle": "Unlocked 1.5",
         "artistName": "Denzel Curry",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "hip-hop",
+            "rap",
+            "hardcore hip-hop",
+            "boom bap",
+            "hip hop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/0zSuS34RB2ZUeRngtn7H4C?si=dc8ff2a7c86d49df"
     },
     {
@@ -15577,7 +15613,13 @@
         "albumTitle": "Alfredo",
         "artistName": "Freddie Gibbs",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2020",
+            "hip hop",
+            "hip-hop",
+            "old school",
+            "20s"
+        ],
         "spotifyLink": "https://open.spotify.com/album/3znl1qe13kyjQv7KcR685N?si=b18097c96826415a"
     },
     {
@@ -15929,7 +15971,13 @@
         "rating": "NOT GOOD",
         "spotify": "",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "hip-hop",
+            "2020",
+            "rap",
+            "black metal",
+            "trap"
+        ],
         "albumTitle": "Good Intentions",
         "artistName": "Nav",
         "spotifyLink": "https://open.spotify.com/album/2kx4l1OQNT2JXLld9HJDIh?si=7YHRfqpDRZ-91FNXsJhD1Q"
@@ -16160,7 +16208,13 @@
         "rating": "NOT GOOD",
         "spotify": "",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "rock",
+            "rock and roll",
+            "heavy metal",
+            "out of place covers",
+            "hard rock"
+        ],
         "albumTitle": "Sings Elvis",
         "artistName": "Danzig",
         "spotifyLink": "https://open.spotify.com/album/2lfdbxZXN3OU4Hz2ffJ36x?si=45f6e7674d2e4178"
@@ -17647,7 +17701,13 @@
         "albumTitle": "Jackboys",
         "artistName": "Jackboys & Travis Scott",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "cactus jack",
+            "jackboys",
+            "travis scott",
+            "pop smoke",
+            "sheck wes"
+        ],
         "spotifyLink": "https://open.spotify.com/album/1Sf8GsXG32t0jNrX11xqWx?si=2aca871562154c86"
     },
     {
@@ -17760,7 +17820,13 @@
         "albumTitle": "My Beautiful Dark Twisted Fantasy",
         "artistName": "Kanye West",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "hip hop",
+            "hip-hop",
+            "rap",
+            "kanye west",
+            "2010"
+        ],
         "spotifyLink": "https://open.spotify.com/album/20r762YmB5HeofjMCiPMLv"
     },
     {
@@ -18354,7 +18420,13 @@
         "albumTitle": "Lost Wisdom pt. 2",
         "artistName": "Mount Eerie",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "lo-fi",
+            "folk",
+            "experimental",
+            "indie",
+            "a campire and a tent and a flashlight and some mat…y big bear but the bear is really really far away"
+        ],
         "spotifyLink": "https://open.spotify.com/album/5OZQdmhj8egQXMG1A2gzzX?si=37f39d6434c349e1"
     },
     {
@@ -18369,7 +18441,13 @@
         "albumTitle": "Everybody's Everything",
         "artistName": "Lil Peep",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "emo rap",
+            "cloud rap",
+            "hip-hop",
+            "emo",
+            "indie"
+        ],
         "spotifyLink": "https://open.spotify.com/album/1r1Xt6oUnY3VMYbQb1U7CO?si=e-7UF1UuToWJJe-Wa4kSPA"
     },
     {
@@ -18479,7 +18557,13 @@
         "albumTitle": "Hitler Wears Hermes 7",
         "artistName": "Westside Gunn",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "rap",
+            "hip-hop",
+            "gangsta rap",
+            "jazz rap",
+            "east coast hip hop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/4IpYr0pM7QsoHGBnNdrI3d?si=j7N4p6CjRs6LgHtSSSb89w"
     },
     {
@@ -19804,7 +19888,13 @@
         "albumTitle": "Care Package",
         "artistName": "Drake",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "drake",
+            "rap",
+            "hip-hop",
+            "rnb",
+            "hip hop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/7dqpveMVcWgbzqYrOdkFTD?si=8ccd34b7f0834d1c"
     },
     {
@@ -20201,7 +20291,13 @@
         "albumTitle": "My First Album",
         "artistName": "Peppa Pig",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "better than bts",
+            "album of the year",
+            "noise",
+            "new wave",
+            "experimental"
+        ],
         "spotifyLink": "https://open.spotify.com/album/3A3N9hChYmsWPd3px8eF5u?si=DMmD-Ox5QFi3NfTjcmIgFA"
     },
     {
@@ -22403,7 +22499,13 @@
         "albumTitle": "Songs for the Firing Squad",
         "artistName": "SeeYouSpaceCowboy",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2019",
+            "mathcore",
+            "metalcore",
+            "screamo",
+            "post-hardcore"
+        ],
         "spotifyLink": "https://open.spotify.com/album/6nohVaKwQ9OBaQwPgH4LiS?si=0204ffb02ed440d2"
     },
     {
@@ -22719,7 +22821,13 @@
         "albumTitle": "NOW That's What I Call Music, Vol. 69",
         "artistName": "Various Artists",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "pop",
+            "rnb",
+            "2010s",
+            "country",
+            "bop"
+        ],
         "spotifyLink": ""
     },
     {
@@ -22978,7 +23086,13 @@
         "albumTitle": "TDT",
         "artistName": "Big K.R.I.T.",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2019",
+            "banned",
+            "hip-hop",
+            "rap",
+            "southern hip hop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/7DUNqEpnwePiDrwO4R1xz3?si=aEK5AKDNQBOaFcBju-uOrg"
     },
     {
@@ -24086,7 +24200,13 @@
         "albumTitle": "Antipositive, Pt. 2",
         "artistName": "Little Big",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "electronic",
+            "rap",
+            "rave",
+            "russian",
+            "hard house"
+        ],
         "spotifyLink": "https://open.spotify.com/album/0kIcx4ojwAIHwIIPPm7UnN?si=59a8791db04e401c"
     },
     {
@@ -25103,7 +25223,13 @@
         "albumTitle": "Slime Language",
         "artistName": "Young Thug",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2018",
+            "hip-hop",
+            "goat",
+            "thug",
+            "4"
+        ],
         "spotifyLink": "https://open.spotify.com/album/4OHfmMUq6xwCo8zfQuc9Rf?si=kONBy4ypRJ27e9kmpg-b2w"
     },
     {
@@ -25614,7 +25740,13 @@
         "albumTitle": "harutosyura",
         "artistName": "Haru Nemuri",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "japanese",
+            "j-pop",
+            "j-rock",
+            "rock",
+            "personal favourites"
+        ],
         "spotifyLink": "https://open.spotify.com/album/6or18qH3INbHS0kyALV2HL?si=Q__ONTSKT-yR1N-NhKizjA"
     },
     {
@@ -26585,7 +26717,13 @@
         "albumTitle": "Endless",
         "artistName": "Frank Ocean",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "rnb",
+            "soul",
+            "ambient pop",
+            "hip-hop",
+            "art pop"
+        ],
         "spotifyLink": ""
     },
     {
@@ -28453,7 +28591,13 @@
         "albumTitle": "The Life of Pablo",
         "artistName": "Kanye West",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "hip hop",
+            "pop rap",
+            "rap",
+            "hip-hop",
+            "chris brown"
+        ],
         "spotifyLink": "https://open.spotify.com/album/7gsWAHLeT0w7es6FofOXk1?si=193876b8c1c44d16"
     },
     {
@@ -28865,7 +29009,13 @@
         "albumTitle": "Huncho Jack, Jack Huncho",
         "artistName": "Huncho Jack",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2017",
+            "trap",
+            "travis scott",
+            "hiphop",
+            "rap"
+        ],
         "spotifyLink": "https://open.spotify.com/album/6FED8aeieEnUWwQqAO9zT1?si=252bc7b547be4f18"
     },
     {
@@ -29252,7 +29402,13 @@
         "albumTitle": "GFOTYBUCKS",
         "artistName": "GFOTY",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "bubblegum bass",
+            "2017",
+            "electropop",
+            "experimental",
+            "album"
+        ],
         "spotifyLink": "https://open.spotify.com/album/2k5HlmocImUDMDh80YXFXH?si=f200990e21604b8c"
     },
     {
@@ -30339,7 +30495,13 @@
         "albumTitle": "Wonderful Wonderful",
         "artistName": "The Killers",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2017",
+            "alternative rock",
+            "rock",
+            "alt rock",
+            "indie rock"
+        ],
         "spotifyLink": "https://open.spotify.com/album/72ZfMxLCPG8mlWC0TXfZQi?si=b958655ef2144734"
     },
     {
@@ -31813,7 +31975,13 @@
         "albumTitle": "Known Unknowns",
         "artistName": "Billy Woods",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "hip-hop",
+            "trip-hop",
+            "downtempo",
+            "rap",
+            "abstract hip hop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/67paibJlA5CXa0i8L8rraq?si=c9b2228a3e8c4578"
     },
     {
@@ -31849,7 +32017,13 @@
         "albumTitle": "B-Sides and Rarities",
         "artistName": "Beach House",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "dream pop",
+            "indie",
+            "2017",
+            "indie pop",
+            "hidden track"
+        ],
         "spotifyLink": "https://open.spotify.com/album/1U2HNCQTbqtG7uKvgrXj3e?si=iVtQNBL9R0mdauCy5WTZ4w"
     },
     {
@@ -32387,7 +32561,13 @@
         "albumTitle": "Planetarium",
         "artistName": "Sufjan Stevens",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "ambient",
+            "indietronica",
+            "chamber pop",
+            "art pop",
+            "ambient pop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/1wQiDPyqj92SnCIejeVn9P?si=BB8HHvtKTSu7NaZylaHPCA"
     },
     {
@@ -33708,7 +33888,13 @@
         "albumTitle": "At What Cost",
         "artistName": "GoldLink",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2017",
+            "1",
+            "pop rap",
+            "trap",
+            "hip house"
+        ],
         "spotifyLink": "https://open.spotify.com/album/18JrBX1QkpnUSJF3oxX6RX?si=0bDLjEM2TRm-LfqilKUG9g"
     },
     {
@@ -33925,7 +34111,13 @@
         "albumTitle": "More Life",
         "artistName": "Drake",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "rnb",
+            "hip-hop",
+            "dancehall",
+            "rap",
+            "alternative rnb"
+        ],
         "spotifyLink": "https://open.spotify.com/album/1lXY618HWkwYKJWBRYR4MK?si=0a5c9cbdacf84a24"
     },
     {
@@ -34552,7 +34744,13 @@
         "albumTitle": "Accelerator",
         "artistName": "Paul White",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "hip-hop",
+            "beats",
+            "electronic",
+            "experimental",
+            "instrumental"
+        ],
         "spotifyLink": "https://open.spotify.com/album/3pqOz6ufzMEnuec96bCb1O?si=X1MywO0vRsa70uj6qw7Hlg"
     },
     {
@@ -34599,7 +34797,13 @@
         "albumTitle": "Crossover Ministry",
         "artistName": "Iron Reagan",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "crossover thrash",
+            "hardcore",
+            "crossover",
+            "thrash metal",
+            "iron reagan"
+        ],
         "spotifyLink": "https://open.spotify.com/album/3kTEOedIeXQIXY9JawtaZJ?si=dad03281191e4749"
     },
     {
@@ -34928,7 +35132,13 @@
         "albumTitle": "Stillness In Wonderland",
         "artistName": "Little Simz",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "gilles peterson",
+            "rap",
+            "played",
+            "hip-hop",
+            "underground hip-hop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/5WIvREgNBScLryJbpNs9yN?si=fb4bbf5092f94488"
     },
     {
@@ -34954,7 +35164,13 @@
         "albumTitle": "Original",
         "artistName": "Unkle Adams",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "hardcore",
+            "gangsta rap",
+            "meme rap",
+            "music for intelligent people",
+            "hip hop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/59sHqs22HVNTVouzLiObVx?si=CDmdbBweQemUW-ZkXqWq4w"
     },
     {
@@ -35187,7 +35403,13 @@
         "albumTitle": "Run the Jewels 3",
         "artistName": "Run the Jewels",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "rap",
+            "2016",
+            "hip-hop",
+            "1-31-19",
+            "hip hop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/2vY03PfKPFUUM1FA2lgmC2?si=85b25d32abe54415"
     },
     {
@@ -36862,7 +37084,13 @@
         "albumTitle": "The Sun's Tirade",
         "artistName": "Isaiah Rashad",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "jazz rap",
+            "southern hip hop",
+            "rap",
+            "2016",
+            "played"
+        ],
         "spotifyLink": "https://open.spotify.com/album/6jjX8mGrsWtrpYpFhGMrg1?si=67734c82dc214158"
     },
     {
@@ -37115,7 +37343,13 @@
         "albumTitle": "The Bible 2",
         "artistName": "AJJ",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "i love you cos i love you cos i can",
+            "music to go batshit to",
+            "punk",
+            "folk",
+            "folk punk"
+        ],
         "spotifyLink": "https://open.spotify.com/album/0umKI9UKmubVWFCDNxlpH2?si=15beef79f1234194"
     },
     {
@@ -37295,7 +37529,13 @@
         "albumTitle": "The 2nd Amendment",
         "artistName": "JPEGMAFIA",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "politics",
+            "2016",
+            "lounge",
+            "rap",
+            "hip hop"
+        ],
         "spotifyLink": ""
     },
     {
@@ -37426,7 +37666,13 @@
         "albumTitle": "Rain Temple",
         "artistName": "2814",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "ambient",
+            "downtempo",
+            "rain",
+            "vaporwave",
+            "dreampunk"
+        ],
         "spotifyLink": "https://open.spotify.com/album/18EtfdFj2SRKkK7Uy3u2yC?si=a3da90d5e9ef4c43"
     },
     {
@@ -38545,7 +38791,13 @@
         "albumTitle": "The Dream Is Over",
         "artistName": "PUP",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "post-hardcore",
+            "punk",
+            "indie rock",
+            "power pop",
+            "punk rock"
+        ],
         "spotifyLink": "https://open.spotify.com/album/3l94HZBpKFTn1plZ1WWQPf?si=ae8b152d39224bf0"
     },
     {
@@ -39348,7 +39600,13 @@
         "albumTitle": "Metal Resistance",
         "artistName": "Babymetal",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "metal",
+            "j-pop",
+            "kawaii metal",
+            "japanese",
+            "idol"
+        ],
         "spotifyLink": "https://open.spotify.com/album/2Xzz2rVZIwoJr1S3btHPho?si=0e14d118f4ba495e"
     },
     {
@@ -39545,7 +39803,13 @@
         "albumTitle": "Southern Family",
         "artistName": "Various Artists",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "country",
+            "americana",
+            "singer-songwriter",
+            "female vocalists",
+            "miranda lambert"
+        ],
         "spotifyLink": "https://open.spotify.com/album/2cKzkXbgcoQjaFMCPbJDdi?si=bc54f9ee39d04270"
     },
     {
@@ -39688,7 +39952,13 @@
         "albumTitle": "One Day You Will Ache Like I Ache",
         "artistName": "The Body",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "noise",
+            "doom metal",
+            "grindcore",
+            "powerviolence",
+            "sludge metal"
+        ],
         "spotifyLink": "https://open.spotify.com/album/7d6g8By8C5IFCFBcC53kBG?si=21fe7b0bc09f4a81"
     },
     {
@@ -39871,7 +40141,13 @@
         "albumTitle": "Too High To Riot",
         "artistName": "Bas",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "rap",
+            "banned",
+            "hip-hop",
+            "cloud rap",
+            "played"
+        ],
         "spotifyLink": "https://open.spotify.com/album/0djZBLLoZgWveXvSGQ6AHI?si=d504765c836841eb"
     },
     {
@@ -40112,7 +40388,13 @@
         "rating": 2,
         "spotify": "",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "star wars",
+            "electronic",
+            "ninja tune",
+            "chillout",
+            "house"
+        ],
         "albumTitle": "Star Wars Headspace",
         "artistName": "Various Artists",
         "spotifyLink": "https://open.spotify.com/album/6oJnwRad77TohXQ683Rlw6?si=kSctzaAtRwqloVh6FT2qjw"
@@ -40794,7 +41076,13 @@
         "albumTitle": "AQUARIA ",
         "artistName": "Boots",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2015 single",
+            "groovy",
+            "electronic",
+            "rock",
+            "punk"
+        ],
         "spotifyLink": "https://open.spotify.com/album/79Z6DE8XSvqhD7nXAEtz0s?si=P6cEy3x9SQKAfJGvbSUW-g"
     },
     {
@@ -40851,7 +41139,13 @@
         "albumTitle": "Blackstar",
         "artistName": "David Bowie",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2016",
+            "art rock",
+            "experimental rock",
+            "rock",
+            "jazz"
+        ],
         "spotifyLink": "https://open.spotify.com/album/0vxg8oJKDu3i0bXQu7vEpi?si=7ad9ec6f53324f7b"
     },
     {
@@ -41429,7 +41723,13 @@
         "albumTitle": "Product",
         "artistName": "Sophie",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "bubblegum bass",
+            "2015",
+            "electronic",
+            "wonky",
+            "pc music"
+        ],
         "spotifyLink": ""
     },
     {
@@ -41863,7 +42163,13 @@
         "albumTitle": "Garden of Delete",
         "artistName": "Oneohtrix Point Never",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "electronic",
+            "experimental",
+            "2015",
+            "ambient",
+            "progressive electronic"
+        ],
         "spotifyLink": "https://open.spotify.com/album/0B0pnJCB4ECF12VNo49p6g?si=006f2b2fe6954485"
     },
     {
@@ -41996,7 +42302,13 @@
         "albumTitle": "Bad Neighbor",
         "artistName": "MED",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "rap",
+            "madlib",
+            "med",
+            "hiphop",
+            "hip-hop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/3UbwOC1OgkpGXI2nUaj8cm?si=db2ce2f3a4444c3b"
     },
     {
@@ -42085,7 +42397,13 @@
         "albumTitle": "Disharmony",
         "artistName": "Twitching Tongues",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "hardcore",
+            "metallic hardcore",
+            "slayer",
+            "gothic rock",
+            "gothic metal"
+        ],
         "spotifyLink": "https://open.spotify.com/album/7ha9rncPA9hOwoBaPHk44u?si=NgNVWcu2Rb2a4cvw_7FIzA"
     },
     {
@@ -42473,7 +42791,13 @@
         "albumTitle": "The Documentary 2",
         "artistName": "The Game",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "rap",
+            "hip-hop",
+            "gangsta rap",
+            "the game",
+            "west coast"
+        ],
         "spotifyLink": "https://open.spotify.com/album/4fF56KwtoOvsd9uVmlEfxL?si=mCP6jz-xRtiP2xFM_ITluw"
     },
     {
@@ -42625,7 +42949,13 @@
         "albumTitle": "Meow the Jewels",
         "artistName": "Run the Jewels",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "hip-hop",
+            "2015",
+            "title is imperative",
+            "rap",
+            "personal favourites"
+        ],
         "spotifyLink": "https://open.spotify.com/album/5QJlwvAXmPBLymGvbqKzdQ?si=43f03e753de04003"
     },
     {
@@ -42894,7 +43224,13 @@
         "albumTitle": "Anthems For Doomed Youth",
         "artistName": "The Libertines",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2015",
+            "indie",
+            "alternative",
+            "alternative rock",
+            "indie rock"
+        ],
         "spotifyLink": "https://open.spotify.com/album/4SlldHebG28ZuPKd2NYQVd?si=aspKf8ppRTemGc7VjkhQrQ"
     },
     {
@@ -43179,7 +43515,13 @@
         "albumTitle": "The Expanding Flower Planet",
         "artistName": "Deradoorian",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "sexy",
+            "electronic",
+            "female vocalists",
+            "neo-psychedelia",
+            "later"
+        ],
         "spotifyLink": "https://open.spotify.com/album/10e1mx1PykreNOn02pFjIU?si=khIKmLsvRxSGmzYOAJK-_Q"
     },
     {
@@ -43694,7 +44036,13 @@
         "albumTitle": "Another One",
         "artistName": "Mac DeMarco",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2015",
+            "lo-fi",
+            "indie rock",
+            "jangle pop",
+            "indie pop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/5FiDVzxLqGtYjF5yzmMoj4?si=w8FQC6CzTY6KdDsDH08QNA"
     },
     {
@@ -43835,7 +44183,13 @@
         "albumTitle": "Fingers, Bank Pads & Shoe Prints",
         "artistName": "RP Boo",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "planet mu",
+            "electronic",
+            "footwork",
+            "juke",
+            "dance"
+        ],
         "spotifyLink": "https://open.spotify.com/album/6DyNVX8fAGDI8gTvZNQx6f?si=tJqoeiHxQSiEKIvhWhAVgw"
     },
     {
@@ -45109,7 +45463,13 @@
         "albumTitle": "Never Were the Way She Was",
         "artistName": "Colin Stetson",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "played",
+            "jazz",
+            "avant-garde",
+            "experimental",
+            "saxophone"
+        ],
         "spotifyLink": "https://open.spotify.com/album/6strsYjypCDE3OTh2f9W8l?si=22ed82cf44e04335"
     },
     {
@@ -45718,7 +46078,13 @@
         "albumTitle": "The Powers That B",
         "artistName": "Death Grips",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2015",
+            "experimental hip hop",
+            "noise rock",
+            "industrial hip hop",
+            "hip-hop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/5Y04ylQjDWsawOUJXzY4YO?si=6f28b2e99d1d4b99"
     },
     {
@@ -45963,7 +46329,13 @@
         "albumTitle": "Scar Sighted",
         "artistName": "Leviathan",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2015",
+            "black metal",
+            "dark ambient",
+            "progressive black metal",
+            "falsecore"
+        ],
         "spotifyLink": "https://open.spotify.com/album/4hnlvhL0RR3AH2YOVChSsh?si=5cc40a577b6a45eb"
     },
     {
@@ -46041,7 +46413,13 @@
         "albumTitle": "We Cool?",
         "artistName": "Jeff Rosenstock",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "pop punk",
+            "indie rock",
+            "2015",
+            "punk",
+            "power pop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/50bg2f6DaWI3gmsMzZ30mV?si=63fbcd7a5c6e4a5e"
     },
     {
@@ -46163,7 +46541,13 @@
         "albumTitle": "Citizen Zombie",
         "artistName": "The Pop Group",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2015",
+            "post-punk",
+            "funk",
+            "merkliste",
+            "you better get your shit together songs"
+        ],
         "spotifyLink": "https://open.spotify.com/album/32ETf00LIuNCKSuNjYzbbB?si=1b2ffe0f18814c06"
     },
     {
@@ -46178,7 +46562,13 @@
         "albumTitle": "Rose Mountain",
         "artistName": "Screaming Females",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2015",
+            "alternative rock",
+            "punk rock",
+            "bagel",
+            "indie rock"
+        ],
         "spotifyLink": "https://open.spotify.com/album/2TLGJr8phFIkRUUHMbMcIQ?si=506567945aec4db1"
     },
     {
@@ -47099,7 +47489,13 @@
         "albumTitle": "ShadyXV",
         "artistName": "Various Artists",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "rap",
+            "hip-hop",
+            "eminem",
+            "50 cent",
+            "gangsta rap"
+        ],
         "spotifyLink": "https://open.spotify.com/album/3CjuTytLZz3G9znXt2rJgU?si=a90e9170009c42ae"
     },
     {
@@ -47188,7 +47584,13 @@
         "albumTitle": "The Church",
         "artistName": "Mr. Oizo",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "electro",
+            "banned",
+            "electronic",
+            "kick your ass",
+            "fancy pants"
+        ],
         "spotifyLink": "https://open.spotify.com/album/3w40jzZ8eekpde29dBovwK?si=QPKFCvAkQ9y-N2V0HMBY5Q"
     },
     {
@@ -47203,7 +47605,13 @@
         "albumTitle": "Seeds",
         "artistName": "TV on the Radio",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2014",
+            "indie rock",
+            "pop",
+            "funk",
+            "synthpop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/2pJdnCpeXm3KVUlyuNSeRX?si=8ffc33d6878d481e"
     },
     {
@@ -47856,7 +48264,13 @@
         "albumTitle": "This Is My Hand",
         "artistName": "My Brightest Diamond",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2014",
+            "chamber pop",
+            "indie pop",
+            "art pop",
+            "alternative rock"
+        ],
         "spotifyLink": "https://open.spotify.com/album/1upVY5OFTqJyJO14hn9l1C?si=2lzxlKWtRGywdE1wrJyWXA"
     },
     {
@@ -48559,7 +48973,13 @@
         "albumTitle": "Manipulator",
         "artistName": "Ty Segall",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2014",
+            "garage rock",
+            "lo-fi",
+            "psychedelic rock",
+            "bagel"
+        ],
         "spotifyLink": "https://open.spotify.com/album/2pIFOXH6DxLbWcUO19mbXa?si=f013d549fe4e47a0"
     },
     {
@@ -48742,7 +49162,13 @@
         "albumTitle": "All You Can Do",
         "artistName": "Watsky",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "rap",
+            "hip-hop",
+            "funny",
+            "spoken word",
+            "quirky"
+        ],
         "spotifyLink": "https://open.spotify.com/album/1wugFvREdFZUbm1hocCrMh?si=QvGi1FMPT2Wh-SryMftEKQ"
     },
     {
@@ -49004,7 +49430,13 @@
         "albumTitle": "ピカピカふぁんたじん",
         "artistName": "きゃりーぱみゅぱみゅ",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2014",
+            "japanese",
+            "j-pop",
+            "pop",
+            "jpop"
+        ],
         "spotifyLink": ""
     },
     {
@@ -49759,7 +50191,13 @@
         "albumTitle": "The Powers That B",
         "artistName": "Death Grips",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2015",
+            "experimental hip hop",
+            "noise rock",
+            "industrial hip hop",
+            "hip-hop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/5Y04ylQjDWsawOUJXzY4YO?si=6f28b2e99d1d4b99"
     },
     {
@@ -50166,7 +50604,13 @@
         "albumTitle": "...And Then You Shoot Your Cousin",
         "artistName": "The Roots",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2014",
+            "hip hop",
+            "hip-hop",
+            "r&b",
+            "alternative"
+        ],
         "spotifyLink": "https://open.spotify.com/album/6kYqws8vRcaUKTjFnJRb4X?si=e01be7efbe5b44e3"
     },
     {
@@ -50286,7 +50730,13 @@
         "albumTitle": "Nabuma Rubberband",
         "artistName": "Little Dragon",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2014",
+            "electronic",
+            "synthpop",
+            "indietronica",
+            "art pop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/2xraUs1k7Hct24Jg2C2QR5?si=260ebc9f83a14c05"
     },
     {
@@ -50322,7 +50772,13 @@
         "albumTitle": "The Serpent & The Sphere",
         "artistName": "Agalloch",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2014",
+            "doom metal",
+            "atmospheric black metal",
+            "folk metal",
+            "black metal"
+        ],
         "spotifyLink": "https://open.spotify.com/album/01OzgZUxJaU76kickjpm9V?si=ca100a78ad944b4f"
     },
     {
@@ -50554,7 +51010,13 @@
         "albumTitle": "Death Mask",
         "artistName": "Lord Mantis",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "sludge metal",
+            "2014",
+            "sludge",
+            "industrial metal",
+            "blacker than the blackest black times infinity"
+        ],
         "spotifyLink": "https://open.spotify.com/album/3lIiMLGEeHJZgLvNx4GxaJ?si=fc1b46c4827e47a3"
     },
     {
@@ -50591,7 +51053,13 @@
         "albumTitle": "Indie Cindy",
         "artistName": "Pixies",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2014",
+            "alternative rock",
+            "indie",
+            "rock",
+            "alternative"
+        ],
         "spotifyLink": "https://open.spotify.com/album/5TuDqbxRPsSaZDXzQhETkP?si=vtcdND7TSq6q7NrbEU-8vg"
     },
     {
@@ -50874,7 +51342,13 @@
         "albumTitle": "Z",
         "artistName": "SZA",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "rnb",
+            "synthpop",
+            "alternative rnb",
+            "neo-soul",
+            "electronic"
+        ],
         "spotifyLink": "https://open.spotify.com/album/2qCyMMQ785sPH4Yx25GQZ8?si=7c0da64e132d457c"
     },
     {
@@ -50931,7 +51405,13 @@
         "albumTitle": "Here And Nowhere Else",
         "artistName": "Cloud Nothings",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "2014",
+            "indie rock",
+            "best of 2014",
+            "post-hardcore",
+            "indie"
+        ],
         "spotifyLink": "https://open.spotify.com/album/2FEZuC8iOwitugV2BIjysp?si=0a80d0f710934d5b"
     },
     {
@@ -51190,7 +51670,13 @@
         "albumTitle": "My Krazy Life ",
         "artistName": "YG",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "post g-funk",
+            "hip-hop",
+            "hip hop",
+            "la",
+            "tag"
+        ],
         "spotifyLink": "https://open.spotify.com/album/3EqODYPkWXDfEZnXKwqf8P?si=0f3df718a6954dc5"
     },
     {
@@ -51205,7 +51691,13 @@
         "albumTitle": "Wakedafucup",
         "artistName": "Onyx",
         "wiki": "",
-        "tags": "",
+        "tags": [
+            "gangsta rap",
+            "east coast rap",
+            "2014",
+            "underground hip hop",
+            "hip-hop"
+        ],
         "spotifyLink": "https://open.spotify.com/album/01feNPAeBVmM7Bejc5EWaZ?si=Lo54oKcmTLiVtsVB-P91ow"
     },
     {
@@ -57502,8 +57994,14 @@
         "albumTitle": "Adam Green & Binki Shapiro",
         "artistName": "Adam Green & Binki Shapiro",
         "wiki": "",
-        "tags": "",
-        "spotifyLink": ""
+        "tags": [
+            "2013",
+            "adam green et binki shapiro",
+            "singer-songwriter",
+            "rounder",
+            "10s"
+        ],
+        "spotifyLink": "https://open.spotify.com/album/0mnmn4yrOan10MHcm4CJZI?si=uSnK3ZZyR8OtvnZYhFsqtQ"
     },
     {
         "id": 857,

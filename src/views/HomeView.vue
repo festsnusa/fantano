@@ -21,7 +21,6 @@ import HomeBlock from '@/components/HomeBlock.vue'
 import AppPreloader from '@/components/AppPreloader.vue'
 
 import json from '@/assets/data/main-channel.json'
-// import tags from '@/assets/data/tags.json'
 
 export default {
   name: "HomeView",
@@ -127,7 +126,7 @@ export default {
           if (data.results && data.results.length > 0) {
             const album = data.results[0];
             const albumLink = album.collectionViewUrl;
-            console.log(albumLink)
+            console.log(id, albumLink)
           } else {
             return null;
           }
@@ -137,9 +136,28 @@ export default {
           return null;
         });
     },
+    async searchAlbumOniTunes(id, artist, album) {
+      try {
+        const searchQuery = `${artist} ${album}`;
+        const searchUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(searchQuery)}&entity=album`;
+
+        const response = await this.axios.get(searchUrl);
+
+        // Extract album link from the response
+        const albums = response.data.results;
+        if (albums.length > 0) {
+          const albumLink = albums[0].collectionViewUrl;
+          console.log(id, albumLink);
+        } else {
+          console.log('No matching album found.');
+        }
+      } catch (error) {
+        console.error('An error occurred:', error.message);
+      }
+    },
     getYouTubeLink(id, albumTitle, artistName) {
       const searchQuery = `${albumTitle} ${artistName} album`;
-      const APIKEY = 'AIzaSyD8veGTCgXd1xMkSnd_yljDUFQk3edSFaM'
+      const APIKEY = 'AIzaSyCetglNoZRO6IU3JBIhlmIneiHFef2Q4tM'
 
       fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(searchQuery)}&type=video&maxResults=10&key=${APIKEY}`)
         .then(response => response.json())
@@ -150,7 +168,7 @@ export default {
             if (albumVideo) {
               const albumLink = `https://www.youtube.com/watch?v=${albumVideo.id.videoId}`;
 
-              console.log(albumLink);
+              console.log(id, albumLink);
               // Do something with the album link, such as redirecting the user to that page
             } else {
               console.log('No album found with the specified title and artist');
@@ -228,9 +246,88 @@ export default {
           console.error('Error retrieving album:', error);
         });
     },
+    async getMediaLinks(title, artist) {
+      try {
+        // Format the search query
+        const query = `site:rateyourmusic.com ${title} ${artist}`;
 
+        // Send a GET request to Google search
+        const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        const response = await fetch(searchUrl, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36',
+          },
+        });
+        const htmlText = await response.text();
+
+        // Parse the HTML response using DOMParser
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlText, 'text/html');
+
+        // Find the search results
+        const searchResults = doc.querySelectorAll('div.g');
+        if (!searchResults.length) {
+          return [];
+        }
+
+        // Extract media links from the search results
+        const mediaLinks = [];
+        searchResults.forEach((result) => {
+          const link = result.querySelector('a').href;
+          if (link && link.includes('rateyourmusic.com')) {
+            mediaLinks.push(link);
+          }
+        });
+
+
+        this.fetchData(mediaLinks[0])
+
+      } catch (error) {
+        console.error('Error:', error.message);
+        return [];
+      }
+    },
+    async fetchData(firstMediaLink) {
+
+      let response = await fetch(firstMediaLink, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36',
+        },
+      });
+      const htmlText = await response.text();
+
+      // Create a new window or tab and load the content of the new page
+      const newWindow = window.open();
+      newWindow.document.open();
+      newWindow.document.write(htmlText);
+      newWindow.document.close();
+      console.log(newWindow.document.documentElement.textContent)
+
+      // Convert HTML content to Blob
+      // const blob = new Blob([newWindow.document.documentElement.outerHTML], { type: 'text/html' });
+
+      // // Create a download link for the Blob
+      // const downloadLink = document.createElement('a');
+      // downloadLink.href = URL.createObjectURL(blob);
+      // downloadLink.download = 'document.html';
+      // downloadLink.click();
+      // Parse the HTML response using DOMParser
+      // const parser = new DOMParser();
+      // const doc = parser.parseFromString(htmlText, 'text/html');
+      // console.log(doc.documentElement.innerHTML)
+
+      // Replace the content of the current document
+      // document.open();
+      // document.write(doc.documentElement.innerHTML);
+      // document.close();
+      // console.log(firstMediaLink)
+      // window.location.href = firstMediaLink;
+      // console.log(firstMediaLink)
+    }
   },
   async created() {
+
+    // this.getMediaLinks('ARTPOP', 'Lady Gaga')
 
     // import('../assets/data/spotifyLinks.md')
     //   .then((module) => {
@@ -244,36 +341,52 @@ export default {
 
     // json.forEach(e => {
 
-    // const result = spotifyLinks.filter(obj => obj.id === e.id);
-
-    // if (result.length > 0) {
-    //   e.spotifyLink = result[0].spotifyLink
-    // }
-
     // if (e.type !== 'review') {
     //   return
     // }
 
-    // if (e.tags.length == 0) {
-    //   console.log(e.id)
-    // }
-
-    // if (e.spotifyLink !== '') {
-    //   return
-    // }
-    // if (e.tags.length !== 0) {
+    // if (e.externalLinks.length > 1) {
     //   return
     // }
 
-    // let desiredObj = tags.find(obj => obj.id == e.id)
+    // this.getYouTubeLink(e.id, e.albumTitle, e.artistName)
+    // this.getAppleMusicLink(e.id, e.albumTitle, e.artistName)
+    // this.searchAlbumOniTunes(e.id, e.albumTitle, e.artistName)
 
-    // if (desiredObj) {
-    //   e.tags = desiredObj.tags
+    // const result = AMLinks.filter(obj => obj.id === e.id);
+
+    // if (result.length > 0) {
+    //   let obj = {
+    //     "title": "AM",
+    //     "source": result[0].link
+    //   }
+
+    //   e.externalLinks.push(obj)
     // }
 
-    // console.log(e.id)
-    // this.fetchLastFm(e.id, e.artistName, e.albumTitle)
-    // this.getSpotifyLink(e.id, e.albumTitle, e.artistName)
+    //   // if (e.type !== 'review') {
+    //   //   return
+    //   // }
+
+    //   // if (e.tags.length == 0) {
+    //   //   console.log(e.id)
+    //   // }
+
+    //   // if (e.spotifyLink !== '') {
+    //   //   return
+    //   // }
+    //   // if (e.tags.length !== 0) {
+    //   //   return
+    //   // }
+
+    //   // let desiredObj = tags.find(obj => obj.id == e.id)
+
+    //   // if (desiredObj) {
+    //   //   e.tags = desiredObj.tags
+    //   // }
+
+    //   // this.fetchLastFm(e.id, e.artistName, e.albumTitle)
+    //   // this.getSpotifyLink(e.id, e.albumTitle, e.artistName)
 
     // })
 

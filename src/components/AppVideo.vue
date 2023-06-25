@@ -221,7 +221,7 @@ export default {
     flex-direction: column;
 
     &__left {
-      flex-direction: row;
+      // flex-direction: row;
     }
   }
 }

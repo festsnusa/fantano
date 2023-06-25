@@ -3,7 +3,7 @@
   iframe(:src="video(current.video)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
 ul.external-links(v-show="current.externalLinks")
   li(v-for="link in current.externalLinks" @click="changePlayer(link.title)")
-    img(:src="`/src/assets/images/icon-${link.title}.png`", :alt="link.title")
+    a-button {{link.title}}
 .player(v-show="current.externalLinks")
   iframe.iframe(v-for="link in current.externalLinks"
     v-show="player == link.title" style="border-radius:12px" :src="toEmbedLink" width="100%" height="452" frameBorder="0" allowfullscreen="" 
@@ -95,6 +95,15 @@ export default {
     background-color: black;
     border-radius: 20px;
     cursor: pointer;
+  }
+
+  button {
+    text-transform: capitalize;
+    border-radius: 20px;
+  }
+
+  @media (max-width: 820px) {
+    padding: 0;
   }
 }
 </style>

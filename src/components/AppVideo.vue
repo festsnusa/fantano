@@ -28,7 +28,7 @@ import VideoSideSection from '@/components/VideoSideSection.vue'
 import Breadcrumb from '@/components/Breadcrumb.vue'
 
 import { useMediaQuery } from '@vueuse/core'
-import json from '@/assets/data/main-channel.json'
+// import json from '@/assets/data/main-channel.json'
 
 import { downloadFile } from '@/includes/helper'
 
@@ -41,9 +41,10 @@ export default {
     VideoSideSection,
     Breadcrumb,
   },
+  inject: ["json"],
   data() {
     return {
-      arr: json.filter(e => e.type == 'review'),
+      arr: this.json.filter(e => e.type == 'review'),
       current: null,
       en: false,
       isLargeScreen: useMediaQuery('(min-width: 1024px)'),
@@ -111,7 +112,7 @@ export default {
     }
   },
   async created() {
-    this.current = json.filter((e) => e.id == this.$route.params.video)[0]
+    this.current = this.json.filter((e) => e.id == this.$route.params.video)[0]
     this.addBreadcrumbLink(this.current.type)
 
     let englishText = downloadFile(`${this.$route.params.video}-en`)

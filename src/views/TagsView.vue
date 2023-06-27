@@ -19,7 +19,7 @@ import AppVideos from '@/components/AppVideos.vue'
 import AppPreloader from '@/components/AppPreloader.vue'
 import AppPagination from '@/components/AppPagination.vue'
 import Breadcrumb from '@/components/Breadcrumb.vue'
-import json from '@/assets/data/main-channel.json'
+// import json from '@/assets/data/main-channel.json'
 
 import { getThumbnail } from '@/includes/helper'
 import { useMediaQuery } from '@vueuse/core'
@@ -36,10 +36,11 @@ export default {
     AppPagination,
     Breadcrumb,
   },
+  inject: ["json"],
   data() {
     return {
       tag: this.$route.params.tag,
-      reviews: json.filter(e => e.type == 'review').filter(e => e.tags.includes(this.$route.params.tag)),
+      reviews: this.json.filter(e => e.type == 'review').filter(e => e.tags.includes(this.$route.params.tag)),
       page: 1,
       perPage: 20,
       totalPages: 1,

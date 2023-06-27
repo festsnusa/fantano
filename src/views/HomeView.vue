@@ -21,7 +21,7 @@ import HomeBlock from '@/components/HomeBlock.vue'
 import AppPreloader from '@/components/AppPreloader.vue'
 import Carousel from '@/components/Carousel.vue'
 
-import json from '@/assets/data/main-channel.json'
+// import json from '@/assets/data/main-channel.json'
 import { ref, getDownloadURL } from "firebase/storage"
 
 import { storage } from '@/includes/firebase'
@@ -36,11 +36,12 @@ export default {
     AppPreloader,
     Carousel,
   },
+  inject: ["json"],
   data() {
     return {
-      reviews: json.filter(e => e.type == 'review').slice(0, 5),
-      wtr: json.filter(e => e.type == 'weekly').slice(0, 5),
-      ynr: json.filter(e => e.type == 'YUNOREVIEW').slice(0, 5),
+      reviews: this.json.filter(e => e.type == 'review').slice(0, 5),
+      wtr: this.json.filter(e => e.type == 'weekly').slice(0, 5),
+      ynr: this.json.filter(e => e.type == 'YUNOREVIEW').slice(0, 5),
     }
   },
   methods: {
@@ -156,7 +157,7 @@ export default {
     },
     getAppleMusicLink() {
 
-      json.forEach(e => {
+      this.json.forEach(e => {
 
         if (e.type !== 'review') {
           return
@@ -212,7 +213,7 @@ export default {
 
       // })
 
-      console.log(json)
+      console.log(this.json)
     },
     pushImages() {
       // json.forEach(e => {
@@ -228,7 +229,7 @@ export default {
 
       // })
 
-      console.log(json)
+      console.log(this.json)
     },
     async getMediaLinks(id, title, artist) {
       try {

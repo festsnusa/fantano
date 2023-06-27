@@ -30,6 +30,8 @@ import Breadcrumb from '@/components/Breadcrumb.vue'
 import { useMediaQuery } from '@vueuse/core'
 import json from '@/assets/data/main-channel.json'
 
+import { downloadFile } from '@/includes/helper'
+
 export default {
   name: "AppVideo",
   components: {
@@ -108,32 +110,66 @@ export default {
       return dom
     }
   },
-  created() {
+  async created() {
     this.current = json.filter((e) => e.id == this.$route.params.video)[0]
     this.addBreadcrumbLink(this.current.type)
 
-    import(`@/assets/text/${this.$route.params.video}-en.md`)
-      .then((module) => {
-        this.textEn = this.stringToHTML(module.default)
+    let englishText = downloadFile(`${this.$route.params.video}-en`)
+
+    englishText.then(data => {
+
+      if (data !== '') {
+        this.textEn = data
         this.en = true
         this.filesLoaded++
-        document.querySelector('.markdown__en').appendChild(this.textEn)
-      })
+        document.querySelector('.markdown__en').innerHTML = this.textEn
+      }
+
+    })
       .catch((e) => {
         console.log(e)
       })
 
-    import(`@/assets/text/${this.$route.params.video}-ru.md`)
-      .then((module) => {
-        this.textRu = this.stringToHTML(module.default)
+    let russianText = downloadFile(`${this.$route.params.video}-ru`)
+
+    russianText.then(data => {
+
+      if (data !== '') {
+        this.textRu = data
         this.en = false
         this.filesLoaded++
-        document.querySelector('.markdown__ru').appendChild(this.textRu)
+        document.querySelector('.markdown__ru').innerHTML = this.textRu
+      }
 
-      })
+    })
       .catch((e) => {
         console.log(e)
       })
+
+    // console.log(this.textEn)
+
+    // import(`@/assets/text/${this.$route.params.video}-en.md`)
+    //   .then((module) => {
+    //     this.textEn = this.stringToHTML(module.default)
+    //     this.en = true
+    //     this.filesLoaded++
+    //     document.querySelector('.markdown__en').appendChild(this.textEn)
+    //   })
+    //   .catch((e) => {
+    //     console.log(e)
+    //   })
+
+    // import(`@/assets/text/${this.$route.params.video}-ru.md`)
+    //   .then((module) => {
+    //     this.textRu = this.stringToHTML(module.default)
+    //     this.en = false
+    //     this.filesLoaded++
+    //     document.querySelector('.markdown__ru').appendChild(this.textRu)
+
+    //   })
+    //   .catch((e) => {
+    //     console.log(e)
+    //   })
   }
 }
 </script>
@@ -219,10 +255,6 @@ export default {
 @media (max-width: 1300px) {
   .review {
     flex-direction: column;
-
-    &__left {
-      // flex-direction: row;
-    }
   }
 }
 

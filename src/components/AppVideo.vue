@@ -6,8 +6,8 @@ main.review
       h1.review__title {{ current.title }} ({{ current.year }})
       ul.tags
         li.tag(v-for="tag in current.tags")
-          RouterLink(:to="`/tags/${tag}`")
-            a-button {{ tag }}
+          RouterLink(:to="`/tags/${tag.toLowerCase()}`")
+            a-button {{ tag.toLowerCase() }}
       Toggle.toggle(v-if="filesLoaded == 2" :toggleValue="toggleValue" :checked="en")
       ReviewStar(v-for="n in current.rating" v-show="!isNaN(current.rating)")
     .text-field.multiline

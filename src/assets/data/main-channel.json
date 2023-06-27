@@ -20,7 +20,7 @@
             },
             {
                 "title": "AM",
-                "source": "https://music.apple.com/fj/album/átta/1689744202"
+                "source": "https://geo.music.apple.com/fj/album/%C3%A1tta/1689744202"
             }
         ],
         "image": "https://lastfm.freetls.fastly.net/i/u/770x0/1d07b423b5075165cbc723376475e078.jpg"
@@ -153,7 +153,7 @@
         "rating": 8,
         "albumTitle": "Girl with Fish",
         "artistName": "feeble little horse",
-        "wiki": "'Girl With Fish is the American indie band feeble little horse’s second album. It is set to release on June 9, 2023 via Saddle Creek. The album was announced on February 27, alongside the lead single, “Tin Man”.",
+        "wiki": "",
         "tags": [
             "slacker rock",
             "noise pop",

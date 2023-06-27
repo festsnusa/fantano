@@ -227,15 +227,6 @@ export default {
     line-height: 2.1rem;
   }
 
-  // @media (min-width: 1024px) {
-  //   font-size: 2rem;
-  //   line-height: 3.5rem;
-  // }
-
-  // @media (min-width: 1280px) {
-  //   font-size: 3rem;
-  //   line-height: 4.5rem;
-  // }
 }
 
 .multiline {

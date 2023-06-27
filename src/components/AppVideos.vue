@@ -29,16 +29,18 @@ import { getThumbnail } from '@/includes/helper'
 
 import { useMediaQuery } from '@vueuse/core'
 
+// import json from '@/assets/data/main-channel.json'
+
 export default {
   name: "AppVideos",
   props: ["type", "years", "title"],
+  inject: ["json"],
   components: {
     AppFilter,
     AppPreloader,
     AppPagination,
     Breadcrumb,
   },
-  inject: ["json"],
   data() {
     return {
       firstChannel: this.json.filter(e => e.type == this.type),
@@ -120,7 +122,7 @@ export default {
   },
   created() {
 
-    // this.reviews = this.firstChannel.concat(this.secondChannel)
+    this.reviews = this.firstChannel
     // this.paginatedData()
 
     this.perPage = this.isLargeScreen ? 20 : 6

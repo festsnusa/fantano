@@ -8,8 +8,7 @@ import piniaPluginPersistedState from 'pinia-plugin-persistedstate'
 import App from './App.vue'
 import router from './router'
 
-// import json from '@/assets/data/main-channel.json'
-import { getJSONData } from './includes/helper'
+import json from '@/assets/data/main-channel.json'
 
 import axios from 'axios'
 import VueAxios from 'vue-axios'
@@ -23,9 +22,6 @@ library.add(faSortDown)
 
 async function initializeApp() {
   try {
-
-    const json = await getJSONData()
-
     const app = createApp(App)
 
     const pinia = createPinia()

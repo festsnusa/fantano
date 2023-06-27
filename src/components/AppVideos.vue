@@ -21,9 +21,6 @@ import AppFilter from '@/components/AppFilter.vue'
 import AppPagination from '@/components/AppPagination.vue'
 import Breadcrumb from '@/components/Breadcrumb.vue'
 
-// import json from '@/assets/data/main-channel.json'
-import secondJson from '@/assets/data/fantano-channel.json'
-
 import { mapStores } from 'pinia';
 import usePageStore from '@/stores/page'
 import useYearStore from '@/stores/year'
@@ -45,7 +42,6 @@ export default {
   data() {
     return {
       firstChannel: this.json.filter(e => e.type == this.type),
-      secondChannel: secondJson.filter(e => e.type == this.type),
       reviews: [],
       page: 1,
       perPage: 20,
@@ -124,7 +120,7 @@ export default {
   },
   created() {
 
-    this.reviews = this.firstChannel.concat(this.secondChannel)
+    // this.reviews = this.firstChannel.concat(this.secondChannel)
     // this.paginatedData()
 
     this.perPage = this.isLargeScreen ? 20 : 6

@@ -59,3 +59,24 @@ export async function downloadFile(fileName) {
     return ""
   }
 }
+
+export async function getJSONData() {
+
+  const fileRef = ref(storage, "main-channel.json")
+
+  try {
+
+    const url = await getDownloadURL(fileRef)
+
+    // Fetch the Markdown content from the URL
+    const response = await fetch(url)
+    const jsonText = await response.text()
+
+    // Perform further actions with the Markdown text
+    return JSON.parse(jsonText)
+  } catch (error) {
+    // Handle error
+    console.error("Error retrieving Markdown file:", error)
+    return ""
+  }
+}

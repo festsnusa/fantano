@@ -8,7 +8,8 @@ import piniaPluginPersistedState from 'pinia-plugin-persistedstate'
 import App from './App.vue'
 import router from './router'
 
-import json from '@/assets/data/main-channel.json'
+// import json from '@/assets/data/main-channel.json'
+import { getJSONData } from './includes/helper'
 
 import axios from 'axios'
 import VueAxios from 'vue-axios'
@@ -20,18 +21,30 @@ import Antd from 'ant-design-vue'
 import { faSortDown } from '@fortawesome/free-solid-svg-icons'
 library.add(faSortDown)
 
-const app = createApp(App)
+async function initializeApp() {
+  try {
 
-const pinia = createPinia()
-pinia.use(piniaPluginPersistedState)
+    const json = await getJSONData()
 
-app.component('font-awesome-icon', FontAwesomeIcon)
+    const app = createApp(App)
 
-app.use(pinia)
-app.use(router)
-app.use(VueAxios, axios)
-app.use(Antd)
+    const pinia = createPinia()
+    pinia.use(piniaPluginPersistedState)
 
-app.provide('json', json);
+    app.component('font-awesome-icon', FontAwesomeIcon)
 
-app.mount('#app')
+    app.use(pinia)
+    app.use(router)
+    app.use(VueAxios, axios)
+    app.use(Antd)
+
+    app.provide('json', json)
+
+    app.mount('#app')
+
+  } catch (error) {
+    console.error('Failed to initialize app:', error)
+  }
+}
+
+initializeApp();

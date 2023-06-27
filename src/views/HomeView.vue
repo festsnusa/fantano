@@ -22,9 +22,6 @@ import AppPreloader from '@/components/AppPreloader.vue'
 import Carousel from '@/components/Carousel.vue'
 
 // import json from '@/assets/data/main-channel.json'
-import { ref, getDownloadURL } from "firebase/storage"
-
-import { storage } from '@/includes/firebase'
 
 export default {
   name: "HomeView",
@@ -285,50 +282,11 @@ export default {
       newWindow.document.write(htmlText);
       newWindow.document.close();
       console.log(newWindow.document.documentElement.textContent)
-
-      // Convert HTML content to Blob
-      // const blob = new Blob([newWindow.document.documentElement.outerHTML], { type: 'text/html' });
-
-      // // Create a download link for the Blob
-      // const downloadLink = document.createElement('a');
-      // downloadLink.href = URL.createObjectURL(blob);
-      // downloadLink.download = 'document.html';
-      // downloadLink.click();
-      // Parse the HTML response using DOMParser
-      // const parser = new DOMParser();
-      // const doc = parser.parseFromString(htmlText, 'text/html');
-      // console.log(doc.documentElement.innerHTML)
-
-      // Replace the content of the current document
-      // document.open();
-      // document.write(doc.documentElement.innerHTML);
-      // document.close();
-      // console.log(firstMediaLink)
-      // window.location.href = firstMediaLink;
-      // console.log(firstMediaLink)
     },
-    async downloadFile() {
-
-      const fileRef = ref(storage, "texts/0-en.md");
-
-      try {
-        const url = await getDownloadURL(fileRef);
-
-        // Fetch the Markdown content from the URL
-        const response = await fetch(url);
-        const markdownText = await response.text();
-
-        // Perform further actions with the Markdown text
-        console.log("Markdown Content:", markdownText);
-      } catch (error) {
-        // Handle error
-        console.error("Error retrieving Markdown file:", error);
-      }
-    }
   },
   async created() {
 
-    this.downloadFile()
+    // this.downloadFile()
 
     // this.pushImages()
 

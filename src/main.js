@@ -30,4 +30,4 @@ app.use(router)
 app.use(VueAxios, axios)
 app.use(Antd)
 
-app.mount('#app')
+app.mount('#app') 

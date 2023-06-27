@@ -1,3 +1,6 @@
+import { ref, getDownloadURL } from "firebase/storage"
+import { storage } from '@/includes/firebase'
+
 export function transformYouTubeLink(currentLink) {
 
   const videoID = extractVideoID(currentLink)
@@ -34,4 +37,25 @@ function getVideoID(url) {
   let regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/
   let match = url.match(regExp)
   return (match && match[7].length == 11) ? match[7] : false
+}
+
+export async function downloadFile(fileName) {
+
+  const fileRef = ref(storage, `texts/${fileName}.md`)
+
+  try {
+
+    const url = await getDownloadURL(fileRef)
+
+    // Fetch the Markdown content from the URL
+    const response = await fetch(url)
+    const markdownText = await response.text()
+
+    // Perform further actions with the Markdown text
+    return markdownText
+  } catch (error) {
+    // Handle error
+    console.error("Error retrieving Markdown file:", error)
+    return ""
+  }
 }

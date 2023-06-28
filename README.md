@@ -10,7 +10,7 @@ So, I've decided to continue posting on my little pet project. Here are some ste
 -  Used Ant Design for some styling;
 -  Added filter methods to filter videos by year and by Anthony's score.
 
-The complete action is available [here] (dapper-cactus-c2ed7a.netlify.app) 
+The complete action is available [here](dapper-cactus-c2ed7a.netlify.app)
 
 Enjoy!
 

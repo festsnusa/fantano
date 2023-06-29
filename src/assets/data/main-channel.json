@@ -1,5 +1,27 @@
 [
     {
+        "id": 4114,
+        "title": "Young Thug - Business Is Business ALBUM REVIEW",
+        "video": "https://youtu.be/LwbUvvxf2I8",
+        "year": "2023",
+        "imageShow": true,
+        "type": "review",
+        "rating": 4,
+        "albumTitle": "Business Is Business",
+        "artistName": "Young Thug",
+        "wiki": "",
+        "tags": [
+            "trap", "southern hip hop", "pop rap"
+        ],
+        "externalLinks": [
+            {
+                "title": "spotify",
+                "source": "https://open.spotify.com/album/6qElaeK7SHsEzb8uV8eG3D"
+            }
+        ],
+        "image": "https://lastfm.freetls.fastly.net/i/u/770x0/c25b39b5d9ec8f57f60f6b1df1695a30.jpg#c25b39b5d9ec8f57f60f6b1df1695a30"
+    },
+    {
         "id": 4113,
         "title": "Sigur Rós - Átta ALBUM REVIEW",
         "video": "https://youtu.be/SNmWrEFCv8c",

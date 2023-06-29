@@ -2,13 +2,7 @@
 Breadcrumb.breadcrumb(:arr="breadcrumbArr" :title="title")
 main.reviews
   section.reviews__left
-    .reviews__content(v-if="reviews.length")
-      RouterLink.review(v-for="(item, index) in paginatedData" :key="index" :to="`/videos/${item.id}`")
-        AppPreloader(v-show="!item.imageShow")
-        img.review__image(v-show="item.imageShow" :src="thumbnail(item.video)", :alt="item.title" @load="item.imageShow = true")
-        p.review__title {{ item.title }}
-    .reviews__content(v-else)
-      p No videos
+    AppContent(:arr="paginatedData" :contentCount="reviews.length")
     AppPagination(v-show="reviews.length" :reviews="reviews" :totalPages="totalPages")
   aside.reviews__right
     AppFilter(:filterByYear="filterByYear" :searchReview="searchReview" :sort="sort" 
@@ -17,6 +11,7 @@ main.reviews
 
 <script>
 import AppPreloader from '@/components/AppPreloader.vue'
+import AppContent from '@/components/AppContent.vue'
 import AppFilter from '@/components/AppFilter.vue'
 import AppPagination from '@/components/AppPagination.vue'
 import Breadcrumb from '@/components/Breadcrumb.vue'
@@ -29,13 +24,12 @@ import { getThumbnail } from '@/includes/helper'
 
 import { useMediaQuery } from '@vueuse/core'
 
-// import json from '@/assets/data/main-channel.json'
-
 export default {
   name: "AppVideos",
   props: ["type", "years", "title"],
   inject: ["json"],
   components: {
+    AppContent,
     AppFilter,
     AppPreloader,
     AppPagination,
@@ -182,9 +176,14 @@ $size: 24px;
   }
 
   &__content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 2rem;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    // padding: 2rem;
+    // gap: 2rem;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 2rem;
   }
 }
@@ -205,43 +204,43 @@ $size: 24px;
 }
 
 @media (min-width: 280px) {
-  .reviews {
-    &__content {
-      padding: 0;
-    }
-  }
+  // .reviews {
+  //   &__content {
+  //     padding: 0;
+  //   }
+  // }
 }
 
 @media (min-width: 540px) {
-  .reviews {
-    &__content {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-  }
+  // .reviews {
+  //   &__content {
+  //     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  //   }
+  // }
 }
 
 @media (min-width: 700px) {
-  .reviews {
-    &__content {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-  }
+  // .reviews {
+  //   &__content {
+  //     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  //   }
+  // }
 }
 
 @media (min-width: 1200px) {
-  .reviews {
-    &__content {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-  }
+  // .reviews {
+  //   &__content {
+  //     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  //   }
+  // }
 }
 
 @media (min-width: 1700px) {
-  .reviews {
-    &__content {
-      grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-    }
-  }
+  // .reviews {
+  //   &__content {
+  //     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  //   }
+  // }
 }
 
 @media (max-width: 1700px) {

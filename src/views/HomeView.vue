@@ -7,7 +7,7 @@ main
   .wtr
     HomeBlock(title="WTRs" link="wtr" :arr="wtr")
   .ynr 
-    HomeBlock(title="YUNOREVIEWS" link="ynr" :arr="ynr")
+    HomeBlock(title="YNRs" link="ynr" :arr="ynr")
   .list-week 
 AppFooter
 a-back-top

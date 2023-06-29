@@ -19,5 +19,5 @@ And as desperately as Thug's team and Metro Boomin try to turn the song "Global 
 FAV TRACKS: MONEY ON THE DRESSER, CARS BRING ME OUT, ABRACADABRA, OH U WENT, JONESBORO\r
 LEAST FAV TRACK: WENT THRU IT\r
 \r
-5\r
+LIGHT 5\r
 `;export{e as default};

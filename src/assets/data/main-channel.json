@@ -1,5 +1,32 @@
 [
     {
+        "id": 4115,
+        "title": "Swans - The Beggar ALBUM REVIEW",
+        "video": "https://youtu.be/O1k4bQhCx5Y",
+        "year": "2023",
+        "imageShow": true,
+        "type": "review",
+        "rating": 7,
+        "albumTitle": "The Beggar",
+        "artistName": "Swans",
+        "wiki": "",
+        "tags": [
+            "post-rock", "experimental rock", "drone", "neofolk", "gothic country", "sound collage", "ambient", "gothic rock", "avant-folk"
+        ],
+        "externalLinks": [
+            {
+                "title": "spotify",
+                "source": "https://open.spotify.com/album/5e925G5F00QzYCyg3AAMeS"
+            },
+            {
+                "title": "AM",
+                "source": "https://music.apple.com/ru/album/the-beggar/1676352103"
+            }
+
+        ],
+        "image": "https://lastfm.freetls.fastly.net/i/u/770x0/61558dd94b04e008d5db4f89cc7bf8c2.jpg#61558dd94b04e008d5db4f89cc7bf8c2"
+    },
+    {
         "id": 4114,
         "title": "Young Thug - Business Is Business ALBUM REVIEW",
         "video": "https://youtu.be/LwbUvvxf2I8",
@@ -41769,7 +41796,6 @@
         "tags": [
             "2017",
             "post-rock",
-            "post rock",
             "personal favourites",
             "rock"
         ],
@@ -62514,7 +62540,6 @@
             "post-rock",
             "2015",
             "drone",
-            "post rock",
             "ambient"
         ],
         "externalLinks": [
@@ -71451,7 +71476,6 @@
         "tags": [
             "2014",
             "post-rock",
-            "post rock",
             "electronic",
             "instrumental"
         ],
@@ -91816,7 +91840,6 @@
         "tags": [
             "post-rock",
             "2011",
-            "post rock",
             "instrumental",
             "ambient"
         ],
@@ -94386,7 +94409,6 @@
         "rating": 7,
         "wiki": "",
         "tags": [
-            "post rock",
             "2010",
             "instrumental",
             "rock",
@@ -96220,7 +96242,6 @@
         "tags": [
             "post-rock",
             "instrumental",
-            "post rock",
             "ambient",
             "live"
         ],

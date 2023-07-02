@@ -1,5 +1,32 @@
 [
     {
+        "id": 4116,
+        "title": "Geese - 3D Country ALBUM REVIEW",
+        "video": "https://youtu.be/P0NebpflFYU",
+        "year": "2023",
+        "imageShow": true,
+        "type": "review",
+        "rating": 8,
+        "albumTitle": "3D Country",
+        "artistName": "Geese",
+        "wiki": "",
+        "tags": [
+            "indie rock", "art punk", "southern rock", "art rock", "cowpunk"
+        ],
+        "externalLinks": [
+            {
+                "title": "spotify",
+                "source": "https://open.spotify.com/album/475CtqaU2OY24xBvIekWV6"
+            },
+            {
+                "title": "AM",
+                "source": "https://music.apple.com/ru/album/3d-country/1655166394"
+            }
+
+        ],
+        "image": "https://e.snmc.io/i/600/w/12d7290bc81c0f627128ed3ca7cfd4c8/10816435/geese-3d-country-Cover-Art.jpg"
+    },
+    {
         "id": 4115,
         "title": "Swans - The Beggar ALBUM REVIEW",
         "video": "https://youtu.be/O1k4bQhCx5Y",

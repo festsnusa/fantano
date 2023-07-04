@@ -1,0 +1,16 @@
+const e=`What makes this compilation especially interesting is that I've heard a lot of afrobeat recordings, a lot of stuff from Fela Kuti, a lot of stuff from Soundwave Records, and a lot of stuff from the label that this compilation comes from, Analog Africa. But this is the first time I came across a compilation that even in some way focused on the country of Togo, which is skinny, little country right next to Ghana, which both of those countries are on the West side of Africa.\r
+\r
+So what makes this so special, so important, so interesting? For one, the recording quality of these tracks is fantastic, I've heard a lot of recordings of this style of music from this area of Africa, and a lot of it is cruddy, lo-fi, messy, just doesn't do justice to how many players that are actually in the band. But the recording quality here is just superb — the basslines are warm, the drums are all crystal-clear, just a lot of clarity. There might have been some remastering, I have no clue. But the the quality of these songs are really high.\r
+\r
+There are a lot of psychedelic "wah-wah" guitars and very sunny guitar solos. And if you love percussion and you love grooves, then this is something to behold. There's a ton of hand percussion on this thing. There may be one, may be two tracks where you actually hear a full drum kit. Most of the tracks have these classic, old-school electric organ sounds on them too, which is a little cheesy. But is the prevalent sound in afrobeat, because these are the organs that were available to the musicians during this genres heyday.\r
+\r
+Many of the tracks are long, tipping the scales at 8 minutes or more. And when I'm listening to a song with a deep groove for that amount of time, I just get hypnotized, which is a pleasurable experience. And these recordings are just so in the moment, just so they're happening there, right now. And at the time, there's the musicians during some of these recording sessions were just freaking out and screaming at the top of their lungs and having the time of their lives. And it's hard not to feel that same way too when you're hearing these people having a fucking ball recording this.\r
+\r
+Plus, there's all sorts of improvisations and little subtleties that you just don't get out of canned music. Heavy funk and jazz influences on some of these tracks too, the 4th song on this album, the bassline and the horn arrangements that open up the song are so Western, I'm just waiting for James Brown to come in and start screaming on the track.\r
+\r
+I know, compilations can be a little bit shoddy, there are a lot of potholes, but I can assure you on this one there are not. This is just one strong track after another, from a dozen different bands documenting an interesting style and time in music.\r
+\r
+FAV TRACKS: ALL\r
+\r
+STRONG 8\r
+`;export{e as default};

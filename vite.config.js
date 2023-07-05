@@ -7,7 +7,6 @@ import markdownRawPlugin from 'vite-raw-plugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/fantano/',
   plugins: [
     vue(),
     markdownRawPlugin({

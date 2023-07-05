@@ -1,8 +1,7 @@
-import { ref, getDownloadURL } from "firebase/storage"
+import { ref, getDownloadURL } from 'firebase/storage'
 import { storage } from '@/includes/firebase'
 
 export function transformYouTubeLink(currentLink) {
-
   const videoID = extractVideoID(currentLink)
   const embedURL = `https://www.youtube.com/embed/${videoID}`
   return embedURL
@@ -12,16 +11,17 @@ function extractVideoID(link) {
   let videoID = ''
 
   // Regular expression pattern to match the video ID
-  const pattern = /(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|[^#]*[?&]v=|youtu\.be\/|[^#]*[?&]vi=))([^?&"'>]+)/
+  const pattern =
+    /(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|[^#]*[?&]v=|youtu\.be\/|[^#]*[?&]vi=))([^?&"'>]+)/
 
   // Extract the video ID using the regular expression
-  const match = link.match(pattern);
+  const match = link.match(pattern)
   if (match && match[1]) {
     videoID = match[1]
   } else {
     // Check if the link is in the youtu.be pattern
-    const youtuPattern = /^https?:\/\/youtu.be\/([\w-]{11})/;
-    const youtuMatch = link.match(youtuPattern);
+    const youtuPattern = /^https?:\/\/youtu.be\/([\w-]{11})/
+    const youtuMatch = link.match(youtuPattern)
     if (youtuMatch && youtuMatch[1]) {
       videoID = youtuMatch[1]
     }
@@ -36,15 +36,13 @@ export function getThumbnail(url) {
 function getVideoID(url) {
   let regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/
   let match = url.match(regExp)
-  return (match && match[7].length == 11) ? match[7] : false
+  return match && match[7].length == 11 ? match[7] : false
 }
 
 export async function downloadFile(fileName) {
-
   const fileRef = ref(storage, `texts/${fileName}.md`)
 
   try {
-
     const url = await getDownloadURL(fileRef)
 
     // Fetch the Markdown content from the URL
@@ -55,17 +53,15 @@ export async function downloadFile(fileName) {
     return markdownText
   } catch (error) {
     // Handle error
-    console.error("Error retrieving Markdown file:", error)
-    return ""
+    console.error('Error retrieving Markdown file:', error)
+    return ''
   }
 }
 
 export async function getJSONData() {
-
-  const fileRef = ref(storage, "main-channel.json")
+  const fileRef = ref(storage, 'main-channel.json')
 
   try {
-
     const url = await getDownloadURL(fileRef)
 
     // Fetch the Markdown content from the URL
@@ -76,7 +72,7 @@ export async function getJSONData() {
     return JSON.parse(jsonText)
   } catch (error) {
     // Handle error
-    console.error("Error retrieving Markdown file:", error)
-    return ""
+    console.error('Error retrieving Markdown file:', error)
+    return ''
   }
 }

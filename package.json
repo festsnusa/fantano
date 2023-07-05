@@ -2,7 +2,6 @@
   "name": "fantano-core",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://festsnusa.github.io/spotify",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

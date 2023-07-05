@@ -12,6 +12,7 @@ const OtherView = () => import('@/views/OtherView.vue')
 const TagsView = () => import('@/views/TagsView.vue')
 
 const router = createRouter({
+  mode: 'history',
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
@@ -71,14 +72,14 @@ const router = createRouter({
     },
     {
       path: '/:catchAll(.*)*',
-      redirect: { name: 'home' },
+      redirect: { name: 'home' }
     }
   ]
 })
 
 router.beforeEach((to, from, next) => {
-  window.scrollTo(0, 0);
-  next();
-});
+  window.scrollTo(0, 0)
+  next()
+})
 
 export default router

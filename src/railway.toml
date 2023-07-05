@@ -1,8 +1,4 @@
-[[statics]]
-  directory = "dist"
-  spa = true
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

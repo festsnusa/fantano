@@ -7,9 +7,13 @@ import markdownRawPlugin from 'vite-raw-plugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), markdownRawPlugin({
-    fileRegex: /\.md$/
-  })],
+  base: '/fantano/',
+  plugins: [
+    vue(),
+    markdownRawPlugin({
+      fileRegex: /\.md$/
+    })
+  ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

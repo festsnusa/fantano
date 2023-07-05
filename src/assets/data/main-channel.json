@@ -1,5 +1,44 @@
 [
     {
+        "id": 4118,
+        "title": "Lil Uzi Vert - Pink Tape ALBUM REVIEW",
+        "video": "https://youtu.be/4ciUHpF9Vkg",
+        "year": "2023",
+        "imageShow": true,
+        "type": "review",
+        "rating": 5,
+        "albumTitle": "Pink Tape",
+        "artistName": "Lil Uzi Vert",
+        "wiki": "",
+        "tags": [
+            "trap", "pop rap", "rage", "alternative metal", "cloud rap", "trap metal", "experimental hip hop",
+            "rap rock"
+        ],
+        "externalLinks": [
+            {
+                "title": "spotify",
+                "source": "https://open.spotify.com/album/2ua5bFkZLZl1lIgKWtYZIz"
+            },
+            {
+                "title": "AM",
+                "source": "https://music.apple.com/us/album/pink-tape/1694343104"
+            }
+
+        ],
+        "image": "https://e.snmc.io/i/600/w/12d7290bc81c0f627128ed3ca7cfd4c8/10816435/geese-3d-country-Cover-Art.jpg"
+    },
+    {
+        "id": 4117,
+        "title": "Doja Cat, The Weeknd, Trippie Redd, Coi Leray | Weekly Track Roundup: 6/18/23",
+        "video": "https://youtu.be/NtzT7C6f-18",
+        "year": "2023",
+        "imageShow": true,
+        "type": "weekly",
+        "wiki": "",
+        "tags": "",
+        "image": ""
+    },
+    {
         "id": 4116,
         "title": "Geese - 3D Country ALBUM REVIEW",
         "video": "https://youtu.be/P0NebpflFYU",

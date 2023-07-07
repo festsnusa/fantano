@@ -232,6 +232,11 @@ export default {
 
 .multiline {
   white-space: pre-wrap;
+
+  ::selection {
+    background-color: #FEE27B;
+    color: black;
+  }
 }
 
 .markdown {

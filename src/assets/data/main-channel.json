@@ -1,5 +1,43 @@
 [
     {
+        "id": 4120,
+        "title": "Joanna Sternberg - I've Got Me ALBUM REVIEW",
+        "video": "https://youtu.be/RyegEfRvXP8",
+        "year": "2023",
+        "imageShow": true,
+        "type": "review",
+        "rating": 8,
+        "albumTitle": "I've Got Me",
+        "artistName": "Joanna Sternberg",
+        "wiki": "",
+        "tags": [
+            "contemporary folk", "singer-songwriter", "anti-folk", "indie folk", "freak folk"
+        ],
+        "externalLinks": [
+            {
+                "title": "spotify",
+                "source": "https://open.spotify.com/album/3l3xPtGZXUcnQaNlpbjvR0"
+            },
+            {
+                "title": "AM",
+                "source": "https://music.apple.com/us/album/ive-got-me/1664565397"
+            }
+
+        ],
+        "image": "https://e.snmc.io/i/600/w/f7980ef15b003b50bc6d18109a01b9b1/10783281/joanna-sternberg-ive-got-me-Cover-Art.jpg"
+    },
+    {
+        "id": 4119,
+        "title": "Best Albums of 2023 So Far",
+        "video": "https://youtu.be/PHYMuB5Llp0",
+        "year": "2023",
+        "imageShow": false,
+        "type": "other",
+        "wiki": "",
+        "tags": "",
+        "image": ""
+    },
+    {
         "id": 4118,
         "title": "Lil Uzi Vert - Pink Tape ALBUM REVIEW",
         "video": "https://youtu.be/4ciUHpF9Vkg",
@@ -29,7 +67,7 @@
     },
     {
         "id": 4117,
-        "title": "Doja Cat, The Weeknd, Trippie Redd, Coi Leray | Weekly Track Roundup: 6/18/23",
+        "title": "Earl Sweatshirt, Olivia Rodrigo, Sampha, Fall Out Boy | Weekly Track Roundup: 7/2/23",
         "video": "https://youtu.be/NtzT7C6f-18",
         "year": "2023",
         "imageShow": true,

@@ -95391,11 +95391,7 @@
         "rating": 8,
         "wiki": "",
         "tags": [
-            "electronic",
-            "idm",
-            "2010",
-            "radiohead office chart",
-            "drjazzmrfunkmusic"
+            "IDM", "ambient techno", "minimal techno"
         ],
         "albumTitle": "Holkham Drones",
         "artistName": "Luke Abbott",
@@ -95856,7 +95852,7 @@
         "rating": 8,
         "artistName": "Flying Lotus",
         "wiki": "",
-        "tags": "",
+        "tags": ["glitch hop", "IDM", "chiptune", "wonky"],
         "albumTitle": "Pattern+Grid World",
         "externalLinks": [
             {

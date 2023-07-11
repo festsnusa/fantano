@@ -19,7 +19,7 @@ import Breadcrumb from '@/components/Breadcrumb.vue'
 import AppFooter from '@/components/AppFooter.vue'
 import HomeBlock from '@/components/HomeBlock.vue'
 import AppPreloader from '@/components/AppPreloader.vue'
-import Carousel from '@/components/Carousel.vue'
+// import Carousel from '@/components/Carousel.vue'
 
 // import json from '@/assets/data/main-channel.json'
 
@@ -31,7 +31,7 @@ export default {
     AppFooter,
     HomeBlock,
     AppPreloader,
-    Carousel,
+    // Carousel,
   },
   inject: ["json"],
   data() {

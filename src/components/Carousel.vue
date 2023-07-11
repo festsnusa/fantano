@@ -16,7 +16,7 @@ a-carousel(arrows dots-class="slick-dots slick-thumb")
 </template>
 
 <script>
-import json from '@/assets/data/main-channel.json'
+// import json from '@/assets/data/main-channel.json'
 
 export default {
   name: "CarouselApp",

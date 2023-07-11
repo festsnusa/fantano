@@ -30,7 +30,7 @@ import Breadcrumb from '@/components/Breadcrumb.vue'
 import { useMediaQuery } from '@vueuse/core'
 // import json from '@/assets/data/main-channel.json'
 
-// import { downloadFile } from '@/includes/helper'
+import { downloadFile } from '@/includes/helper'
 
 export default {
   name: "AppVideo",
@@ -115,62 +115,62 @@ export default {
     this.current = this.json.filter((e) => e.id == this.$route.params.video)[0]
     this.addBreadcrumbLink(this.current.type)
 
-    // let englishText = downloadFile(`${this.$route.params.video}-en`)
+    let englishText = downloadFile(`${this.$route.params.video}-en`)
 
-    // englishText.then(data => {
+    englishText.then(data => {
 
-    //   if (data !== '') {
-    //     this.textEn = data
-    //     this.en = true
-    //     this.filesLoaded++
-    //     document.querySelector('.markdown__en').innerHTML = this.textEn
-    //   }
+      if (data !== '') {
+        this.textEn = data
+        this.en = true
+        this.filesLoaded++
+        document.querySelector('.markdown__en').innerHTML = this.textEn
+      }
 
-    // })
-    //   .catch((e) => {
-    //     console.log(e)
-    //   })
+    })
+      .catch((e) => {
+        console.log(e)
+      })
 
-    // let russianText = downloadFile(`${this.$route.params.video}-ru`)
+    let russianText = downloadFile(`${this.$route.params.video}-ru`)
 
-    // russianText.then(data => {
+    russianText.then(data => {
 
-    //   if (data !== '') {
-    //     this.textRu = data
-    //     this.en = false
-    //     this.filesLoaded++
-    //     document.querySelector('.markdown__ru').innerHTML = this.textRu
-    //   }
+      if (data !== '') {
+        this.textRu = data
+        this.en = false
+        this.filesLoaded++
+        document.querySelector('.markdown__ru').innerHTML = this.textRu
+      }
 
-    // })
-    //   .catch((e) => {
-    //     console.log(e)
-    //   })
+    })
+      .catch((e) => {
+        console.log(e)
+      })
 
     // console.log(this.textEn)
 
-    import(`@/assets/text/${this.$route.params.video}-en.md`)
-      .then((module) => {
-        this.textEn = this.stringToHTML(module.default)
-        this.en = true
-        this.filesLoaded++
-        document.querySelector('.markdown__en').appendChild(this.textEn)
-      })
-      .catch((e) => {
-        console.log(e)
-      })
+    // import(`@/assets/text/${this.$route.params.video}-en.md`)
+    //   .then((module) => {
+    //     this.textEn = this.stringToHTML(module.default)
+    //     this.en = true
+    //     this.filesLoaded++
+    //     document.querySelector('.markdown__en').appendChild(this.textEn)
+    //   })
+    //   .catch((e) => {
+    //     console.log(e)
+    //   })
 
-    import(`@/assets/text/${this.$route.params.video}-ru.md`)
-      .then((module) => {
-        this.textRu = this.stringToHTML(module.default)
-        this.en = false
-        this.filesLoaded++
-        document.querySelector('.markdown__ru').appendChild(this.textRu)
+    // import(`@/assets/text/${this.$route.params.video}-ru.md`)
+    //   .then((module) => {
+    //     this.textRu = this.stringToHTML(module.default)
+    //     this.en = false
+    //     this.filesLoaded++
+    //     document.querySelector('.markdown__ru').appendChild(this.textRu)
 
-      })
-      .catch((e) => {
-        console.log(e)
-      })
+    //   })
+    //   .catch((e) => {
+    //     console.log(e)
+    //   })
   }
 }
 </script>

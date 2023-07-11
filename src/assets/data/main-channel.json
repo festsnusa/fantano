@@ -1,5 +1,32 @@
 [
     {
+        "id": 4121,
+        "title": "grouptherapy. - I Was Mature for My Age, But I Was Still a Child ALBUM REVIEW",
+        "video": "https://youtu.be/GElu5cR8XOU",
+        "year": "2023",
+        "imageShow": true,
+        "type": "review",
+        "rating": 8,
+        "albumTitle": "I Was Mature for My Age, But I Was Still a Child",
+        "artistName": "grouptherapy.",
+        "wiki": "",
+        "tags": [
+            "pop rap", "contemporary R&B", "rap rock", "hip house", "experimental hip hop"
+        ],
+        "externalLinks": [
+            {
+                "title": "spotify",
+                "source": "https://open.spotify.com/album/0xJEL0q2jaHqIOamFxE7yq"
+            },
+            {
+                "title": "AM",
+                "source": "https://music.apple.com/us/album/i-was-mature-for-my-age-but-i-was-still-a-child/1692032960"
+            }
+
+        ],
+        "image": "https://e.snmc.io/i/600/w/4b6839500cf9055964e495cb1ef7efad/11091481/grouptherapy-i-was-mature-for-my-age-but-i-was-still-a-child-Cover-Art.jpg"
+    },
+    {
         "id": 4120,
         "title": "Joanna Sternberg - I've Got Me ALBUM REVIEW",
         "video": "https://youtu.be/RyegEfRvXP8",

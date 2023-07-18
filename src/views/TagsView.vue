@@ -40,7 +40,7 @@ export default {
   data() {
     return {
       tag: this.$route.params.tag,
-      reviews: this.json.filter(e => e.type == 'review').filter(e => e.tags.includes(this.$route.params.tag)),
+      reviews: this.json.filter(e => e.type === 'review'),
       page: 1,
       perPage: 20,
       totalPages: 1,
@@ -58,8 +58,28 @@ export default {
     },
     ...mapStores(usePageStore),
   },
+  methods: {
+    convertArrToLowerCase(arrayOfObjects) {
+      const keyToConvert = 'tags'
+
+      // Map over the array and convert the values to lowercase
+      const convertedArray = arrayOfObjects.map(obj => ({
+        ...obj,
+        [keyToConvert]: Array.isArray(obj[keyToConvert])
+          ? obj[keyToConvert].map(value => value.toLowerCase())
+          : obj[keyToConvert] // If not an array, retain the original value
+      }));
+
+      // Output the converted array
+      console.log(convertedArray);
+
+      return convertedArray
+
+    }
+  },
   created() {
-    console.log(this.reviews.length)
+
+    this.reviews = this.convertArrToLowerCase(this.reviews).filter(e => e.tags.includes(this.$route.params.tag))
     this.perPage = this.isLargeScreen ? 20 : 6
     this.totalPages = Math.ceil(this.reviews.length / this.perPage)
 

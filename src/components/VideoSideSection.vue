@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       video: transformYouTubeLink,
-      player: this.current.externalLinks.length ? this.current.externalLinks[0].title : 'spotify',
+      player: this.current.externalLinks?.length ? this.current.externalLinks[0].title : 'spotify',
     }
   },
   computed: {

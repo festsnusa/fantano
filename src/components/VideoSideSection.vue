@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       video: transformYouTubeLink,
-      player: 'spotify',
+      player: this.current.externalLinks.length ? this.current.externalLinks[0].title : 'spotify',
     }
   },
   computed: {
@@ -27,24 +27,20 @@ export default {
       if (this.player === 'spotify') {
 
         let obj = this.current.externalLinks.find(e => e.title == 'spotify')
-
-        if (obj == undefined) {
-          return ""
-        }
-
+        if (obj == undefined) return ""
         return obj.source.replace("/album/", "/embed/album/")
       }
 
-      if (this.player === 'AM') {
+      else if (this.player === 'AM') {
 
         let obj = this.current.externalLinks.find(e => e.title == 'AM')
-
-        if (obj == undefined) {
-          return ""
-        }
-
+        if (obj == undefined) return ""
         return obj.source.replace("music.apple.com", "embed.music.apple.com")
 
+      } else {
+        let obj = this.current.externalLinks.find(e => e.title == this.player)
+        if (obj == undefined) return ""
+        return obj.source
       }
 
       return this.current.externalLinks

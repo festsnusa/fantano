@@ -203,46 +203,6 @@ $size: 24px;
   }
 }
 
-@media (min-width: 280px) {
-  // .reviews {
-  //   &__content {
-  //     padding: 0;
-  //   }
-  // }
-}
-
-@media (min-width: 540px) {
-  // .reviews {
-  //   &__content {
-  //     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  //   }
-  // }
-}
-
-@media (min-width: 700px) {
-  // .reviews {
-  //   &__content {
-  //     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  //   }
-  // }
-}
-
-@media (min-width: 1200px) {
-  // .reviews {
-  //   &__content {
-  //     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  //   }
-  // }
-}
-
-@media (min-width: 1700px) {
-  // .reviews {
-  //   &__content {
-  //     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-  //   }
-  // }
-}
-
 @media (max-width: 1700px) {
   .reviews {
 

@@ -38,7 +38,6 @@ async function initializeApp() {
     app.use(Antd)
 
     await getJSONData('main-channel.json').then((result) => {
-      console.log(result)
       json = result
     })
 

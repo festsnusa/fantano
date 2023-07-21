@@ -31,6 +31,7 @@ export default {
 .preloader {
   position: relative;
   width: 125px;
+  // max-width: 19rem;
   height: 125px;
   margin: auto;
   transform: scale(var(--scale));

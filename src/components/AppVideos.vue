@@ -176,10 +176,6 @@ $size: 24px;
   }
 
   &__content {
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    // padding: 2rem;
-    // gap: 2rem;
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;

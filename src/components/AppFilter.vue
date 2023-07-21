@@ -1,8 +1,8 @@
 <template lang="pug">
 .search
   a-button(@click="sort") Reverse
-  input.search__input(type="text" v-model="text" @input="searchReview(text)" placeholder="Search by title...")
-  select.search__select(v-model="year" name="select" @change="filterByYear(year, rating)")
+  input.search__input(ref="inputRef" type="text" v-model="text" @input="searchReview(text)" placeholder="Search by title...")
+  select.search__select(ref="selectRef" v-model="year" name="select" @change="filterByYear(year, rating)")
     option(value="") Filter by year
     option(v-for="item in years" :value="item") {{item}}
   select.search__select_rating(v-model="rating" name="select_rating" @change="filterByRating(rating, year)"

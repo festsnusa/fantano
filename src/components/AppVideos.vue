@@ -5,7 +5,7 @@ main.reviews
     AppContent(:arr="paginatedData" :contentCount="reviews.length")
     AppPagination(v-show="reviews.length" :reviews="reviews" :totalPages="totalPages")
   aside.reviews__right
-    AppFilter(:filterByYear="filterByYear" :searchReview="searchReview" :sort="sort" 
+    AppFilter(ref="childRef" :filterByYear="filterByYear" :searchReview="searchReview" :sort="sort" 
     :filterByRating="filterByRating" :type="type" :years="years")
 </template>
 
@@ -66,7 +66,7 @@ export default {
     filterByYear(year, rating) {
       this.reviews = this.json.filter(e => e.type == this.type)
       this.pageStore.currentPage = 1
-      document.querySelector('.search__input').value = ''
+      this.$refs.childRef.$refs.inputRef.value = ''
       this.yearStore.currentYear = year
       if (year != '') {
         this.reviews = this.reviews.filter(e => e.year == year)
@@ -81,7 +81,7 @@ export default {
     filterByRating(rating, year) {
       this.reviews = this.json.filter(e => e.type == this.type)
       this.pageStore.currentPage = 1
-      document.querySelector('.search__input').value = ''
+      this.$refs.childRef.$refs.inputRef.value = ''
       if (year !== '') {
         this.reviews = this.reviews.filter(e => e.year == year)
       }
@@ -97,7 +97,7 @@ export default {
       this.reviews = this.json.filter(e => e.type == this.type)
       this.pageStore.currentPage = 1
       this.yearStore.currentYear = ''
-      document.querySelector('.search__select').value = ''
+      this.$refs.childRef.$refs.selectRef.value = ''
       this.ratingStore.currentRating = ''
       if (text.length == 0) {
         this.setTotalPages()

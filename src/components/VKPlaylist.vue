@@ -26,18 +26,32 @@ export default {
     const vkScriptLoaded = ref(false)
 
     const extractOwnerIdAndPlaylistId = (url) => {
-      const regex = /playlist\/-([\d]+)_([\w]+)/;
-      const matches = url.match(regex);
-      if (matches && matches.length === 3) {
+      // const regex = /-(\d+)_(\w+)_?/;
+      const playlistRegex = /\/music\/playlist\/(-?\d+)_(\w+)/;
+      const albumRegex = /\/music\/album\/(-?\d+)_(\d+)_(\w+)/;
+
+      const playlistMatches = url.match(playlistRegex);
+      const albumMatches = url.match(albumRegex);
+
+      if (playlistMatches && playlistMatches.length === 3) {
         return {
-          ownerId: `-${matches[1]}`,
-          playlistId: matches[2],
+          ownerId: playlistMatches[1],
+          playlistId: playlistMatches[2],
         };
       }
+
+      if (albumMatches && albumMatches.length === 4) {
+        return {
+          ownerId: albumMatches[1],
+          playlistId: `${albumMatches[2]}_${albumMatches[3]}`,
+        };
+      }
+
       return {
         ownerId: null,
         playlistId: null,
       };
+
     };
 
     const { ownerId, playlistId } = extractOwnerIdAndPlaylistId(props.playlistUrl)

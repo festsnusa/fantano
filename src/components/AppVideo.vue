@@ -124,6 +124,8 @@ export default {
         this.en = true
         this.filesLoaded++
         document.querySelector('.markdown__en').innerHTML = this.textEn
+      } else {
+        throw new Error("Not found")
       }
 
     })
@@ -140,6 +142,8 @@ export default {
         this.en = false
         this.filesLoaded++
         document.querySelector('.markdown__ru').innerHTML = this.textRu
+      } else {
+        throw new Error("Not found")
       }
 
     })

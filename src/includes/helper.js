@@ -53,7 +53,7 @@ export async function downloadFile(fileName) {
     return markdownText
   } catch (error) {
     // Handle error
-    console.error('Error retrieving Markdown file:', error)
+    console.log('Error retrieving Markdown file:', error)
     return ''
   }
 }

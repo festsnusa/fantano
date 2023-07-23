@@ -1,6 +1,6 @@
 <template lang="pug">
 .video
-  iframe(:src="video(current.video)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+  iframe(:src="video(current.video)" rel=0 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
 ul.external-links(v-show="current.externalLinks")
   li(v-for="link in current.externalLinks" @click="changePlayer(link.title)")
     a-button {{link.title}}

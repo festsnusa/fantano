@@ -3,7 +3,7 @@ import { storage } from '@/includes/firebase'
 
 export function transformYouTubeLink(currentLink) {
   const videoID = extractVideoID(currentLink)
-  const embedURL = `https://www.youtube.com/embed/${videoID}?rel=0`
+  const embedURL = `https://www.youtube.com/embed/${videoID}`
   return embedURL
 }
 

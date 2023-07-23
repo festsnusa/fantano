@@ -5,17 +5,22 @@ ul.external-links(v-show="current.externalLinks")
   li(v-for="link in current.externalLinks" @click="changePlayer(link.title)")
     a-button {{link.title}}
 .player(v-show="current.externalLinks")
-  iframe.iframe(v-for="link in current.externalLinks"
-    v-show="player == link.title" style="border-radius:12px" :src="toEmbedLink" width="100%" height="452" frameBorder="0" allowfullscreen="" 
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy")
+  div(v-for="link in current.externalLinks")
+    VKPlaylist(v-if="link.title === 'VK'" :playlistUrl="link.source")
+    iframe.iframe(v-else v-show="player == link.title" style="border-radius:12px" :src="toEmbedLink" width="100%" height="452" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy")
 
 </template>
 
 <script>
 import { transformYouTubeLink } from '@/includes/helper'
+import VKPlaylist from '@/components/VKPlaylist.vue'
+
 export default {
   name: "VideoSideSection",
   props: ["current"],
+  components: {
+    VKPlaylist
+  },
   data() {
     return {
       video: transformYouTubeLink,

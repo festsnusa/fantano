@@ -29,21 +29,22 @@ export default {
   },
   computed: {
     toEmbedLink() {
-      if (this.player === 'spotify') {
+      if (this.player.toLowerCase() === 'spotify') {
 
-        let obj = this.current.externalLinks.find(e => e.title == 'spotify')
+        let obj = this.current.externalLinks.find(e => e.title.toLowerCase() === 'spotify')
         if (obj == undefined) return ""
+        if (obj.source.includes("/playlist/")) return obj.source.replace("/playlist/", "/embed/playlist/")
         return obj.source.replace("/album/", "/embed/album/")
       }
 
-      else if (this.player === 'AM') {
+      else if (this.player.toLowerCase() === 'am') {
 
-        let obj = this.current.externalLinks.find(e => e.title == 'AM')
+        let obj = this.current.externalLinks.find(e => e.title.toLowerCase() === 'am')
         if (obj == undefined) return ""
         return obj.source.replace("music.apple.com", "embed.music.apple.com")
 
       } else {
-        let obj = this.current.externalLinks.find(e => e.title == this.player)
+        let obj = this.current.externalLinks.find(e => e.title.toLowerCase() === this.player.toLowerCase())
         if (obj == undefined) return ""
         return obj.source
       }

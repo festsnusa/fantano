@@ -7,7 +7,7 @@ export function transformYouTubeLink(currentLink) {
   return embedURL
 }
 
-function extractVideoID(link) {
+export function extractVideoID(link) {
   let videoID = ''
 
   // Regular expression pattern to match the video ID

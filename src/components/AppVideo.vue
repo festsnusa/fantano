@@ -28,9 +28,7 @@ import VideoSideSection from '@/components/VideoSideSection.vue'
 import Breadcrumb from '@/components/Breadcrumb.vue'
 
 import { useMediaQuery } from '@vueuse/core'
-// import json from '@/assets/data/main-channel.json'
-
-import { downloadFile } from '@/includes/helper'
+import { downloadFile, extractVideoID } from '@/includes/helper'
 
 export default {
   name: "AppVideo",
@@ -109,6 +107,32 @@ export default {
       let dom = document.createElement('div')
       dom.innerHTML = str
       return dom
+    },
+    async getYoutubeCaption() {
+      const apiKey = 'AIzaSyCetglNoZRO6IU3JBIhlmIneiHFef2Q4tM'
+      const videoId = extractVideoID(this.current.video)
+
+      const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`;
+
+      await fetch(apiUrl)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          const video = data.items[0];
+          const description = video.snippet.description;
+          // Process the description as needed
+          this.textEn = description
+          document.querySelector('.markdown__en').innerHTML = this.textEn
+          this.en = true
+          this.filesLoaded++
+        })
+        .catch(error => {
+          console.error('Error fetching video description:', error);
+        });
     }
   },
   async created() {
@@ -125,7 +149,7 @@ export default {
         this.filesLoaded++
         document.querySelector('.markdown__en').innerHTML = this.textEn
       } else {
-        throw new Error("Not found")
+        this.getYoutubeCaption()
       }
 
     })
@@ -150,6 +174,8 @@ export default {
       .catch((e) => {
         console.log(e)
       })
+
+
 
     // console.log(this.textEn)
 

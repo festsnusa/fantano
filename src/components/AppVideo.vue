@@ -28,7 +28,7 @@ import VideoSideSection from '@/components/VideoSideSection.vue'
 import Breadcrumb from '@/components/Breadcrumb.vue'
 
 import { useMediaQuery } from '@vueuse/core'
-import { downloadFile, extractVideoID } from '@/includes/helper'
+import { downloadFile, getYoutubeCaption } from '@/includes/helper'
 
 export default {
   name: "AppVideo",
@@ -108,32 +108,32 @@ export default {
       dom.innerHTML = str
       return dom
     },
-    async getYoutubeCaption() {
-      const apiKey = 'AIzaSyCetglNoZRO6IU3JBIhlmIneiHFef2Q4tM'
-      const videoId = extractVideoID(this.current.video)
+    // async getYoutubeCaption() {
+    //   const apiKey = 'AIzaSyCetglNoZRO6IU3JBIhlmIneiHFef2Q4tM'
+    //   const videoId = extractVideoID(this.current.video)
 
-      const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`;
+    //   const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`;
 
-      await fetch(apiUrl)
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.json();
-        })
-        .then(data => {
-          const video = data.items[0];
-          const description = video.snippet.description;
-          // Process the description as needed
-          this.textEn = description
-          document.querySelector('.markdown__en').innerHTML = this.textEn
-          this.en = true
-          this.filesLoaded++
-        })
-        .catch(error => {
-          console.error('Error fetching video description:', error);
-        });
-    }
+    //   await fetch(apiUrl)
+    //     .then(response => {
+    //       if (!response.ok) {
+    //         throw new Error('Network response was not ok');
+    //       }
+    //       return response.json();
+    //     })
+    //     .then(data => {
+    //       const video = data.items[0];
+    //       const description = video.snippet.description;
+    //       // Process the description as needed
+    //       this.textEn = description
+    //       document.querySelector('.markdown__en').innerHTML = this.textEn
+    //       this.en = true
+    //       this.filesLoaded++
+    //     })
+    //     .catch(error => {
+    //       console.error('Error fetching video description:', error);
+    //     });
+    // }
   },
   async created() {
     this.current = this.json.filter((e) => e.id == this.$route.params.video)[0]
@@ -149,7 +149,19 @@ export default {
         this.filesLoaded++
         document.querySelector('.markdown__en').innerHTML = this.textEn
       } else {
-        this.getYoutubeCaption()
+        let result = getYoutubeCaption(this.current.video)
+        result.then(captionData => {
+
+          if (captionData !== undefined) {
+            this.textEn = captionData
+            this.en = true
+            this.filesLoaded++
+            document.querySelector('.markdown__en').innerHTML = this.textEn
+          }
+
+        }).catch(error => {
+          console.log(error); // Handle any errors that might occur during getYoutubeCaption
+        });
       }
 
     })

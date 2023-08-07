@@ -75,3 +75,50 @@ export async function getJSONData(fileName) {
     return ''
   }
 }
+
+// export async function getYoutubeCaption(currentVideo) {
+//   const apiKey = 'AIzaSyCetglNoZRO6IU3JBIhlmIneiHFef2Q4tM'
+//   const videoId = extractVideoID(currentVideo)
+
+//   const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`
+
+//   await fetch(apiUrl)
+//     .then((response) => {
+//       if (!response.ok) {
+//         throw new Error('Network response was not ok')
+//       }
+//       return response.json()
+//     })
+//     .then((data) => {
+//       const video = data.items[0]
+//       const description = video.snippet.description
+//       // Process the description as needed
+//       return description
+//     })
+//     .catch((error) => {
+//       console.error('Error fetching video description:', error)
+//     })
+// }
+
+export async function getYoutubeCaption(currentVideo) {
+  try {
+    const apiKey = 'AIzaSyCetglNoZRO6IU3JBIhlmIneiHFef2Q4tM'
+    const videoId = extractVideoID(currentVideo)
+
+    const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`
+
+    const response = await fetch(apiUrl)
+    if (!response.ok) {
+      throw new Error('Network response was not ok')
+    }
+
+    const data = await response.json()
+    const video = data.items[0]
+    const description = video.snippet.description
+
+    return description
+  } catch (error) {
+    console.error('Error fetching video description:', error)
+    throw error // Rethrow the error for handling at a higher level
+  }
+}

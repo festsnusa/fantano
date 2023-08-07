@@ -9,20 +9,19 @@ a-carousel(arrows dots-class="slick-dots slick-thumb")
     .carousel__right
       RouterLink(:to="`/videos/${item.id}`")
         h1 {{ item.title }}
-      div.carousel__links(v-for="link in item.externalLinks")
-        a(:href="link.source" target="_blank") 
+      .links
+        a(:href="link.source" target="_blank" v-for="link in item.externalLinks") 
           a-button {{ link.title }}
 
 </template>
 
 <script>
-// import json from '@/assets/data/main-channel.json'
-
 export default {
   name: "CarouselApp",
+  inject: ["json"],
   data() {
     return {
-      reviews: json.sort(() => 0.5 - Math.random()).filter(e => e.type === 'review').slice(0, 10),
+      reviews: this.json.sort(() => 0.5 - Math.random()).filter(e => e.type === 'review').slice(0, 10),
     }
   },
   methods: {
@@ -36,10 +35,11 @@ export default {
 <style scoped>
 .carousel {
   display: flex !important;
+}
 
-  &__links {
-    display: flex !important;
-  }
+.links {
+  display: flex !important;
+  gap: 1rem !important;
 }
 
 /* For demo */

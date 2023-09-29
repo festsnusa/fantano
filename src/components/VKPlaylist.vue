@@ -2,7 +2,7 @@
   <div id="vkPlaylist" ref="vkPlaylist"></div>
 </template>
 
-<script>
+<script lang="ts">
 import { onMounted, ref } from 'vue'
 
 export default {
@@ -74,7 +74,7 @@ export default {
       }
     })
 
-    const embedPlaylist = (element) => {
+    const embedPlaylist = () => {
       VK.Widgets.Playlist('vkPlaylist', ownerId, playlistId, props.width, props.height, {
         mode: 4 // Display mode (0 - list, 4 - tiles)
       })

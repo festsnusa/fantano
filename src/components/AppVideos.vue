@@ -134,6 +134,18 @@ export default {
     this.pageStore.$subscribe((mutation, state) => {
       this.page = state.currentPage
     })
+
+    let arr = []
+    this.reviews.map(e => {
+      let obj = {}
+      obj.albumTitle = e.albumTitle
+      obj.artistName = e.artistName
+      obj.theneedledrop = e.rating
+      obj.pitchfork = ""
+      arr.push(obj)
+    })
+
+    console.log(arr)
   },
   mounted() {
 

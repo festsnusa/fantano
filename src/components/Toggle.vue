@@ -5,13 +5,13 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "AppToggle",
   props: ["toggleValue", "checked"],
   data() {
     return {
-      checkedFlag: this.checked,
+      checkedFlag: this.checked as boolean,
     }
   }
 }

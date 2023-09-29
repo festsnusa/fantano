@@ -1,8 +1,9 @@
 <template lang="pug">
 AppHeader
-Carousel
 Breadcrumb.breadcrumb(title="Home")
 main
+  .carousel
+    Carousel
   .reviews
     HomeBlock(title="REVIEWS" link="videos" :arr="reviews")
   .wtr
@@ -338,6 +339,7 @@ export default {
 .reviews,
 .wtr,
 .ynr,
+.carousel,
 .list-week {
   padding: 0 3rem;
 }

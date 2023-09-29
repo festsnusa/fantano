@@ -9,7 +9,7 @@
   </a-breadcrumb>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "AppBreadcrumb",
   props: ["arr", "title"],

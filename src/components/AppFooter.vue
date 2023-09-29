@@ -7,7 +7,7 @@ footer.footer
   p.text Copyright © 2023 The Needle Drop
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "AppFooter",
 }

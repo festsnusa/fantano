@@ -3,7 +3,7 @@
   span(:class="`rot-${n}`" v-for="n in 8")
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'AppPreloader',
   props: {

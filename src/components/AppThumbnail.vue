@@ -7,7 +7,7 @@ h1.title {{ title }}
     span.thumbnail__caption {{ item.year }}
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "AppThumbnail",
   props: ["title", "data"],

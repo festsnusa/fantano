@@ -28,16 +28,16 @@ export default {
   data() {
     return {
       page: 1,
-      perPage: 16,
+      // perPage: 16,
       maxVisibleButtons: 8,
       gotoNumber: ''
     }
   },
   computed: {
     ...mapStores(usePageStore),
-    paginatedData() {
-      return this.reviews.slice((this.page - 1) * this.perPage, this.page * this.perPage)
-    },
+    // paginatedData() {
+    //   return this.reviews.slice((this.page - 1) * this.perPage, this.page * this.perPage)
+    // },
     firstPage() {
       return Math.max(this.page - (this.page === this.totalPages ? 2 : 1), 1)
     },

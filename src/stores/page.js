@@ -3,11 +3,11 @@ import { defineStore } from 'pinia'
 export default defineStore('page', {
   state: () => {
     return {
-      currentPage: 1,
-    };
+      currentPage: 1
+    }
   },
   // persist: true,
   persist: {
-    storage: sessionStorage,
-  },
+    storage: sessionStorage
+  }
 })

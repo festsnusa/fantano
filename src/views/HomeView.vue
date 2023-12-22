@@ -2,8 +2,8 @@
 AppHeader
 Breadcrumb.breadcrumb(title="Home")
 main
-  .carousel
-    Carousel
+  //- .carousel
+  //-   Carousel
   .reviews
     HomeBlock(title="REVIEWS" link="videos" :arr="reviews")
   .wtr

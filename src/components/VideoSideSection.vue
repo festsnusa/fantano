@@ -79,6 +79,10 @@ export default {
   }
 }
 
+.player {
+  padding-bottom: 85%;
+}
+
 .iframe {
   @media (min-width: 1524px) {
     max-height: 25rem;

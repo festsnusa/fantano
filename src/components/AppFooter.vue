@@ -4,6 +4,9 @@ footer.footer
     a(href="https://vk.com/mbdtfisstill6" target="_blank") 
       li.item
         img.image(src="@/assets/images/vk.png")
+    a(href="https://t.me/mbdtfisstill6" target="_blank") 
+      li.item
+        img.image(src="@/assets/images/telegram.png")
   p.text Copyright © 2023 The Needle Drop
 </template>
 

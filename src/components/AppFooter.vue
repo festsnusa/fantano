@@ -28,6 +28,14 @@ export default {
   // position: sticky;
   // bottom: 0;
   width: 100%;
+
+  .list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .text {

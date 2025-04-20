@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      years: Array.from(Array(4), (_, i) => i + 2015).reverse()
+      years: Array.from(Array(6), (_, i) => i + 2015).reverse()
     }
   }
 }

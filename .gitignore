@@ -29,3 +29,5 @@ coverage
 
 src/assets/data/
 src/assets/text/
+
+.env

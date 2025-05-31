@@ -46,9 +46,9 @@ export default {
   methods: {
     async fetchLastFm(id, artistName, albumTitle) {
 
-      const apiKey = '9be755d7287c977402ce830fc6b09896'
+      const apiKeyLastFm = import.meta.env.VITE_API_KEY_LASTFM
 
-      fetch(`http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${apiKey}&artist=${encodeURIComponent(artistName)}&album=${encodeURIComponent(albumTitle)}&format=json`)
+      fetch(`http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${apiKeyLastFm}&artist=${encodeURIComponent(artistName)}&album=${encodeURIComponent(albumTitle)}&format=json`)
         .then(response => response.json())
         .catch(error => {
           console.error('Error:', error);
@@ -80,7 +80,7 @@ export default {
     },
     async fetchLastFmImages(id, artistName, albumTitle) {
 
-      const apiKey = 'e44382d410187390db28095da14f7f98'
+      const apiKey = import.meta.env.VITE_API_KEY_LASTFM_IMAGES
 
       await fetch(`http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${apiKey}&artist=${encodeURIComponent(artistName)}&album=${encodeURIComponent(albumTitle)}&format=json`)
         .then(response => response.json())
@@ -126,9 +126,8 @@ export default {
       return arrObj
     },
     getSpotifyLink(id, albumTitle, artistName) {
-      // const accessToken = 'BQAoGruW4vQOUL3ioFMFpRV-Yhe29_Wl25idYydLqm9uOta-tW0Z2TThAdNzPgM8abQLnVlTbGhkL-Jq4wCwvN0VWw2P5ZBGXrteL1kwZkjajz6aKhXFKpz0vSYh-1aAw7tdJj9pthugPFPur4Njh8yiSZhz9svGDjmDTOyCUK3h-YEknu72ExDmNf_NXlG2Lkhm5jx0uwtQuVA4O_ghQCC4Qrz7S30X8xq0oF_gWYdkZVVFIjRk1rz7YN5MG4Ymg1JYGSLYu7WbXEwbIj_ryb0l';
-      // const accessToken = "BQDBKJ5eo5jxbtpWjVOj7ryS84khybFpP_lTqzV7uV-T_m0cTfwvdn5BnBSKPxKgEb11"
-      const accessToken = 'BQBAspwrTtcoSz8Q3eFdU0bWP-ayX-TuV-sMLh-baVdxzFO5iwIB_DLrrFvuF6qg-LRLjXUDmgSCEtqSGbVLepJY9xi7ie6WHZ8-4nxoZzYb1PeL3I7Zwr6DLI0Q7QeN-UPyj3ga2vYgbtDnOp4UzVH56Sh6v2ahvgC-qu0CwANaG5t065zeovXlBNbgTkOiDqQiM61h1wjAmL5TC7_IivBMZx3ihbAYphU5cZikq_Kjvn6bZiWgQ2Gj3Sip9tiKE9U-GBrqAkoWRiDvHINlu6Bw'
+      
+      const accessToken = import.meta.env.VITE_SPOTIFY_ACCESS_TOKEN
 
       const searchQuery = `album:${encodeURIComponent(albumTitle)} artist:${encodeURIComponent(artistName)}`;
 

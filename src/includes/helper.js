@@ -77,7 +77,7 @@ export async function getJSONData(fileName) {
 }
 
 // export async function getYoutubeCaption(currentVideo) {
-//   const apiKey = 'AIzaSyCetglNoZRO6IU3JBIhlmIneiHFef2Q4tM'
+//   const apiKey = import.meta.env.VITE_API_KEY_YOUTUBE
 //   const videoId = extractVideoID(currentVideo)
 
 //   const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`
@@ -102,7 +102,7 @@ export async function getJSONData(fileName) {
 
 export async function getYoutubeCaption(currentVideo) {
   try {
-    const apiKey = 'AIzaSyCetglNoZRO6IU3JBIhlmIneiHFef2Q4tM'
+    const apiKey = import.meta.env.VITE_API_KEY_YOUTUBE
     const videoId = extractVideoID(currentVideo)
 
     const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`

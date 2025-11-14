@@ -29,7 +29,7 @@ export default {
     return {
       page: 1,
       // perPage: 16,
-      maxVisibleButtons: 8,
+      maxVisibleButtons: 10,
       gotoNumber: ''
     }
   },
@@ -39,14 +39,24 @@ export default {
     //   return this.reviews.slice((this.page - 1) * this.perPage, this.page * this.perPage)
     // },
     firstPage() {
-      return Math.max(this.page - (this.page === this.totalPages ? 2 : 1), 1)
+      const halfVisible = Math.floor(this.maxVisibleButtons / 2)
+      let start = Math.max(this.page - halfVisible, 1)
+      if (this.totalPages - start < this.maxVisibleButtons - 1) {
+        start = Math.max(this.totalPages - this.maxVisibleButtons + 1, 1)
+      }
+      return start
     },
     lastPage() {
-      return Math.min(this.page + (this.page === 1 ? 2 : 1), this.totalPages)
+      const halfVisible = Math.floor(this.maxVisibleButtons / 2)
+      let end = Math.min(this.page + halfVisible, this.totalPages)
+      if (end - this.firstPage < this.maxVisibleButtons - 1) {
+        end = Math.min(this.firstPage + this.maxVisibleButtons - 1, this.totalPages)
+      }
+      return end
     },
     displayedPages() {
       if (this.totalPages <= this.maxVisibleButtons || this.page > this.totalPages) {
-        return this.totalPages
+        return Array.from({ length: this.totalPages }, (_, i) => i + 1)
       }
 
       return Array.from(

@@ -27,7 +27,4 @@ coverage
 *.sln
 *.sw?
 
-src/assets/data/
-src/assets/text/
-
 .env

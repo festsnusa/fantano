@@ -202,37 +202,68 @@ export default {
       
       return spotifyLinks
     },
-    getAppleMusicLink() {
-      this.json.forEach((e) => {
-        if (e.type !== 'review') {
-          return
+    async getAppleMusicLink(id, albumTitle, artistName) {
+      const searchQuery = `${albumTitle} ${artistName}`
+      const url = `https://itunes.apple.com/search?term=${encodeURIComponent(
+        searchQuery
+      )}&entity=album&limit=1`
+
+      try {
+        const response = await fetch(url)
+        const data = await response.json()
+        
+        if (data.results && data.results.length > 0) {
+          const album = data.results[0]
+          const albumLink = album.collectionViewUrl
+          console.log(id, albumLink)
+          return {
+            id,
+            link: albumLink
+          }
+        } else {
+          console.log('No album found with the specified title and artist')
+          return null
         }
-
-        if (e.externalLinks.length > 1) {
-          return
-        }
-
-        const searchQuery = `${e.albumTitle} ${e.artistName}`
-        const url = `https://itunes.apple.com/search?term=${encodeURIComponent(
-          searchQuery
-        )}&entity=album&limit=1`
-
-        fetch(url)
-          .then((response) => response.json())
-          .then((data) => {
-            if (data.results && data.results.length > 0) {
-              const album = data.results[0]
-              const albumLink = album.collectionViewUrl
-              console.log(e.id, albumLink)
-            } else {
-              return null
-            }
-          })
-          .catch((error) => {
-            console.error('Error:', error)
-            return null
-          })
+      } catch (error) {
+        console.error('Error retrieving album:', error)
+        return null
+      }
+    },
+    async populateAppleMusicLinks() {
+      const appleMusicLinks = []
+      
+      // Filter items that are reviews and don't have Apple Music links
+      const itemsToFetch = this.json.filter((e) => {
+        if (e.type !== 'review') return false
+        if (!Array.isArray(e.externalLinks)) return false
+        // Check if Apple Music link already exists
+        return !e.externalLinks.some(link => link.title === 'AM')
       })
+      
+      console.log(`Found ${itemsToFetch.length} items to fetch Apple Music links for`)
+      
+      for (const item of itemsToFetch) {
+        try {
+          const result = await this.getAppleMusicLink(item.id, item.albumTitle, item.artistName)
+          if (result) {
+            appleMusicLinks.push({
+              id: result.id,
+              title: 'AM',
+              source: result.link
+            })
+          }
+          // Add delay to avoid rate limiting
+          await new Promise(resolve => setTimeout(resolve, 500))
+        } catch (error) {
+          console.error(`Error fetching link for id ${item.id}:`, error)
+        }
+      }
+      
+      console.log('Apple Music links to add:', appleMusicLinks)
+      console.log('Copy this data to your main-channel.json externalLinks arrays:')
+      console.table(appleMusicLinks)
+      
+      return appleMusicLinks
     },
     pushAppleMusicLink() {
       // json.forEach(e => {

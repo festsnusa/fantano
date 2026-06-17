@@ -1,5 +1,5 @@
-import { ref, getDownloadURL } from 'firebase/storage'
-import { storage } from '@/includes/firebase'
+// GitHub raw content URL base
+const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/festsnusa/fantano/main'
 
 export function transformYouTubeLink(currentLink) {
   const videoID = extractVideoID(currentLink)
@@ -59,19 +59,17 @@ export async function downloadFile(fileName) {
 }
 
 export async function getJSONData(fileName) {
-  const fileRef = ref(storage, fileName)
+  const url = `${GITHUB_RAW_BASE}/${fileName}`
 
   try {
-    const url = await getDownloadURL(fileRef)
-
     const response = await fetch(url)
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`)
+    }
     const jsonText = await response.text()
-
-    // Perform further actions with the Markdown text
     return JSON.parse(jsonText)
   } catch (error) {
-    // Handle error
-    console.error('Error retrieving Markdown file:', error)
+    console.error('Error retrieving JSON file:', error)
     return ''
   }
 }
